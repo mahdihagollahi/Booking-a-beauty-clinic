@@ -1,12 +1,14 @@
-// import Navbar from '@/Component/Landing/Navbar'
-import SingIn from '@/Component/Login/SingIn'
+import Navbar from '@/Component/Landing/Navbar'
+import ReservationServicePart from '@/Component/Landing/ReservationServicePart'
+// import SingIn from '@/Component/Login/SingIn'
 import React from 'react'
 
 function page() {
   return (
     <div >
-      {/* <Navbar/> */}
-      <SingIn/>
+      <Navbar/>
+      <ReservationServicePart/>
+      {/* <SingIn/> */}
     </div>
   )
 }
