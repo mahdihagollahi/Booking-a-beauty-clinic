@@ -7,7 +7,7 @@ function ReservationServicePart() {
   return (
     <div>
       <div
-        className="absolute -z-1 inset-0 w-[100%] h-[60%] py-10 mt-1 rounded-3xl"
+        className="absolute -z-1 inset-0 w-[100%] h-[50%] py-10 mt-1  "
         style={{ backgroundImage: `url(${Background.src})` }}
       >
         <div className=" mr-[80.9%] mt-2">
@@ -58,6 +58,9 @@ function ReservationServicePart() {
             </button>
         </div>
       </div>
+      <div className=" mr-[32.5%] mt-[320px]">
+          <Image src={Flower} width={52} height={58} alt="" />
+        </div>
     </div>
   );
 }
