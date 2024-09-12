@@ -4,7 +4,7 @@ import IconImage from "@/assent/Img/Landing/Vector.svg"
 import loginButton from '@/assent/Img/Landing/user.svg'
 function Navbar() {
   return (
-    <div className="bg-white">
+    <div className=" relative z-10">
       <div className="flex px-20 py-6 items-center  ">
         <div className="flex items-center gap-3">
           <Image src={IconImage} width={30} height={30} alt="logo" />
@@ -14,7 +14,7 @@ function Navbar() {
         </div>
         <div className="flex gap-20 mr-60 items-center ">
           <div className="  cursor-pointer"> 
-          <p className="w-20  font-extrabold text-base whitespace-nowrap text-[#8F8F8F] hover:w-[67px]  hover:text-[#4BB09C] hover:border-b-4 hover:border-[#4BB09C] hover:pb-[2px] hover:mt-[1px]  duration-300">
+          <p className="w-20  font-extrabold text-base whitespace-nowrap text-[#8F8F8F] hover:w-[73px]  hover:text-[#4BB09C] hover:border-b-4 hover:border-[#4BB09C] hover:pb-[2px] hover:mt-[1px]  duration-300">
           صفحه اصلی
          </p>
           </div>
