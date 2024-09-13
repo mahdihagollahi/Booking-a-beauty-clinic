@@ -4,6 +4,7 @@ import ServicePhoto1 from "@/assent/Img/Landing/ServicePhoto1.svg";
 import servicePhoto2 from "@/assent/Img/Landing/servicePhoto2.svg";
 import ServicePhoto3 from "@/assent/Img/Landing/ServicePhoto3.svg";
 import ServicePhoto4 from "@/assent/Img/Landing/ServicePhoto4.svg";
+import Flower from "@/assent/Img/Landing/flower.svg";
 function Services() {
   return (
     <Fragment>
@@ -43,6 +44,9 @@ function Services() {
             <Image src={ServicePhoto3} width={226} height={226} alt="" />
           </div>
         </div>
+      </div>
+      <div className=" mr-[33.9%] mt-[100px]">
+        <Image src={Flower} width={52} height={58} alt="" />
       </div>
     </Fragment>
   );
