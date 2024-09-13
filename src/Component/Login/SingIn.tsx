@@ -47,4 +47,3 @@ function SingIn() {
 }
 
 export default SingIn;
-

@@ -36,12 +36,13 @@ function ReservationServicePart() {
         </div>
 
         <div className="mt-16 mr-[5%] text-[#A5A5A5] font-regular text-xl">
-            <p>
-            کلینیک تخصصی پوست و مو نورانید ارائه دهنده خدمات ویژه جوانسازی پوست با لیزر، 
-            </p>
-            <p className="mt-4">
+          <p>
+            کلینیک تخصصی پوست و مو نورانید ارائه دهنده خدمات ویژه جوانسازی پوست
+            با لیزر،
+          </p>
+          <p className="mt-4">
             لاغری با دستگاه، لیزر موهای زائد، جراحی زیبایی و فیشیال صورت است.
-            </p>
+          </p>
         </div>
 
         <div className=" mr-[40.8%] -mt-[2.2%] ">
@@ -49,18 +50,18 @@ function ReservationServicePart() {
         </div>
 
         <div className="flex gap-8 mr-[5%]">
-            <button className="bg-[#DC1E7A] whitespace-nowrap w-36 py-2 px-4 rounded-md text-white font-medium text-sm">
-                رزرو نوبت
-            </button>
+          <button className="bg-[#DC1E7A] whitespace-nowrap w-36 py-2 px-4 rounded-md text-white font-medium text-sm">
+            رزرو نوبت
+          </button>
 
-            <button className="border border-[#DC1E7A] whitespace-nowrap w-36 py-2 px-4 rounded-md text-[#DC1E7A] font-medium text-sm">
-              مشاوره تلفنی
-            </button>
+          <button className="border border-[#DC1E7A] whitespace-nowrap w-36 py-2 px-4 rounded-md text-[#DC1E7A] font-medium text-sm">
+            مشاوره تلفنی
+          </button>
         </div>
       </div>
-      <div className=" mr-[32.5%] mt-[320px]">
-          <Image src={Flower} width={52} height={58} alt="" />
-        </div>
+      <div className=" mr-[32.5%] mt-[360px]">
+        <Image src={Flower} width={52} height={58} alt="" />
+      </div>
     </div>
   );
 }
