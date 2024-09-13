@@ -55,7 +55,7 @@ function Services() {
           </div>
         </div>
       </div>
-      <div className=" mr-[33.9%] mt-[100px]">
+      <div className=" mr-[33.9%] mt-[10px]">
         <Image src={Flower} width={52} height={58} alt="" />
       </div>
     </Fragment>
