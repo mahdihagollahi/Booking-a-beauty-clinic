@@ -5,11 +5,17 @@ import servicePhoto2 from "@/assent/Img/Landing/servicePhoto2.svg";
 import ServicePhoto3 from "@/assent/Img/Landing/ServicePhoto3.svg";
 import ServicePhoto4 from "@/assent/Img/Landing/ServicePhoto4.svg";
 import Flower from "@/assent/Img/Landing/flower.svg";
+import EllipseService from "@/assent/Img/Landing/EllipseService.svg";
+import EllipseRevers from "@/assent/Img/Landing/EllipseRevers.svg";
+
 function Services() {
   return (
     <Fragment>
       <div className="bg-white py-2">
         <div className="flex ">
+          <div className="absolute mr-[26%] -mt-2">
+            <Image src={EllipseService} width={490} height={530} alt="" />
+          </div>
           <div className=" px-20 py-20">
             <h3 className="font-medium text-xl text-[#393939] mr-8 mt-14">
               خدمات نورانید
@@ -25,6 +31,10 @@ function Services() {
               </p>
               <p className="mt-2">صورت است.</p>
             </div>
+
+            <div className="absolute mr-[30%] -m-[5.9%]">
+            <Image src={EllipseRevers} width={490} height={530} alt="" />
+          </div>
             <div className="mt-12 mr-7">
               <button className="bg-[#DC1E7A] whitespace-nowrap w-36 py-2 px-4 rounded-md text-white font-medium text-sm">
                 مشاهده بیشتر
@@ -32,7 +42,7 @@ function Services() {
             </div>
           </div>
           <div className="mr-[16%] mt-32 ">
-          <Image src={servicePhoto2} width={226} height={226} alt="" />
+            <Image src={servicePhoto2} width={226} height={226} alt="" />
           </div>
           <div className="absolute mr-[65%]">
             <Image src={ServicePhoto1} width={226} height={226} alt="" />
@@ -53,4 +63,3 @@ function Services() {
 }
 
 export default Services;
-
