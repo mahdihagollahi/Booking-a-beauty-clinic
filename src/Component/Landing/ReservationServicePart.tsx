@@ -29,7 +29,7 @@ function ReservationServicePart() {
 
         <div>
           <div>
-            <h1 className="font-demiBold text-[48px] -mt-[8%] mr-[5%]  leading-6">
+            <h1 className="font-demiBold text-[48px] -mt-[8%] mr-[6.5%]  leading-6">
               خدمات ما راز {""}
               <span className="text-[#DC1E7A]">زیبایی</span>
               {""} شماست
@@ -37,7 +37,7 @@ function ReservationServicePart() {
           </div>
         </div>
 
-        <div className="mt-16 mr-[5%] text-[#A5A5A5] font-regular text-xl">
+        <div className="mt-16  mr-[6.5%] text-[#A5A5A5] font-regular text-xl">
           <p>
             کلینیک تخصصی پوست و مو نورانید ارائه دهنده خدمات ویژه جوانسازی پوست
             با لیزر،
@@ -47,11 +47,11 @@ function ReservationServicePart() {
           </p>
         </div>
 
-        <div className=" mr-[40.8%] -mt-[2.2%] ">
+        <div className=" mr-[42.8%] -mt-[2.2%] ">
           <Image src={Flower} width={52} height={58} alt="" />
         </div>
 
-        <div className="flex gap-8 mr-[5%]">
+        <div className="flex gap-8 mr-[6.5%]">
           <button className="bg-[#DC1E7A] whitespace-nowrap w-36 py-2 px-4 rounded-md text-white font-medium text-sm">
             رزرو نوبت
           </button>
