@@ -33,8 +33,8 @@ function Services() {
             </div>
 
             <div className="absolute mr-[30%] -m-[5.9%]">
-            <Image src={EllipseRevers} width={490} height={530} alt="" />
-          </div>
+              <Image src={EllipseRevers} width={490} height={530} alt="" />
+            </div>
             <div className="mt-12 mr-7">
               <button className="bg-[#DC1E7A] whitespace-nowrap w-36 py-2 px-4 rounded-md text-white font-medium text-sm">
                 مشاهده بیشتر
@@ -63,4 +63,3 @@ function Services() {
 }
 
 export default Services;
-
