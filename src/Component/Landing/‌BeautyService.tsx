@@ -3,16 +3,13 @@ import Image from "next/image";
 import GreenRservation from "@/assent/Img/Landing/GreenRservation.svg";
 import Logo from "@/assent/Img/Landing/LogoWhitName.svg";
 
-
 const BeautyService = () => {
   return (
     <Fragment>
- 
       <div
         className="mt-20  py-4 relative z-10"
         style={{ backgroundImage: `url(${GreenRservation.src})` }}
       >
-           
         <div className="px-28">
           <Image src={Logo} width={90} height={30} alt="" />
         </div>
@@ -23,7 +20,8 @@ const BeautyService = () => {
           </p>
 
           <p className="font-regular text-[20px] mt-3 text-[#727272]">
-          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+            استفاده از طراحان گرافیک است
           </p>
         </div>
 
@@ -31,7 +29,7 @@ const BeautyService = () => {
           <button className="bg-[#DC1E7A] whitespace-nowrap w-36 py-2 px-4 rounded-md text-white font-medium text-sm">
             رزرو نوبت
           </button>
-      </div>
+        </div>
       </div>
     </Fragment>
   );

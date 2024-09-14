@@ -18,13 +18,7 @@ function ReservationServicePart() {
           <Image src={Flower} width={52} height={58} alt="" />
         </div>
         <div className="mr-[72.6%] -mt-[11%] absolute">
-          <Image
-                
-                src={WomanImage}
-                width={290}
-                height={250}
-                alt=''
-                />
+          <Image src={WomanImage} width={290} height={250} alt="" />
         </div>
 
         <div>
@@ -47,7 +41,7 @@ function ReservationServicePart() {
           </p>
         </div>
 
-        <div className=" mr-[42.8%] -mt-[2.2%] ">
+        <div className=" mr-[46.8%] -mt-[2.2%] ">
           <Image src={Flower} width={52} height={58} alt="" />
         </div>
 

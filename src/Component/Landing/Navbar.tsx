@@ -12,28 +12,28 @@ function Navbar() {
         </div>
         <div className="flex gap-20 mr-60 items-center ">
           <div className="  cursor-pointer">
-            <p className="w-20  font-extrabold text-base whitespace-nowrap text-[#8F8F8F] hover:w-[73px]  hover:text-[#4BB09C] hover:border-b-4 hover:border-[#4BB09C] hover:pb-[2px] hover:mt-[1px]  duration-300">
+            <p className="w-20  font-extrabold text-base whitespace-nowrap text-[#8F8F8F] hover:w-[77px]  hover:text-[#4BB09C] hover:border-b-4 hover:border-[#4BB09C] hover:pb-[2px] hover:mt-[1px]  duration-300">
               صفحه اصلی
             </p>
           </div>
 
           <div className="  cursor-pointer">
-            <p className="w-[76px]  font-extrabold text-base whitespace-nowrap text-[#8F8F8F] hover:w-[76px]  hover:text-[#4BB09C] hover:border-b-4 hover:border-[#4BB09C] hover:pb-[2px] hover:mt-[1px] duration-300">
+            <p className="w-[76px]  font-extrabold text-base whitespace-nowrap text-[#8F8F8F] hover:w-[87px]  hover:text-[#4BB09C] hover:border-b-4 hover:border-[#4BB09C] hover:pb-[2px] hover:mt-[1px] duration-300">
               خدمات نورانید
             </p>
           </div>
           <div className="  cursor-pointer">
-            <p className="w-[81px] font-extrabold text-base whitespace-nowrap text-[#8F8F8F] hover:w-[81px] hover:text-[#4BB09C] hover:border-b-4 hover:border-[#4BB09C] hover:pb-[2px] hover:mt-[1px]  duration-300">
+            <p className="w-[81px] font-extrabold text-base whitespace-nowrap text-[#8F8F8F] hover:w-[88px] hover:text-[#4BB09C] hover:border-b-4 hover:border-[#4BB09C] hover:pb-[2px] hover:mt-[1px]  duration-300">
               پزشکان نورانید
             </p>
           </div>
           <div className="  cursor-pointer">
-            <p className="w-9 font-extrabold text-base whitespace-nowrap text-[#8F8F8F] hover:w-9  hover:text-[#4BB09C] hover:border-b-4 hover:border-[#4BB09C] hover:pb-[2px] hover:mt-[1px]  duration-300">
+            <p className="w-9 font-extrabold text-base whitespace-nowrap text-[#8F8F8F] hover:w-10  hover:text-[#4BB09C] hover:border-b-4 hover:border-[#4BB09C] hover:pb-[2px] hover:mt-[1px]  duration-300">
               مقالات
             </p>
           </div>
           <div className="  cursor-pointer">
-            <p className="w-14  font-extrabold text-base whitespace-nowrap text-[#8F8F8F] hover:w-14  hover:text-[#4BB09C] hover:border-b-4 hover:border-[#4BB09C] hover:pb-[2px] hover:mt-[1px]  duration-300">
+            <p className="w-14  font-extrabold text-base whitespace-nowrap text-[#8F8F8F] hover:w-[70px]  hover:text-[#4BB09C] hover:border-b-4 hover:border-[#4BB09C] hover:pb-[2px] hover:mt-[1px]  duration-300">
               تماس با ما
             </p>
           </div>
