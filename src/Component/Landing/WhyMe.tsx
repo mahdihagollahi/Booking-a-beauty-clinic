@@ -22,7 +22,7 @@ function WhyMe() {
             />
            </div>
 
-           <div className='mr-[58%] top-[2.5%] -z-1  absolute'>
+           <div className='mr-[58%] top-[2.5%] z-10  absolute'>
             <Image 
             src={HealthyWhyUs}
             width={356}
@@ -52,7 +52,7 @@ function WhyMe() {
             alt=''
             />
            </div>
-           <div className=" mr-[54.9%] top-[25%] -z-1  absolute">
+           <div className=" mr-[56.5%] top-[25%] -z-1  absolute">
         <Image src={Flower} width={52} height={58} alt="" />
       </div>
 
@@ -67,6 +67,14 @@ function WhyMe() {
 
          
            <div className=" mr-[38.9%] top-[94.8%] -z-1  absolute">
+        <Image src={Flower} width={52} height={58} alt="" />
+      </div>
+
+      <div className="  top-[113%] -z-9  absolute">
+        <Image src={Flower} width={52} height={58} alt="" />
+      </div>
+
+      <div className=" mr-[96.9%] top-[113.8%] -z-1  absolute">
         <Image src={Flower} width={52} height={58} alt="" />
       </div>
        </div>
