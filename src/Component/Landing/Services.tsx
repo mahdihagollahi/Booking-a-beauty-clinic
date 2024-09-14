@@ -41,7 +41,7 @@ function Services() {
               </button>
             </div>
           </div>
-          <div className="mr-[16%] mt-32 ">
+          <div className="mr-[12%] mt-32 ">
             <Image src={servicePhoto2} width={226} height={226} alt="" />
           </div>
           <div className="absolute mr-[65%]">
@@ -63,3 +63,4 @@ function Services() {
 }
 
 export default Services;
+
