@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import Background from "@/assent/Img/Landing/background.svg";
 import Image from "next/image";
 import Flower from "@/assent/Img/Landing/flower.svg";
+import FlowerP from "@/assent/Img/Landing/flower.png";
 import WomanImage from "@/assent/Img/Landing/WomanResevation.svg";
 function ReservationServicePart() {
   return (
@@ -60,7 +61,7 @@ function ReservationServicePart() {
       </div>
 
       <div className="absolute mr-[59.5%] -z-1 ">
-        <Image src={Flower} width={52} height={58} alt="" />
+        <Image src={FlowerP} width={52} height={58} alt="" />
       </div>
     </div>
   );

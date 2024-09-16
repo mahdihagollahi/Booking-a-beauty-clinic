@@ -114,12 +114,13 @@
 
 
 
-import React from "react";
+import React,{useState} from "react";
 import Image from "next/image";
 import { REGEXP_ONLY_DIGITS_AND_CHARS } from "input-otp"
 import LoginImage from "@/assent/Img/Login/LognModal.svg";
 import IconImage from "@/assent/Img/Landing/Vector.svg";
 import Link from "next/link";
+import SingIn3 from "./SingIn3";
 import {
   InputOTP,
   InputOTPGroup,
@@ -131,12 +132,22 @@ interface SingInProps {
 }
 
 const SingIn: React.FC<SingInProps> = ({ handleCloseModal }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const handleFocus = () => {
     document.documentElement.lang = "en";
   };
 
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
-    <div className="flex justify-center items-center mt-[15%]">
+    <div className="flex justify-center items-center mt-[15%] relative z-50">
       <div
         className="px-10 py-10 pb-32 rounded-r-[4.5%] rounded-l-[4.5%]"
         style={{
@@ -177,14 +188,14 @@ const SingIn: React.FC<SingInProps> = ({ handleCloseModal }) => {
         <InputOTPSlot index={3} />
       </InputOTPGroup>
     </InputOTP>
-        <Link href='/singin'>
+       
         <button
           className="w-full bg-[#DC1E7A] text-white py-4 rounded-lg mt-4"
        
         >
           دریافت کد
         </button>
-        </Link>
+     
       </div>
     </div>
   );
