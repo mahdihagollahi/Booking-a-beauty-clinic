@@ -11,7 +11,7 @@ import EllipseRevers from "@/assent/Img/Landing/EllipseRevers.svg";
 function Services() {
   return (
     <Fragment>
-      <div className="bg-white py-2">
+      <div className="bg-white relative z-10 py-2 mt-4">
         <div className="flex ">
           <div className="absolute mr-[26%] -mt-2">
             <Image src={EllipseService} width={490} height={530} alt="" />
@@ -29,6 +29,9 @@ function Services() {
                 پوست با لیزر، لاغری با دستگاه، لیزر موهای زائد، جراحی زیبایی و
                 فیشیال
               </p>
+              <div className=" mr-[31.6%] -mt-9 absolute">
+        <Image src={Flower} width={52} height={58} alt="" />
+      </div>
               <p className="mt-2">صورت است.</p>
             </div>
 
@@ -55,7 +58,7 @@ function Services() {
           </div>
         </div>
       </div>
-      <div className=" mr-[33.9%] mt-[10px]">
+      <div className=" absolute mr-[33.9%] -mt-6">
         <Image src={Flower} width={52} height={58} alt="" />
       </div>
     </Fragment>

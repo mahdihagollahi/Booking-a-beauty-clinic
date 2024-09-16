@@ -1,8 +1,23 @@
-import React from "react";
+'use client'
+import React,{ useState} from "react";
 import Image from "next/image";
 import IconImage from "@/assent/Img/Landing/Vector.svg";
 import loginButton from "@/assent/Img/Landing/user.svg";
+import Modal from "./Modal";
+import SingIn from "../SingIn/SingIn";
 function Navbar() {
+
+  const [isModalVisible, setIsModalVisible] = useState(false);
+
+  const handleOpenModal = () => {
+    console.log('Opening modal...');
+    setIsModalVisible(true);
+  };
+
+  const handleCloseModal = () => {
+    console.log('Closing modal...');
+    setIsModalVisible(false);
+  };
   return (
     <div className=" relative z-10">
       <div className="flex px-20 py-6 items-center  ">
@@ -39,7 +54,9 @@ function Navbar() {
           </div>
         </div>
         <div className="mr-44">
-          <button className="flex gap-2 bg-[#DC1E7A] rounded-md py-2 px-4  whitespace-nowrap">
+          <button className="flex gap-2 bg-[#DC1E7A] rounded-md py-2 px-4  whitespace-nowrap"
+           onClick={handleOpenModal}
+          >
             <Image
               src={loginButton}
               width={20}
@@ -52,9 +69,14 @@ function Navbar() {
             </p>
           </button>
         </div>
+        <Modal isVisible={isModalVisible} handleCloseModal={handleCloseModal}>
+          <SingIn handleCloseModal={handleCloseModal} />
+        </Modal>
       </div>
     </div>
   );
 }
 
 export default Navbar;
+
+
