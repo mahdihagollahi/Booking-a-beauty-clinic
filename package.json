@@ -9,11 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
     "daisyui": "^4.12.10",
+    "input-otp": "^1.2.4",
+    "lucide-react": "^0.441.0",
     "next": "14.2.9",
     "react": "^18",
     "react-dom": "^18",
-    "react-otp-input": "^3.1.1"
+    "react-otp-input": "^3.1.1",
+    "tailwind-merge": "^2.5.2",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@types/node": "^20",

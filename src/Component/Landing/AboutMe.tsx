@@ -8,7 +8,7 @@ import EllipseService from "@/assent/Img/Landing/EllipseService.svg";
 function AboutMe() {
   return (
     <Fragment>
-      <div className="bg-white z-10 mt-[3%]">
+      <div className="bg-white relative z-10 mt-6">
         <div className="absolute">
           <Image src={EllipseServicePhoto} width={300} height={300} alt="" />
         </div>
@@ -16,15 +16,15 @@ function AboutMe() {
           <Image src={EllipseService} width={490} height={500} alt="" />
         </div>
 
-        <div className="absolute mr-[55.5%]">
+        {/* <div className="absolute mr-[55.5%]">
           <Image src={Flower} width={52} height={52} alt="" />
-        </div>
+        </div> */}
         <div className="flex px-20">
           <Image src={DoctorImage} width={308} height={343} alt="" />
           <div>
-            <div className="absolute mr-[49.5%] mt-[5.5%]">
+            {/* <div className="absolute mr-[49.5%] mt-[5.5%]">
               <Image src={Flower} width={52} height={52} alt="" />
-            </div>
+            </div> */}
             <h3 className="font-medium text-xl text-[#393939] mr-8 mt-14">
               درباره نورانید
             </h3>
@@ -41,9 +41,9 @@ function AboutMe() {
               <p className="mt-2">برای همراهان خود رقم بزنیم.</p>
             </div>
 
-            <div className="absolute mr-[34.5%] mt-10 ">
+            {/* <div className="absolute mr-[34.5%] mt-10 ">
               <Image src={Flower} width={52} height={52} alt="" />
-            </div>
+            </div> */}
             <div className="mt-12 mr-7">
               <button className="bg-[#DC1E7A] whitespace-nowrap w-36 py-2 px-4 rounded-md text-white font-medium text-sm">
                 خدمات ما
@@ -52,7 +52,7 @@ function AboutMe() {
           </div>
         </div>
       </div>
-      <div className=" mr-[53%] mt-[20px]">
+      <div className=" mr-[57%] mt-[20px]">
         <Image src={Flower} width={52} height={58} alt="" />
       </div>
     </Fragment>

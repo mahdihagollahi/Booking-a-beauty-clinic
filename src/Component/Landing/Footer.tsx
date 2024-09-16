@@ -14,7 +14,7 @@ const Footer = () => {
       </div>
       <div className="flex gap-20 mr-40 items-center ">
         <div className="  cursor-pointer">
-          <p className="w-20  font-extrabold text-base whitespace-nowrap text-[#8F8F8F] hover:w-[77px]  hover:text-[#4BB09C] hover:border-b-4 hover:border-[#4BB09C] hover:pb-[2px] hover:mt-[1px]  duration-300">
+          <p className="w-20  font-extrabold text-base whitespace-nowrap text-[#8F8F8F] ">
             صفحه اصلی
           </p>
         </div>

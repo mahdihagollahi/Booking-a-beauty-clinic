@@ -9,7 +9,7 @@ import Flower from "@/assent/Img/Landing/flower.svg";
 function WhyMe() {
   return (
     <Fragment>
-      <div className="bg-inherit mt-6 relative ">
+      <div className="bg-inherit mt-20 relative ">
         <p className="mr-20  font-medium text-xl text-[#393939] ">
           چرا کلینیک نورانید
         </p>
