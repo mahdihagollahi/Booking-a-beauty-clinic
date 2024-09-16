@@ -8,7 +8,7 @@ import EllipseService from "@/assent/Img/Landing/EllipseService.svg";
 function AboutMe() {
   return (
     <Fragment>
-      <div className="bg-white relative z-10 mt-6">
+      <div className="bg-white   mt-6">
         <div className="absolute">
           <Image src={EllipseServicePhoto} width={300} height={300} alt="" />
         </div>
