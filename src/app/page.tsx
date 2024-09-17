@@ -14,6 +14,7 @@
 // import SingIn3 from '@/Component/SingIn/SingIn3'
 import SelectService from '@/Component/Reservation/SelectService'
 import Service from '@/Component/Reservation/Service'
+import SetTimeAndDate from '@/Component/Reservation/SetTimeAndDate'
 
 import React from 'react'
 
@@ -36,7 +37,8 @@ function page() {
         {/* <SingIn3/> */}
         {/* <LogIn1/> */}
        {/* <Service/> */}
-       <SelectService/>
+       {/* <SelectService/> */}
+       <SetTimeAndDate/>
         
     </div>
   )

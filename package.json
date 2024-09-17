@@ -14,6 +14,7 @@
     "daisyui": "^4.12.10",
     "input-otp": "^1.2.4",
     "lucide-react": "^0.441.0",
+    "moment-jalaali": "^0.10.1",
     "next": "14.2.9",
     "react": "^18",
     "react-dom": "^18",
