@@ -13,6 +13,7 @@
 // import LogIn1 from '@/Component/LogIn/LogIn1'
 // import SingIn3 from '@/Component/SingIn/SingIn3'
 import Information from '@/Component/Reservation/Information'
+import Payment from '@/Component/Reservation/Payment'
 import SelectService from '@/Component/Reservation/SelectService'
 import Service from '@/Component/Reservation/Service'
 import SetTimeAndDate from '@/Component/Reservation/SetTimeAndDate'
@@ -40,7 +41,8 @@ function page() {
        {/* <Service/> */}
        {/* <SelectService/> */}
        {/* <SetTimeAndDate/> */}
-        <Information/>
+        {/* <Information/> */}
+        <Payment/>
     </div>
   )
 }

@@ -6,6 +6,7 @@ import ServicePhoto1 from "@/assent/Img/Landing/ServicePhoto1.svg";
 import servicePhoto2 from "@/assent/Img/Landing/servicePhoto2.svg";
 import ServicePhoto3 from "@/assent/Img/Landing/ServicePhoto3.svg";
 import HaireAndSkinReservation from "@/assent/Img/Reservation/HaireAndSkinReservation.svg";
+import AppointmentReservation from "./AppointmentReservation";
 const Service = () => {
   return (
     <div>
@@ -13,11 +14,8 @@ const Service = () => {
         <Navbar />
       </div>
 
-      <div className="py-20 px-20">
-        <h3 className="font-medium text-xl text-[#393939]">رزرو نوبت</h3>
-        <p className="font-medium text-lg mt-3 text-[#8F8F8F]">
-          کلینیک زیبایی نورانید ۷ روز هفته میزبان شما عزیزان می باشد.
-        </p>
+      <div className="py-20 px-8 md:px-20">
+      <AppointmentReservation/>
 
         <div className="mt-16 px-20">
           <Image src={ServiceImage} width={11000} height={83} alt="" />
