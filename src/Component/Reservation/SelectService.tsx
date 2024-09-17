@@ -125,7 +125,7 @@ const SelectService: React.FC = () => {
                   </p>
                 </div>
                 <div className="flex-shrink-0 text-center">
-                  <div className="flex items-center justify-center mr-20">
+                  <div className="flex items-center justify-center gap-2 mr-20">
                     <Image src={Star} width={22} height={22} alt="" />
                     <p className="font-medium text-lg text-[#393939]">
                       {items.rate}
@@ -139,6 +139,20 @@ const SelectService: React.FC = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="flex gap-8 mr-[80.5%] mt-32">
+
+        <button className=" whitespace-nowrap w-36 py-2 px-4 rounded-md text-[#727272] bg-[#DDDDDD] font-medium text-sm">
+            مرحله قبل
+          </button>
+
+
+          <button className="bg-[#DC1E7A] whitespace-nowrap w-36 py-2 px-4 rounded-md text-white font-medium text-sm">
+          تایید و ادامه
+          </button>
+
+          
         </div>
       </div>
     </div>
