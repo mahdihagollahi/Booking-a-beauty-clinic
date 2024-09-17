@@ -5,6 +5,7 @@ import ServiceImage from "@/assent/Img/Reservation/ServiceReservation.svg";
 import RefreshSkin from "@/assent/Img/Reservation/RefreshSkin.svg";
 import Star from "@/assent/Img/Reservation/Star.svg";
 import ArrowLeft from "@/assent/Img/Reservation/arrowLeft.svg";
+import AppointmentReservation from "./AppointmentReservation";
 
 interface ServiceItems {
   id: number;
@@ -96,10 +97,7 @@ const SelectService: React.FC = () => {
       </div>
 
       <div className="py-20 px-8 md:px-20">
-        <h3 className="font-medium text-xl text-[#393939]">رزرو نوبت</h3>
-        <p className="font-medium text-lg mt-3 text-[#8F8F8F]">
-          کلینیک زیبایی نورانید ۷ روز هفته میزبان شما عزیزان می باشد.
-        </p>
+  <AppointmentReservation/>
 
         <div className="mt-16 text-center px-24">
           <Image src={ServiceImage} width={11000} height={83} alt="" />
