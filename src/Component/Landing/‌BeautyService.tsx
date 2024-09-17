@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import Image from "next/image";
 import GreenRservation from "@/assent/Img/Landing/GreenRservation.svg";
-import Logo from "@/assent/Img/Landing/LogoWhitName.svg";
+import Logo from "@/assent/Img/Landing/GreenLogo.svg";
 
 const BeautyService = () => {
   return (
