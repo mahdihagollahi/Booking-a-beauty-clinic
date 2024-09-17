@@ -82,7 +82,7 @@ const SetTimeAndDate = () => {
                   .jMonth(month - 1)
                   .format("jMMMM")}
               </button>
-              <h2 className="text-xl font-bold">
+              <h2 className="text-xl font-bold whitespace-nowrap">
                 {moment().jYear(year).jMonth(month).format("jMMMM jYYYY")}
               </h2>
               <button
@@ -206,7 +206,7 @@ const SetTimeAndDate = () => {
             </div>
           </div>
         </div>
-        <div className="flex gap-8 mr-[80.5%] mt-32">
+        <div className="flex gap-8 mr-[80.5%] mt-12">
           <button className=" whitespace-nowrap w-36 py-2 px-4 rounded-md text-[#727272] bg-[#DDDDDD] font-medium text-sm">
             مرحله قبل
           </button>
