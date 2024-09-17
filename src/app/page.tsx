@@ -12,7 +12,9 @@
 // import SingIn2 from '@/Component/Login/SingIn2'
 // import LogIn1 from '@/Component/LogIn/LogIn1'
 // import SingIn3 from '@/Component/SingIn/SingIn3'
+import SelectService from '@/Component/Reservation/SelectService'
 import Service from '@/Component/Reservation/Service'
+
 import React from 'react'
 
 
@@ -33,7 +35,8 @@ function page() {
         {/* <SingIn2/> */}
         {/* <SingIn3/> */}
         {/* <LogIn1/> */}
-       <Service/>
+       {/* <Service/> */}
+       <SelectService/>
         
     </div>
   )
