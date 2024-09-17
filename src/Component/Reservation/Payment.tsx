@@ -178,8 +178,16 @@ const Payment: React.FC = () => {
                 </button>
             </div>
           </div>
+          
         </div>
+        <div className="mr-[83.7%] mt-20 ">
+      <button className=" whitespace-nowrap w-36 py-2 px-4 rounded-md text-[#727272] bg-[#DDDDDD] font-medium text-sm">
+            مرحله قبل
+          </button>
       </div>
+      </div>
+      
+   
     </div>
   );
 };

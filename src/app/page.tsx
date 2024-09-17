@@ -12,6 +12,7 @@
 // import SingIn2 from '@/Component/Login/SingIn2'
 // import LogIn1 from '@/Component/LogIn/LogIn1'
 // import SingIn3 from '@/Component/SingIn/SingIn3'
+import FishPeyment from '@/Component/Reservation/FishPeyment'
 import Information from '@/Component/Reservation/Information'
 import Payment from '@/Component/Reservation/Payment'
 import SelectService from '@/Component/Reservation/SelectService'
@@ -42,7 +43,8 @@ function page() {
        {/* <SelectService/> */}
        {/* <SetTimeAndDate/> */}
         {/* <Information/> */}
-        <Payment/>
+        {/* <Payment/> */}
+        <FishPeyment/>
     </div>
   )
 }
