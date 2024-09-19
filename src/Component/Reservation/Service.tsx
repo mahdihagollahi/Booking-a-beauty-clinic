@@ -9,7 +9,7 @@ import HaireAndSkinReservation from "@/assent/Img/Reservation/HaireAndSkinReserv
 import AppointmentReservation from "./AppointmentReservation";
 const Service = () => {
   return (
-    <div>
+    <div className="h-full">
       <div className="bg-white">
         <Navbar />
       </div>

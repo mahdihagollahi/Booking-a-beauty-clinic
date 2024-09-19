@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import Navbar from "../Landing/Navbar";
 import Image, { StaticImageData } from "next/image";
 import PaymentWoman from "@/assent/Img/Reservation/PaymentWoman.svg";
@@ -54,7 +54,7 @@ const Payment: React.FC = () => {
   
 
   return (
-    <div>
+    <Fragment>
       <div className="bg-white">
         <Navbar />
       </div>
@@ -188,7 +188,7 @@ const Payment: React.FC = () => {
       </div>
       
    
-    </div>
+    </Fragment>
   );
 };
 
