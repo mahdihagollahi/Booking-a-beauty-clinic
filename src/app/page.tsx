@@ -12,6 +12,7 @@
 // import SingIn2 from '@/Component/Login/SingIn2'
 // import LogIn1 from '@/Component/LogIn/LogIn1'
 // import SingIn3 from '@/Component/SingIn/SingIn3'
+import Doctor from '@/Component/Doctors/Doctors'
 import FishPeyment from '@/Component/Reservation/FishPeyment'
 import Information from '@/Component/Reservation/Information'
 import Payment from '@/Component/Reservation/Payment'
@@ -19,12 +20,12 @@ import SelectService from '@/Component/Reservation/SelectService'
 import Service from '@/Component/Reservation/Service'
 import SetTimeAndDate from '@/Component/Reservation/SetTimeAndDate'
 
-import React from 'react'
+import React, { Fragment } from 'react'
 
 
 function page() {
   return (
-    <div >
+    <Fragment >
       {/* <Navbar/>
       <ReservationServicePart/>
       <AboutMe/>
@@ -35,17 +36,25 @@ function page() {
     
       <ContactWithCustomer/>
       <Footer/> */}
+
+
         {/* <SingIn/> */}
         {/* <SingIn2/> */}
         {/* <SingIn3/> */}
         {/* <LogIn1/> */}
+
+
        {/* <Service/> */}
        {/* <SelectService/> */}
        {/* <SetTimeAndDate/> */}
         {/* <Information/> */}
         {/* <Payment/> */}
-        <FishPeyment/>
-    </div>
+        {/* <FishPeyment/> */}
+
+        <Doctor/>
+
+
+    </Fragment>
   )
 }
 

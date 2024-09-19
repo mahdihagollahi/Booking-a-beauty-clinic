@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import Navbar from "../Landing/Navbar";
 import Image from "next/image";
 import AppointmentReservation from "./AppointmentReservation";
@@ -30,7 +30,7 @@ interface turn {
 }
 const FishPeyment = () => {
   return (
-    <div>
+    <Fragment>
       <div className="bg-white">
         <Navbar />
       </div>
@@ -135,7 +135,7 @@ const FishPeyment = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Fragment>
   );
 };
 
