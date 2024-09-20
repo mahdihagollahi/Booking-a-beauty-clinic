@@ -19,13 +19,14 @@ import Payment from '@/Component/Reservation/Payment'
 import SelectService from '@/Component/Reservation/SelectService'
 import Service from '@/Component/Reservation/Service'
 import SetTimeAndDate from '@/Component/Reservation/SetTimeAndDate'
+import ShowService from '@/Component/Service/ShowService'
 
 import React, { Fragment } from 'react'
 
 
 function page() {
   return (
-    <Fragment >
+    <div  >
       {/* <Navbar/>
       <ReservationServicePart/>
       <AboutMe/>
@@ -51,10 +52,12 @@ function page() {
         {/* <Payment/> */}
         {/* <FishPeyment/> */}
 
-        <Doctor/>
+        {/* <Doctor/> */}
+
+        <ShowService/>
 
 
-    </Fragment>
+    </div>
   )
 }
 

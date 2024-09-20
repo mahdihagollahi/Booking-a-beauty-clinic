@@ -105,7 +105,7 @@ const Doctors = () => {
   ];
 
   return (
-    <Fragment>
+    <div className="h-full">
       <div className="bg-white">
         <Navbar />
       </div>
@@ -118,7 +118,7 @@ const Doctors = () => {
         {ShowDoctors.map((doctor, index) => (
           <div
             key={doctor.id}
-            className={`flex mt-60 px-20 bg-[#f8f8f8] ${
+            className={`flex h-full mt-60 px-20 bg-[#f8f8f8] ${
               index % 2 === 0 ? "flex-row" : "flex-row-reverse"
             }`}
 
@@ -160,7 +160,7 @@ const Doctors = () => {
           </div>
         ))}
       </div>
-    </Fragment>
+    </div>
   );
 };
 

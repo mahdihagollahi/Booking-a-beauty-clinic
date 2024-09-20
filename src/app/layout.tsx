@@ -8,8 +8,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fa" dir="rtl" className='font-iransans '>
-        <body className='font-iransansNumber'>
+    <html lang="fa" dir="rtl" className='font-iransans '
+    style={{ backgroundColor: '#f8f8f8'}}
+    >
+        <body className='font-iransansNumber '>
         {children}
       </body>
     </html>

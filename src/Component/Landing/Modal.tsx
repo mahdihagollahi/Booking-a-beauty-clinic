@@ -26,14 +26,12 @@ import React, { useEffect } from "react";
 
 const Modal = ({ isVisible, handleCloseModal, children }) => {
   useEffect(() => {
-    // Disable scroll when modal is visible
     if (isVisible) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "auto";
     }
 
-    // Cleanup on unmount
     return () => {
       document.body.style.overflow = "auto";
     };
