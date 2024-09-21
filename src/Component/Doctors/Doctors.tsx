@@ -8,6 +8,7 @@ import DoctorDelara from "@/assent/Img/Doctors/DoctorDelara.svg";
 import RoutDoctor from "@/assent/Img/Doctors/RoutDactor.svg";
 import LeftFlower from "@/assent/Img/Doctors/LeftFlower.svg";
 import Navbar from "../Landing/Navbar";
+import Footer from "../Landing/Footer";
 
 interface Doctor {
   id: number;
@@ -160,6 +161,7 @@ const Doctors = () => {
           </div>
         ))}
       </div>
+      <Footer/>
     </div>
   );
 };
