@@ -14,6 +14,7 @@ import ServiceReservation from "./ServiceReservation";
 import WhyUs from "./WhyUs";
 import Metod from "./Metod";
 import SetComment from "./SetComment";
+import Footer from "../Landing/Footer";
 
 const ServiceDetails = ({ serviceData }) => {
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -82,6 +83,7 @@ const ServiceDetails = ({ serviceData }) => {
           <RatingForm handleCloseModal={handleCloseModal} />
         </Modal>
       </div>
+      <Footer/>
     </div>
   );
 };

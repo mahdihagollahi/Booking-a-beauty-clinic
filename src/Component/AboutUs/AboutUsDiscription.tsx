@@ -4,6 +4,7 @@ import AboutUsTitle from "./AboutUsTitle";
 import AboutUsPicture from "./AboutUsPicture";
 import ContactUs from "./ContactUs";
 import InformationInput from "./InformationInput";
+import Footer from "../Landing/Footer";
 
 const AboutUsDiscription = () => {
   return (
@@ -28,6 +29,9 @@ const AboutUsDiscription = () => {
               
         </div>
       </div>
+      </div>
+      <div>
+        <Footer/>
       </div>
     </Fragment>
   );
