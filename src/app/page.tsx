@@ -13,6 +13,7 @@
 // import LogIn1 from '@/Component/LogIn/LogIn1'
 // import SingIn3 from '@/Component/SingIn/SingIn3'
 import AboutUsDiscription from '@/Component/AboutUs/AboutUsDiscription'
+import DetailArticle from '@/Component/Article/DetailArticle'
 import Doctor from '@/Component/Doctors/Doctors'
 import FishPeyment from '@/Component/Reservation/FishPeyment'
 import Information from '@/Component/Reservation/Information'
@@ -57,8 +58,8 @@ function page() {
 
         {/* <ShowService/> */}
 
-         <AboutUsDiscription/>
-
+         {/* <AboutUsDiscription/> */}
+<DetailArticle/>
     </div>
   )
 }
