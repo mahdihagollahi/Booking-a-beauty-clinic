@@ -25,7 +25,7 @@ const Navbar = () => {
 
   return (
     <Fragment>
-      <div className="bg-[#EA78AF] h-[100%] w-60 py-10 rounded-l-[50px]">
+      <div className="bg-[#EA78AF]  w-60 py-10 h-full rounded-l-[50px]">
         <div className="flex items-center gap-2 justify-center">
           <Image src={Logo} width={30} height={30} alt="" />
 
@@ -55,8 +55,8 @@ const Navbar = () => {
                 key={index}
                 className={`bg-inherit rounded-r-lg py-2 px-1 w-[111%] ${
                   hoverImage[items.id] || clickedItems == items.id
-                    ? "bg-[#FCE9F2] order-r-2 border-[#DC1E7A] rounded-md"
-                    : "bg-inherit"
+                    ? " border-r-2 bg-pink-100 border-[#DC1E7A] rounded-md"
+                    : "bg-[#DC1E7A]"
                 } hover:bg-[#FCE9F2] hover:border-r-2 hover:border-[#DC1E7A] hover:rounded-md `}
                 onMouseEnter={() => handleMouseEnter(items.id)}
                 onMouseLeave={() => handleMouseLeave(items.id)}
