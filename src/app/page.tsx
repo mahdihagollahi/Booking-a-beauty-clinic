@@ -22,6 +22,7 @@ import SelectService from "@/Component/Reservation/SelectService";
 import Service from "@/Component/Reservation/Service";
 import SetTimeAndDate from "@/Component/Reservation/SetTimeAndDate";
 import ShowService from "@/Component/Service/ShowService";
+import ChangePasswordModal from "@/Component/UserDashboard/component/ChangePasswordModal";
 import Profile from "@/Component/UserDashboard/Profile";
 
 
@@ -29,7 +30,7 @@ import React, { Fragment } from "react";
 
 function page() {
   return (
-    <div>
+    <div className="">
       {/* <Navbar/>
       <ReservationServicePart/>
       <AboutMe/>
@@ -62,6 +63,8 @@ function page() {
       {/* <DetailArticle/> */}
 
       <Profile/>
+
+ 
     </div>
   );
 }

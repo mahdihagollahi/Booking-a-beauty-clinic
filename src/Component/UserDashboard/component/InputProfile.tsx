@@ -1,7 +1,6 @@
 "use client";
 import React, { Fragment, useState } from "react";
 import ProfileData from "./ProfileData";
-import AroowDown from "@/assent/Img/UserDashboard/AroowDown.svg";
 const InputProfile = () => {
   const [selectedOption, setSelectedOption] = useState("خانم");
   const [isOpen, setIsOpen] = useState(false);
@@ -81,14 +80,6 @@ const InputProfile = () => {
               className="w-[528px] p-4 mb-4 border border-[#00AEFF] text-[#00AEFF] rounded-lg"
             />
           </div>
-
-          {/* <div>
-          <p className="font-medium mb-2 text-base text-[#393939]  mr-1">جنسیت</p>
-          <input
-            type="text"
-            className="w-[528px] p-4 mb-4 border border-[#00AEFF] text-[#00AEFF] rounded-lg"
-          />
-        </div> */}
 
           <div className="relative w-[528px] mb-4">
             <div
