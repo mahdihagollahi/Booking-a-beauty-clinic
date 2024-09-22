@@ -114,7 +114,7 @@ const InputProfile = () => {
               </svg>
             </div>
             {isOpen && (
-              <ul className="absolute w-full  rounded-lg bg-white mt-2 z-10">
+              <ul className="absolute w-80  rounded-lg bg-white mt-2 z-10">
                 {options.map((option) => (
                   <li
                     key={option}
