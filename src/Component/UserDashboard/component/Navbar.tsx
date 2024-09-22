@@ -2,6 +2,7 @@
 import React, { Fragment, useState } from "react";
 import Image from "next/image";
 import Logo from "@/assent/Img/UserDashboard/Logo.svg";
+import LogOut from "@/assent/Img/UserDashboard/logout.svg";
 import UserProfile from "@/assent/Img/UserDashboard/UserProfile.svg";
 import NavbarData from "./NavbarData";
 import Link from "next/link";
@@ -24,7 +25,7 @@ const Navbar = () => {
 
   return (
     <Fragment>
-      <div className="bg-[#EA78AF] h-screen w-60 py-10 rounded-l-[50px]">
+      <div className="bg-[#EA78AF] h-[100%] w-60 py-10 rounded-l-[50px]">
         <div className="flex items-center gap-2 justify-center">
           <Image src={Logo} width={30} height={30} alt="" />
 
@@ -48,7 +49,7 @@ const Navbar = () => {
           </div>
         </div>
         <div>
-          <div className="mt-20 px-5 flex flex-col gap-16 ">
+          <div className="mt-20 px-5 flex flex-col gap-10 ">
             {navbar.map((items, index) => (
               <div
                 key={index}
@@ -76,7 +77,7 @@ const Navbar = () => {
                     <p
                       className={`font-demiBold   whitespace-nowrap text-base ${
                         hoverImage[items.id] || clickedItems === items.id
-                          ? "text-[#DC1E7A]"
+                          ? "text-[#DC1E7A] "
                           : "text-[#FFFFFF]"
                       } `}
                     >
@@ -86,6 +87,11 @@ const Navbar = () => {
                 </Link>
               </div>
             ))}
+
+            <button className="flex items-center mt-20 rounded-r-lg py-2 px-1 w-[111%] gap-3 text-[#DC1E7A] bg-[#FCE9F2]  border-r-2 border-[#DC1E7A] rounded-md">
+              <Image src={LogOut} width={24} height={24} alt="" />
+              خروج از حساب کاربری
+            </button>
           </div>
         </div>
       </div>

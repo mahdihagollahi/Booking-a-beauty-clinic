@@ -22,7 +22,8 @@ import SelectService from "@/Component/Reservation/SelectService";
 import Service from "@/Component/Reservation/Service";
 import SetTimeAndDate from "@/Component/Reservation/SetTimeAndDate";
 import ShowService from "@/Component/Service/ShowService";
-import Navbar from "@/Component/UserDashboard/component/Navbar";
+import Profile from "@/Component/UserDashboard/Profile";
+
 
 import React, { Fragment } from "react";
 
@@ -55,12 +56,12 @@ function page() {
       {/* <Doctor/> */}
 
       {/* <ShowService/> */}
-
-      {/* <AboutUsDiscription/> */}
+{/* 
+      <AboutUsDiscription/> */}
 
       {/* <DetailArticle/> */}
 
-      <Navbar/>
+      <Profile/>
     </div>
   );
 }
