@@ -24,6 +24,7 @@ import SetTimeAndDate from "@/Component/Reservation/SetTimeAndDate";
 import ShowService from "@/Component/Service/ShowService";
 import ChangePasswordModal from "@/Component/UserDashboard/component/ChangePasswordModal";
 import MyTurnComponent from "@/Component/UserDashboard/component/MyTurnComponent";
+import MyComment from "@/Component/UserDashboard/MyComment";
 import MyTurn from "@/Component/UserDashboard/MyTurn";
 import Profile from "@/Component/UserDashboard/Profile";
 
@@ -65,7 +66,9 @@ function page() {
 
       {/* <Profile/> */}
 
-      <MyTurn />
+      {/* <MyTurn /> */}
+
+      <MyComment/>
     </div>
   );
 }
