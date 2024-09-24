@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import Image from "next/image";
 import ServicePhoto1 from "@/assent/Img/Landing/ServicePhoto1.svg";
 import servicePhoto2 from "@/assent/Img/Landing/servicePhoto2.svg";
+import ServiceFrame from "@/assent/Img/Service/ServiceFrame.svg";
 import ServicePhoto3 from "@/assent/Img/Landing/ServicePhoto3.svg";
 import ServicePhoto4 from "@/assent/Img/Landing/ServicePhoto4.svg";
 import Flower from "@/assent/Img/Landing/flower.svg";
@@ -30,8 +31,8 @@ function Services() {
                 فیشیال
               </p>
               <div className=" mr-[31.6%] -mt-9 absolute">
-        <Image src={Flower} width={52} height={58} alt="" />
-      </div>
+                <Image src={Flower} width={52} height={58} alt="" />
+              </div>
               <p className="mt-2">صورت است.</p>
             </div>
 
@@ -45,16 +46,103 @@ function Services() {
             </div>
           </div>
           <div className="mr-[12%] mt-32 ">
-            <Image src={servicePhoto2} width={226} height={226} alt="" />
+            <Image src={ServiceFrame} width={226} height={226} alt="" />
           </div>
-          <div className="absolute mr-[65%]">
-            <Image src={ServicePhoto1} width={226} height={226} alt="" />
+
+          <div className="relative -mr-[14.9%] mt-[10%]">
+            <Image
+              src={servicePhoto2}
+              width={199}
+              height={199}
+              alt="service"
+              className="rounded-xl  object-cover"
+            />
+            <p className="absolute -mt-16 mr-[63px] opacity-0 hover:opacity-100 font-medium  text-sm hover:">
+              خدمات لیزر
+              <div
+                className="absolute inset-0 w-[135px] h-[132px] -mt-[101.9px] -mr-[29.6px] rounded-xl object-cover opacity-0 rotate-45  hover:bg-[#5DD9C1] hover:opacity-20 "
+                style={{
+                  zIndex: "10",
+                  background:
+                    "linear-gradient(180.99deg, rgba(255, 255, 255, 0) 25.13%, #5DD9C1 104.3%)",
+                }}
+              ></div>
+            </p>
           </div>
-          <div className="mt-24 mr-[76%] absolute">
-            <Image src={ServicePhoto4} width={226} height={226} alt="" />
+
+          <div className="-mr-[6.5%]  ">
+            <Image src={ServiceFrame} width={226} height={226} alt="" />
           </div>
-          <div className="mt-[15.5%]  mr-[67.9%] absolute ">
-            <Image src={ServicePhoto3} width={226} height={226} alt="" />
+
+          <div className="relative -mr-[14.7%] mt-[1%]">
+            <Image
+              src={ServicePhoto1}
+              width={199}
+              height={199}
+              alt="service"
+              className="rounded-xl  object-cover"
+            />
+            <p className="absolute -mt-16 mr-[63px] opacity-0 hover:opacity-100 font-medium  text-sm hover:">
+              تزریقات زیبایی
+              <div
+                className="absolute inset-0 w-[135px] h-[132px] -mt-[101.9px] -mr-[29.6px] rounded-xl object-cover opacity-0 rotate-45  hover:bg-[#5DD9C1] hover:opacity-20 "
+                style={{
+                  zIndex: "10",
+                  background:
+                    "linear-gradient(180.99deg, rgba(255, 255, 255, 0) 25.13%, #5DD9C1 104.3%)",
+                }}
+              ></div>
+            </p>
+          </div>
+
+          <div className="-mr-[4.5%] mt-24  ">
+            <Image src={ServiceFrame} width={226} height={226} alt="" />
+          </div>
+
+          <div className="relative -mr-[14.7%] mt-[7.5%]">
+            <Image
+              src={ServicePhoto4}
+              width={199}
+              height={199}
+              alt="service"
+              className="rounded-xl  object-cover"
+            />
+            <p className="absolute -mt-16 mr-[63px] opacity-0 hover:opacity-100 font-medium  text-sm hover:">
+              فیشیال صورت
+              <div
+                className="absolute inset-0 w-[135px] h-[132px] -mt-[101.9px] -mr-[29.6px] rounded-xl object-cover opacity-0 rotate-45  hover:bg-[#5DD9C1] hover:opacity-20 "
+                style={{
+                  zIndex: "10",
+                  background:
+                    "linear-gradient(180.99deg, rgba(255, 255, 255, 0) 25.13%, #5DD9C1 104.3%)",
+                }}
+              ></div>
+            </p>
+          </div>
+
+          <div className="-mr-[22.9%] mt-[15%]  ">
+            <Image src={ServiceFrame} width={226} height={226} alt="" />
+          </div>
+
+          <div className="relative -mr-[14.7%] mt-[16%]">
+            <Image
+              src={ServicePhoto3}
+              width={199}
+              height={199}
+              alt="service"
+              className="rounded-xl  object-cover"
+            />
+            <p className="absolute -mt-16 mr-[63px] opacity-0 hover:opacity-100 font-medium  text-sm hover:">
+              خدمات کاشت
+              <div
+                className="absolute inset-0 w-[135px] h-[132px] -mt-[101.9px] -mr-[29.6px] rounded-xl object-cover opacity-0 rotate-45  hover:bg-[#5DD9C1] hover:opacity-20 "
+                style={{
+                  zIndex: "10",
+                  background:
+                    "linear-gradient(180.99deg, rgba(255, 255, 255, 0) 25.13%, #5DD9C1 104.3%)",
+                }}
+              ></div>
+            </p>
           </div>
         </div>
       </div>
