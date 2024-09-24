@@ -113,7 +113,7 @@ const MyCommentComponent = () => {
   return (
     <Fragment>
       <p className="font-medium text-2xl text-[#393939] mt-5">نظرات های من</p>
-      <div>
+      <div className=" overflow-y-scroll">
         {Data.map((items) => (
           <div
             key={items.id}
@@ -154,7 +154,7 @@ const MyCommentComponent = () => {
             <p className="font-regular text-[#565656] text-sm w-[98%] px-5 mt-5">
               {items.discription}
             </p>
-            <div className="flex items-center justify-between">
+            <div className="flex duration-300 items-center justify-between">
               <div>
                 <button
                   onClick={() =>
@@ -173,7 +173,7 @@ const MyCommentComponent = () => {
                   />
                   <span>
                     {showReplies === items.id
-                      ? "بستن پاسخ ادمین"
+                      ? "مشاهده پاسخ ادمین"
                       : "مشاهده پاسخ ادمین"}
                   </span>
                 </button>
@@ -182,7 +182,7 @@ const MyCommentComponent = () => {
 
         
             {showReplies === items.id && (
-              <div className="mt-4">
+              <div className="mt-4 duration-300">
                 {items.replies.map((reply, index) => (
                   <div key={index} className="bg-white duration-300 p-3 rounded-lg">
                     <div className="flex items-center mr-2 mb-2 justify-between">

@@ -3,12 +3,13 @@ import Background from "@/assent/Img/Landing/background.svg";
 import Image from "next/image";
 import Flower from "@/assent/Img/Landing/flower.svg";
 import FlowerP from "@/assent/Img/Landing/flower.png";
-import WomanImage from "@/assent/Img/Landing/WomanResevation.svg";
+// import WomanImage from "@/assent/Img/Landing/WomanResevation.svg";
+import WomanImage from "@/assent/Img/Landing/WomanPointLanding.svg";
 function ReservationServicePart() {
   return (
-    <div className="" >
+    <Fragment>
       <div
-        className="absolute -z-1 inset-0 w-[100%] h-[59%] py-10 mt-1  "
+        className="absolute -z-1 inset-0 w-[100%] h-[56%] py-10 mt-1 bg-white "
         style={{ backgroundImage: `url(${Background.src})` }}
       >
         <div className=" mr-[79.9%] mt-2">
@@ -18,8 +19,8 @@ function ReservationServicePart() {
         <div className=" mr-[63.8%] mt-[40px] absolute">
           <Image src={Flower} width={52} height={58} alt="" />
         </div>
-        <div className="mr-[69%] -mt-[15%] absolute">
-          {/* <Image src={WomanImage} width={290} height={250} alt="" /> */}
+        <div className="mr-[69%] -mt-[4%] absolute">
+          <Image src={WomanImage} width={549} height={554} alt="" />
         </div>
 
         <div>
@@ -63,7 +64,7 @@ function ReservationServicePart() {
       <div className="absolute mr-[59.5%] -z-1 ">
         <Image src={FlowerP} width={52} height={58} alt="" />
       </div>
-    </div>
+    </Fragment>
   );
 }
 
