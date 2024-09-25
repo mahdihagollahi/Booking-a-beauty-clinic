@@ -29,10 +29,11 @@ import ContactWithCustomer from '@/Component/Landing/ContactWithCustomer'
 // import Profile from "@/Component/UserDashboard/Profile";
 
 import React, { Fragment } from "react";
+import SampleWork from '@/Component/Landing/SampleWork'
 
 function page() {
   return (
-    <div className="">
+    <Fragment >
       <Navbar/>
       <ReservationServicePart/>
       <AboutMe/>
@@ -42,6 +43,7 @@ function page() {
       <Doctor/>
     
       <ContactWithCustomer/>
+      <SampleWork/>
       <Footer/>
 
       {/* <SingIn/> */}
@@ -69,7 +71,7 @@ function page() {
       {/* <MyTurn /> */}
 
       {/* <MyComment/> */}
-    </div>
+    </Fragment>
   );
 }
 
