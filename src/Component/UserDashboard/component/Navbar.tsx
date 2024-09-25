@@ -6,10 +6,14 @@ import LogOut from "@/assent/Img/UserDashboard/logout.svg";
 import UserProfile from "@/assent/Img/UserDashboard/UserProfile.svg";
 import NavbarData from "./NavbarData";
 import Link from "next/link";
+import Modal from "./Modal";
+import LogoutModal from "./LogoutModal";
+
 const Navbar = () => {
   const navbar = NavbarData().Navbar;
   const [hoverImage, setHoverImage] = useState<{ [key: number]: boolean }>({});
   const [clickedItems, setClickedItems] = useState<number | null>(null);
+  const [isModalVisible, setIsModalVisible] = useState<boolean>(false);
 
   const handleMouseEnter = (id: number) => {
     setHoverImage((prev) => ({ ...prev, [id]: true }));
@@ -21,6 +25,18 @@ const Navbar = () => {
 
   const handelClick = (id: number) => {
     setClickedItems(id);
+  };
+
+  
+
+  const handleOpenModal = () => {
+    console.log("Opening modal...");
+    setIsModalVisible(true);
+  };
+
+  const handleCloseModal = () => {
+    console.log("Closing modal...");
+    setIsModalVisible(false);
   };
 
   return (
@@ -88,12 +104,17 @@ const Navbar = () => {
               </div>
             ))}
 
-            <button className="flex items-center mt-20 rounded-r-lg py-2 px-1 w-[111%] gap-3 text-[#DC1E7A] bg-[#FCE9F2]  border-r-2 border-[#DC1E7A] rounded-md">
+            <button className="flex items-center mt-20 rounded-r-lg py-2 px-1 w-[111%] gap-3 text-[#DC1E7A] bg-[#FCE9F2]  border-r-2 border-[#DC1E7A] rounded-md"
+               onClick={handleOpenModal}
+            >
               <Image src={LogOut} width={24} height={24} alt="" />
               خروج از حساب کاربری
             </button>
           </div>
         </div>
+        <Modal isVisible={isModalVisible} >
+        <LogoutModal handleCloseModal={handleCloseModal} />
+        </Modal>
       </div>
     </Fragment>
   );
