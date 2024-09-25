@@ -15,6 +15,8 @@ import WhyUs from "./WhyUs";
 import Metod from "./Metod";
 import SetComment from "./SetComment";
 import Footer from "../Landing/Footer";
+import Background from '@/assent/Img/Service/BGdatialService.svg'
+import WomanServiceDetail from '@/assent/Img/Service/WomanDetailService.svg'
 
 const ServiceDetails = ({ serviceData }) => {
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -56,7 +58,26 @@ const ServiceDetails = ({ serviceData }) => {
           <ServiceReservation serviceData={serviceData} />
         </div>
 
-        <div>img</div>
+        <div>
+          <div
+          >
+            <Image
+            
+            src={Background}
+            width={1023}
+            height={840}
+            alt=""
+            className="relative"
+            />
+           <Image
+           src={WomanServiceDetail}
+           width={367}
+           height={367}
+           alt=""
+           className="absolute -mt-[26.5%] mr-[8.2%]"
+           />
+          </div>
+        </div>
       </div>
 
       <div className="mt-20">
