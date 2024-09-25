@@ -31,6 +31,7 @@ import Profile from "@/Component/UserDashboard/Profile";
 import React, { Fragment } from "react";
 import SampleWork from '@/Component/Landing/SampleWork'
 import LogoutModal from '@/Component/UserDashboard/component/LogoutModal';
+import UserComment from '@/Component/Landing/UserComent/UserComment'
 
 function page() {
   return (
@@ -45,6 +46,7 @@ function page() {
     
       <ContactWithCustomer/>
       <SampleWork/>
+      <UserComment/>
       <Footer/> */}
 
       {/* <SingIn/> */}
@@ -61,7 +63,7 @@ function page() {
 
       {/* <Doctor/> */}
 
-      {/* <ShowService/> */}
+      <ShowService/>
       {/* 
       <AboutUsDiscription/> */}
 
@@ -71,7 +73,7 @@ function page() {
 
       {/* <MyTurn /> */}
 
-      <MyComment/>
+      {/* <MyComment/> */}
       
     </Fragment>
   );
