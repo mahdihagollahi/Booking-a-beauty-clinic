@@ -32,6 +32,7 @@ import React, { Fragment } from "react";
 import SampleWork from '@/Component/Landing/SampleWork'
 import LogoutModal from '@/Component/UserDashboard/component/LogoutModal';
 import UserComment from '@/Component/Landing/UserComent/UserComment'
+import FAQ from '@/Component/Landing/FAQ/FAQ'
 
 function page() {
   return (
@@ -47,6 +48,7 @@ function page() {
       <ContactWithCustomer/>
       <SampleWork/>
       <UserComment/>
+      <FAQ/>
       <Footer/>
 
       {/* <SingIn/> */}
