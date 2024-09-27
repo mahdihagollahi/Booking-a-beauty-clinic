@@ -33,6 +33,7 @@ import SampleWork from '@/Component/Landing/SampleWork'
 import LogoutModal from '@/Component/UserDashboard/component/LogoutModal';
 import UserComment from '@/Component/Landing/UserComent/UserComment'
 import FAQ from '@/Component/Landing/FAQ/FAQ'
+import NoranidNews from '@/Component/Landing/NoranidNews'
 
 function page() {
   return (
@@ -49,6 +50,7 @@ function page() {
       <SampleWork/>
       <UserComment/>
       <FAQ/>
+      <NoranidNews/>           
       <Footer/>
 
       {/* <SingIn/> */}
