@@ -6,6 +6,7 @@ import RefreshSkin from "@/assent/Img/Reservation/RefreshSkin.svg";
 import Star from "@/assent/Img/Reservation/Star.svg";
 import ArrowLeft from "@/assent/Img/Reservation/arrowLeft.svg";
 import AppointmentReservation from "./AppointmentReservation";
+import Link from "next/link";
 
 interface ServiceItems {
   id: number;
@@ -27,67 +28,67 @@ const SelectService: React.FC = () => {
       section: 6,
     },
     {
-        id: 2,
-        image: RefreshSkin,
-        name: "جوانسازی پوست",
-        rate: 4.5,
-        doctor: "دلارا رحمانی",
-        section: 6,
-      },
-  
-      {
-        id: 3,
-        image: RefreshSkin,
-        name: "جوانسازی پوست",
-        rate: 4.5,
-        doctor: "دلارا رحمانی",
-        section: 6,
-      },
-  
-      {
-        id: 4,
-        image: RefreshSkin,
-        name: "جوانسازی پوست",
-        rate: 4.5,
-        doctor: "دلارا رحمانی",
-        section: 6,
-      },
-  
-      {
-        id: 5,
-        image: RefreshSkin,
-        name: "جوانسازی پوست",
-        rate: 4.5,
-        doctor: "دلارا رحمانی",
-        section: 6,
-      },
-  
-      {
-        id: 6,
-        image: RefreshSkin,
-        name: "جوانسازی پوست",
-        rate: 4.5,
-        doctor: "دلارا رحمانی",
-        section: 6,
-      },
-  
-      {
-        id: 7,
-        image: RefreshSkin,
-        name: "جوانسازی پوست",
-        rate: 4.5,
-        doctor: "دلارا رحمانی",
-        section: 6,
-      },
-  
-      {
-        id: 8,
-        image: RefreshSkin,
-        name: "جوانسازی پوست",
-        rate: 4.5,
-        doctor: "دلارا رحمانی",
-        section: 6,
-      },
+      id: 2,
+      image: RefreshSkin,
+      name: "جوانسازی پوست",
+      rate: 4.5,
+      doctor: "دلارا رحمانی",
+      section: 6,
+    },
+
+    {
+      id: 3,
+      image: RefreshSkin,
+      name: "جوانسازی پوست",
+      rate: 4.5,
+      doctor: "دلارا رحمانی",
+      section: 6,
+    },
+
+    {
+      id: 4,
+      image: RefreshSkin,
+      name: "جوانسازی پوست",
+      rate: 4.5,
+      doctor: "دلارا رحمانی",
+      section: 6,
+    },
+
+    {
+      id: 5,
+      image: RefreshSkin,
+      name: "جوانسازی پوست",
+      rate: 4.5,
+      doctor: "دلارا رحمانی",
+      section: 6,
+    },
+
+    {
+      id: 6,
+      image: RefreshSkin,
+      name: "جوانسازی پوست",
+      rate: 4.5,
+      doctor: "دلارا رحمانی",
+      section: 6,
+    },
+
+    {
+      id: 7,
+      image: RefreshSkin,
+      name: "جوانسازی پوست",
+      rate: 4.5,
+      doctor: "دلارا رحمانی",
+      section: 6,
+    },
+
+    {
+      id: 8,
+      image: RefreshSkin,
+      name: "جوانسازی پوست",
+      rate: 4.5,
+      doctor: "دلارا رحمانی",
+      section: 6,
+    },
   ];
 
   return (
@@ -97,7 +98,7 @@ const SelectService: React.FC = () => {
       </div>
 
       <div className="py-20 px-8 md:px-20">
-  <AppointmentReservation/>
+        <AppointmentReservation />
 
         <div className="mt-16 text-center px-24">
           <Image src={ServiceImage} width={11000} height={83} alt="" />
@@ -129,28 +130,29 @@ const SelectService: React.FC = () => {
                       {items.rate}
                     </p>
                   </div>
-                  <button className="flex items-center mt-4 text-[#5DD9C1]">
-                    <p className="font-medium text-lg">ادامه و رزرو نوبت</p>
-                    <Image src={ArrowLeft} width={24} height={24} alt="" />
-                  </button>
+                  <Link href='/Resevaion/SetTime'>
+                    <button className="flex items-center mt-4 text-[#5DD9C1]">
+                      <p className="font-medium text-lg">ادامه و رزرو نوبت</p>
+                      <Image src={ArrowLeft} width={24} height={24} alt="" />
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
           ))}
         </div>
 
-        <div className="flex gap-8 mr-[80.5%] mt-32">
-
-        <button className=" whitespace-nowrap w-36 py-2 px-4 rounded-md text-[#727272] bg-[#DDDDDD] font-medium text-sm">
+        <div className="flex gap-8 mr-[75.5%] mt-32">
+        <Link href='/Resevaion'>
+          <button className=" whitespace-nowrap w-36 py-2 px-4 rounded-md text-[#727272] bg-[#DDDDDD] font-medium text-sm">
             مرحله قبل
           </button>
-
-
+          </Link>
+          <Link href='/Resevaion/SetTime'>
           <button className="bg-[#DC1E7A] whitespace-nowrap w-36 py-2 px-4 rounded-md text-white font-medium text-sm">
-          تایید و ادامه
+            تایید و ادامه
           </button>
-
-          
+          </Link>
         </div>
       </div>
     </div>
@@ -158,4 +160,3 @@ const SelectService: React.FC = () => {
 };
 
 export default SelectService;
-

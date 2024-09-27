@@ -6,6 +6,7 @@ import ImageDoctor from "@/assent/Img/Reservation/ImageDoctor.svg";
 import Star from "@/assent/Img/Reservation/Star.svg";
 import PaymentReservation from "@/assent/Img/Reservation/PaymentReservation.svg";
 import AppointmentReservation from "./AppointmentReservation";
+import Link from "next/link";
 
 interface ServiceItems {
   id: number;
@@ -173,17 +174,22 @@ const Payment: React.FC = () => {
               </button>
             </div>
             <div className="mt-10">
+            <Link href='/Resevaion/PaymentFish'>
                 <button className=" bg-[#F1A5CA]  text-white rounded-lg w-[100%] h-[50px] py-2 px-4">
                     تایید و پرداخت
                 </button>
+                </Link>
             </div>
           </div>
           
         </div>
         <div className="mr-[83.7%] mt-20 ">
-      <button className=" whitespace-nowrap w-36 py-2 px-4 rounded-md text-[#727272] bg-[#DDDDDD] font-medium text-sm">
+          <Link href='/Resevaion/Information'>
+          <button className=" whitespace-nowrap w-36 py-2 px-4 rounded-md text-[#727272] bg-[#DDDDDD] font-medium text-sm">
             مرحله قبل
           </button>
+          </Link>
+    
       </div>
       </div>
       

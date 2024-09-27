@@ -17,6 +17,8 @@ import SetComment from "./SetComment";
 import Footer from "../Landing/Footer";
 import Background from '@/assent/Img/Service/BGdatialService.svg'
 import WomanServiceDetail from '@/assent/Img/Service/WomanDetailService.svg'
+import NoranidNews from "../Doctors/NoranidNews";
+
 
 const ServiceDetails = ({ serviceData }) => {
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -104,7 +106,7 @@ const ServiceDetails = ({ serviceData }) => {
           <RatingForm handleCloseModal={handleCloseModal} />
         </Modal>
       </div>
-      <Footer/>
+    
     </div>
   );
 };
@@ -120,6 +122,10 @@ const ShowService = () => {
       <div className="mt-20 px-24">
         <ServiceDetails serviceData={serviceData} />
       </div>
+      <div className="w-full">
+      <NoranidNews/>
+      </div>
+      <Footer/>
     </div>
   );
 };
