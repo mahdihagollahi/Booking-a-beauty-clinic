@@ -3,7 +3,7 @@ import Background from "@/assent/Img/Landing/background.svg";
 import Image from "next/image";
 import Flower from "@/assent/Img/Landing/flower.svg";
 import FlowerP from "@/assent/Img/Landing/flower.png";
-// import WomanImage from "@/assent/Img/Landing/WomanResevation.svg";
+import Link from "next/link";
 import WomanImage from "@/assent/Img/Landing/WomanPointLanding.svg";
 function ReservationServicePart() {
   return (
@@ -48,10 +48,11 @@ function ReservationServicePart() {
         </div>
 
         <div className="flex gap-8 mr-[6.5%] mt-12">
+        <Link href='/Resevaion'>
           <button className="bg-[#DC1E7A] whitespace-nowrap w-36 py-2 px-4 rounded-md text-white font-medium text-sm">
             رزرو نوبت
           </button>
-
+          </Link>
           <button className="border border-[#DC1E7A] whitespace-nowrap w-36 py-2 px-4 rounded-md text-[#DC1E7A] font-medium text-sm">
             مشاوره تلفنی
           </button>

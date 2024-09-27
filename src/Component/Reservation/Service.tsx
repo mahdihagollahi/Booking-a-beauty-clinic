@@ -7,6 +7,7 @@ import servicePhoto2 from "@/assent/Img/Landing/servicePhoto2.svg";
 import ServicePhoto3 from "@/assent/Img/Landing/ServicePhoto3.svg";
 import HaireAndSkinReservation from "@/assent/Img/Reservation/HaireAndSkinReservation.svg";
 import AppointmentReservation from "./AppointmentReservation";
+import Link from "next/link";
 const Service = () => {
   return (
     <div className="h-full">
@@ -21,7 +22,8 @@ const Service = () => {
           <Image src={ServiceImage} width={11000} height={83} alt="" />
         </div>
         <div className="flex items-center gap-32 mt-24 py-10">
-          <div className="cursor-pointer">
+          <Link href='/Resevaion/SelectService'>
+          <button className="cursor-pointer">
             <Image
             src={servicePhoto2}
             width={226}
@@ -31,9 +33,11 @@ const Service = () => {
             <p className="font-medium text-base text-[#393939] mr-10">
             خدمات لیزر موهای زائد
             </p>
-          </div>
-
-          <div className="cursor-pointer">
+          </button>
+          </Link>
+        
+          <Link href='/Resevaion/SelectService'>
+          <button className="cursor-pointer">
             <Image
             src={ServicePhoto1}
             width={226}
@@ -43,9 +47,10 @@ const Service = () => {
             <p className="font-medium text-base text-[#393939] mr-4 whitespace-nowrap">
             خدمات انواع تزریقات زیبایی            
             </p>
-          </div>
-
-          <div className="cursor-pointer">
+          </button>
+          </Link>
+          <Link href='/Resevaion/SelectService'>
+          <button className="cursor-pointer">
             <Image
             src={ServicePhoto3}
             width={226}
@@ -55,9 +60,11 @@ const Service = () => {
             <p className="font-medium text-base text-[#393939] mr-12 whitespace-nowrap">
             خدمات انواع کاشت
             </p>
-          </div>
+          </button>
+          </Link>
 
-          <div className="cursor-pointer">
+          <Link href='/Resevaion/SelectService'>
+          <button className="cursor-pointer">
             <Image
             src={HaireAndSkinReservation}
             width={226}
@@ -67,7 +74,8 @@ const Service = () => {
             <p className="font-medium text-base text-[#393939]  whitespace-nowrap">
             خدمات انواع آبرسانی پوست و مو
             </p>
-          </div>
+          </button>
+          </Link>
         </div>
       </div>
     </div>

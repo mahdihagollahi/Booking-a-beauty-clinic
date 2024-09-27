@@ -12,19 +12,19 @@ const ServiceReservation = ({ serviceData }) => {
       </p>
 
       <div className="flex mt-10">
-        <div className="flex gap-4 items-center">
+        <div className="flex gap-4 items-center whitespace-nowrap">
           <Image src={timer} width={24} height={24} alt="Timer" />
           <p>
             تعداد جلسات: <span>{serviceData.sessions} جلسه</span>
           </p>
         </div>
-        <div className="mr-32 flex gap-4 items-center">
+        <div className="mr-32 flex gap-4 items-center whitespace-nowrap">
           <Image src={coin} width={24} height={24} alt="Coin" />
           <p>
             قیمت: <span>{serviceData.price}</span>
           </p>
         </div>
-        <div className="mr-32 flex gap-4 items-center">
+        <div className="mr-32 flex gap-4 items-center whitespace-nowrap">
           <Image src={user} width={24} height={24} alt="User" />
           <p>
             رده سنی: <span>{serviceData.ageLimit}</span>
