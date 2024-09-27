@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import Image from "next/image";
 import GreenRservation from "@/assent/Img/Landing/GreenRservation.svg";
 import Logo from "@/assent/Img/Landing/GreenLogo.svg";
+import Flower from "@/assent/Img/Landing/flower.svg";
 
 const BeautyService = () => {
   return (
@@ -30,6 +31,9 @@ const BeautyService = () => {
             رزرو نوبت
           </button>
         </div>
+      </div>
+      <div className=" absolute mr-[65.9%] -mt-3 bg-no-repeat ">
+        <Image src={Flower} width={52} height={58} alt="" />
       </div>
     </Fragment>
   );
