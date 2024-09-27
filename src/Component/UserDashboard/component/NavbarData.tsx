@@ -18,7 +18,7 @@ const NavbarData = () => {
                 image:UserImage,
                 title:'پروفایل',
                 imageHover: UserHoverImage,
-                link: ''
+                link: '/UserDashboard/Profile'
     
             },
 
@@ -27,7 +27,7 @@ const NavbarData = () => {
                 image:MyTurnImage,
                 title:'نوبت های من',
                 imageHover: MyTurnHoverImage,
-                link: ''
+                link: '/UserDashboard/MyTurn'
     
             },
 
@@ -36,7 +36,7 @@ const NavbarData = () => {
                 image:MyCommentImage,
                 title:'نظرات من',
                 imageHover: MyCommentHoverImage,
-                link: ''
+                link: '/UserDashboard/Comment'
     
             },
 
