@@ -1,5 +1,5 @@
-'use client'
-import React, { Fragment , useState } from "react";
+"use client";
+import React, { Fragment, useState } from "react";
 import Navbar from "./component/Navbar";
 import InputProfile from "./component/InputProfile";
 import Image from "next/image";
@@ -39,8 +39,9 @@ function Profile() {
           />
           <InputProfile />
           <div className="flex justify-between items-center">
-            <button className="flex items-center gap-2 mt-10 cursor-pointer"
-            onClick={handleOpenModal}
+            <button
+              className="flex items-center gap-2 mt-10 cursor-pointer"
+              onClick={handleOpenModal}
             >
               <Image src={Lock} width={24} height={24} alt="" />
               <p className="font-regular text-base text-[#393939]">
@@ -48,17 +49,16 @@ function Profile() {
               </p>
               <Image src={Arrow} width={24} height={24} alt="" />
             </button>
-
-            <button className="bg-[#DC1E7A] text-white rounded-md py-2 mt-10 px-4">
-              ثبت تغییرات
-            </button>
-            
-          </div>
          
+              <button className="bg-[#DC1E7A] text-white rounded-md py-2 mt-10 px-4">
+                ثبت تغییرات
+              </button>
+          
+          </div>
         </div>
       </div>
       <div className="w-full">
-        <Modal isVisible={isModalVisible} >
+        <Modal isVisible={isModalVisible}>
           <ChangePasswordModal handleCloseModal={handleCloseModal} />
         </Modal>
       </div>

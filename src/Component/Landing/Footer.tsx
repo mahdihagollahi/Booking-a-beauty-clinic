@@ -4,6 +4,7 @@ import IconImage from "@/assent/Img/Landing/Vector.svg";
 import instagramImage from "@/assent/Img/Landing/instagram.svg";
 import PhoneImage from "@/assent/Img/Landing/Phone.svg";
 import LocationImage from "@/assent/Img/Landing/Location.svg";
+import Link from "next/link";
 const Footer = () => {
   return (
     <div className=" relative z-10">
@@ -13,32 +14,45 @@ const Footer = () => {
         <h2 className="font-bold text-xl text-[#DC1E7A]">نورانید</h2>
       </div>
       <div className="flex gap-20 mr-40 items-center ">
-        <div className="  cursor-pointer">
-          <p className="w-20  font-extrabold text-base whitespace-nowrap text-[#8F8F8F] ">
-            صفحه اصلی
-          </p>
-        </div>
+      <Link href='/'>
+          <button className="  cursor-pointer">
+            <p className="w-20  font-extrabold text-base whitespace-nowrap text-[#8F8F8F] hover:w-[77px]  ">
+              صفحه اصلی
+            </p>
+          </button>
+          </Link>
+        
+          <Link href='/'>
+          <button className="  cursor-pointer">
+            <p className="w-[76px]  font-extrabold text-base whitespace-nowrap text-[#8F8F8F] ">
+              خدمات نورانید
+            </p>
+          </button>
+          </Link>
 
-        <div className="  cursor-pointer">
-          <p className="w-[76px]  font-extrabold text-base whitespace-nowrap text-[#8F8F8F] hover:w-[87px]  hover:text-[#4BB09C] hover:border-b-4 hover:border-[#4BB09C] hover:pb-[2px] hover:mt-[1px] duration-300">
-            خدمات نورانید
-          </p>
-        </div>
-        <div className="  cursor-pointer">
-          <p className="w-[81px] font-extrabold text-base whitespace-nowrap text-[#8F8F8F] hover:w-[88px] hover:text-[#4BB09C] hover:border-b-4 hover:border-[#4BB09C] hover:pb-[2px] hover:mt-[1px]  duration-300">
-            پزشکان نورانید
-          </p>
-        </div>
-        <div className="  cursor-pointer">
-          <p className="w-9 font-extrabold text-base whitespace-nowrap text-[#8F8F8F] hover:w-10  hover:text-[#4BB09C] hover:border-b-4 hover:border-[#4BB09C] hover:pb-[2px] hover:mt-[1px]  duration-300">
-            مقالات
-          </p>
-        </div>
-        <div className="  cursor-pointer">
-          <p className="w-14  font-extrabold text-base whitespace-nowrap text-[#8F8F8F] hover:w-[70px]  hover:text-[#4BB09C] hover:border-b-4 hover:border-[#4BB09C] hover:pb-[2px] hover:mt-[1px]  duration-300">
-            تماس با ما
-          </p>
-        </div>
+          <Link href='/Doctors'>
+          <button className="  cursor-pointer">
+            <p className="w-[81px] font-extrabold text-base whitespace-nowrap text-[#8F8F8F] ">
+              پزشکان نورانید
+            </p>
+          </button>
+          </Link>
+
+          <Link href='/Doctors'>
+          <button className="  cursor-pointer">
+            <p className="w-9 font-extrabold text-base whitespace-nowrap text-[#8F8F8F] ">
+              مقالات
+            </p>
+          </button>
+          </Link>
+
+          <Link href='/AboutUs'>
+          <button className="  cursor-pointer">
+            <p className="w-14  font-extrabold text-base whitespace-nowrap text-[#8F8F8F] ">
+              تماس با ما
+            </p>
+          </button>
+          </Link>
       </div>
       <div className="mr-44 flex gap-2 ">
 
