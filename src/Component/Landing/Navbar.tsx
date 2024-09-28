@@ -35,7 +35,7 @@ function Navbar() {
           </button>
           </Link>
         
-          <Link href='/'>
+          <Link href='/Service'>
           <button className="  cursor-pointer">
             <p className="w-[76px]  font-extrabold text-base whitespace-nowrap text-[#8F8F8F] hover:w-[87px]  hover:text-[#4BB09C] hover:border-b-4 hover:border-[#4BB09C] hover:pb-[2px] hover:mt-[1px] duration-300">
               خدمات نورانید
