@@ -23,7 +23,7 @@
   git clone https://github.com/mahdihagollahi/Booking-a-beauty-clinic.git
 ```
 
-> to run sandoghProject with npm
+> to run Noranid Project with npm
 
 ```bash
 cd Booking-a-Beauty-clinic
