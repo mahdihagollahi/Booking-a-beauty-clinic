@@ -5,6 +5,7 @@ const ServiceData = () => {
   return{
       Services:[
         {
+            id:1,
             defaultImage: Doctor,
             title: 'مزوتراپی مو',
             rating: 4.8,
@@ -13,6 +14,7 @@ const ServiceData = () => {
             description: 'خدمات فیشال صورت یا همان اسکین کر کلینیک ایرانیان به گونه ای طراحی شده اند که به شما .',
           },
           {
+            id:2,
             defaultImage: Doctor,
             title: 'پاکسازی پوست',
             rating: 2.5,
@@ -22,6 +24,7 @@ const ServiceData = () => {
           },
 
           {
+            id:3,
             defaultImage: Doctor,
             title: 'پاکسازی پوست',
             rating: 2.5,
@@ -31,6 +34,7 @@ const ServiceData = () => {
           },
 
           {
+            id:4,
             defaultImage: Doctor,
             title: 'پاکسازی پوست',
             rating: 2.5,
@@ -40,6 +44,7 @@ const ServiceData = () => {
           },
 
           {
+            id:5,
             defaultImage: Doctor,
             title: 'پاکسازی پوست',
             rating: 2.5,
@@ -50,6 +55,7 @@ const ServiceData = () => {
 
 
           {
+            id:6,
             defaultImage: Doctor,
             title: 'پاکسازی پوست',
             rating: 2.5,
@@ -59,6 +65,7 @@ const ServiceData = () => {
           },
 
           {
+            id:7,
             defaultImage: Doctor,
             title: 'پاکسازی پوست',
             rating: 2.5,
