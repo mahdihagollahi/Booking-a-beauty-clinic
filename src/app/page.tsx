@@ -14,6 +14,8 @@ import UserComment from "@/Component/Landing/UserComent/UserComment";
 import FAQ from "@/Component/Landing/FAQ/FAQ";
 import NoranidNews from "@/Component/Landing/NoranidNewsLanding";
 
+import Service from "@/Component/Service/Service";
+
 // import SingIn from '@/Component/Login/SingIn'
 // import SingIn2 from '@/Component/Login/SingIn2'
 // import LogIn1 from '@/Component/LogIn/LogIn1'
@@ -23,7 +25,7 @@ import NoranidNews from "@/Component/Landing/NoranidNewsLanding";
 function page() {
   return (
     <Fragment>
-      <Navbar />
+      {/* <Navbar />
       <ReservationServicePart />
       <AboutMe />
       <Services />
@@ -36,12 +38,14 @@ function page() {
       <UserComment />
       <FAQ />
       <NoranidNews />
-      <Footer />
+      <Footer /> */}
 
       {/* <SingIn/> */}
       {/* <SingIn2/> */}
       {/* <SingIn3/> */}
       {/* <LogIn1/> */}
+        
+        <Service/>
 
       {/* <ShowService/> */}
 
