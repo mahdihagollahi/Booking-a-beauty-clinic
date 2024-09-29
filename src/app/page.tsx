@@ -1,12 +1,20 @@
-import AboutMe from '@/Component/Landing/AboutMe'
-import Footer from '@/Component/Landing/Footer'
-import Navbar from '@/Component/Landing/Navbar'
-import ReservationServicePart from '@/Component/Landing/ReservationServicePart'
-import Services from '@/Component/Landing/Services'
-import WhyMe from '@/Component/Landing/WhyMe'
-import  BeautyService  from '@/Component/Landing/‌BeautyService'
-import Doctor from '@/Component/Landing/Doctor'
-import ContactWithCustomer from '@/Component/Landing/ContactWithCustomer'
+// import AboutMe from '@/Component/Landing/AboutMe'
+// import Footer from '@/Component/Landing/Footer'
+// import Navbar from '@/Component/Landing/Navbar'
+// import ReservationServicePart from '@/Component/Landing/ReservationServicePart'
+// import Services from '@/Component/Landing/Services'
+// import WhyMe from '@/Component/Landing/WhyMe'
+// import  BeautyService  from '@/Component/Landing/‌BeautyService'
+// import Doctor from '@/Component/Landing/Doctor'
+// import ContactWithCustomer from '@/Component/Landing/ContactWithCustomer'
+import React from "react";
+import WelcomePanel from "@/Component/AdminDashboard/WelcomePanel";
+import SalesChart from "@/Component/AdminDashboard/SalesChart";
+import ReservationChart from "@/Component/AdminDashboard/ReservationChart"
+import ButtonNavbar from "@/Component/AdminDashboard/ButtonNavbar";
+import Navbar from "@/Component/AdminDashboard/Navbar";
+import ProfileCard from "@/Component/AdminDashboard/ProfileCard"
+
 
 // import SingIn from '@/Component/Login/SingIn'
 // import SingIn2 from '@/Component/Login/SingIn2'
@@ -28,55 +36,63 @@ import ContactWithCustomer from '@/Component/Landing/ContactWithCustomer'
 // import MyTurn from "@/Component/UserDashboard/MyTurn";
 // import Profile from "@/Component/UserDashboard/Profile";
 
-import React, { Fragment } from "react";
-import SampleWork from '@/Component/Landing/SampleWork'
-import LogoutModal from '@/Component/UserDashboard/component/LogoutModal';
-import UserComment from '@/Component/Landing/UserComent/UserComment'
+// import React, { Fragment } from "react";
+// import SampleWork from '@/Component/Landing/SampleWork'
+// import LogoutModal from '@/Component/UserDashboard/component/LogoutModal';
+// import UserComment from '@/Component/Landing/UserComent/UserComment'
 
 function page() {
   return (
-    <Fragment >
-      <Navbar/>
-      <ReservationServicePart/>
-      <AboutMe/>
-      <Services/>
-      <WhyMe/>
-      <BeautyService/>
-      <Doctor/>
+    <div>
+      <ProfileCard/>
+      {/* <Navbar/> */}
+      {/* <ButtonNavbar/> */}
+      {/* <ReservationChart/> */}
+      {/* <WelcomePanel/> */}
+      {/* <SalesChart/> */}
+    </div>
+    // <Fragment >
+    //   <Navbar/>
+    //   <ReservationServicePart/>
+    //   <AboutMe/>
+    //   <Services/>
+    //   <WhyMe/>
+    //   <BeautyService/>
+    //   <Doctor/>
     
-      <ContactWithCustomer/>
-      <SampleWork/>
-      <UserComment/>
-      <Footer/>
+    //   <ContactWithCustomer/>
+    //   <SampleWork/>
+    //   <UserComment/>
+    //   <Footer/>
 
-      {/* <SingIn/> */}
-      {/* <SingIn2/> */}
-      {/* <SingIn3/> */}
-      {/* <LogIn1/> */}
+      // {/* <SingIn/> */}
+      // {/* <SingIn2/> */}
+      // {/* <SingIn3/> */}
+      // {/* <LogIn1/> */}
 
-      {/* <Service/> */}
-      {/* <SelectService/> */}
-      {/* <SetTimeAndDate/> */}
-      {/* <Information/> */}
-      {/* <Payment/> */}
-      {/* <FishPeyment/> */}
+      // {/* <Service/> */}
+      // {/* <SelectService/> */}
+      // {/* <SetTimeAndDate/> */}
+      // {/* <Information/> */}
+      // {/* <Payment/> */}
+      // {/* <FishPeyment/> */}
 
-      {/* <Doctor/> */}
+      // {/* <Doctor/> */}
 
-      {/* <ShowService/> */}
-      {/* 
-      <AboutUsDiscription/> */}
+      // {/* <ShowService/> */}
+      // {/* 
+      // <AboutUsDiscription/> */}
 
-      {/* <DetailArticle/> */}
+      // {/* <DetailArticle/> */}
 
-      {/* <Profile/> */}
+      // {/* <Profile/> */}
 
-      {/* <MyTurn /> */}
+      // {/* <MyTurn /> */}
 
-      {/* <MyComment/> */}
+      // {/* <MyComment/> */}
       
-    </Fragment>
-  );
+  //   </Fragment>
+   );
 }
 
 export default page;
