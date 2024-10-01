@@ -8,7 +8,7 @@ import ServicePhoto4 from "@/assent/Img/Landing/ServicePhoto4.svg";
 import Flower from "@/assent/Img/Landing/flower.svg";
 import EllipseService from "@/assent/Img/Landing/EllipseService.svg";
 import EllipseRevers from "@/assent/Img/Landing/EllipseRevers.svg";
-
+import Link from "next/link";
 function Services() {
   return (
     <Fragment>
@@ -40,9 +40,11 @@ function Services() {
               <Image src={EllipseRevers} width={490} height={530} alt="" />
             </div>
             <div className="mt-12 mr-7">
+            <Link href='/Service'>
               <button className="bg-[#DC1E7A] whitespace-nowrap w-36 py-2 px-4 rounded-md text-white font-medium text-sm">
                 مشاهده بیشتر
               </button>
+              </Link>
             </div>
           </div>
           <div className="mr-[12%] mt-32 ">

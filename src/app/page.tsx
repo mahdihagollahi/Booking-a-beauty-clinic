@@ -19,7 +19,7 @@ import NoranidNews from "@/Component/Landing/NoranidNewsLanding";
 // import SingIn2 from '@/Component/Login/SingIn2'
 // import LogIn1 from '@/Component/LogIn/LogIn1'
 // import SingIn3 from '@/Component/SingIn/SingIn3'
-// import DetailArticle from "@/Component/Article/DetailArticle";
+
 
 function page() {
   return (
@@ -44,7 +44,7 @@ function page() {
       {/* <SingIn3/> */}
       {/* <LogIn1/> */}
 
-      {/* <DetailArticle/> */}
+     
 
 
     </Fragment>

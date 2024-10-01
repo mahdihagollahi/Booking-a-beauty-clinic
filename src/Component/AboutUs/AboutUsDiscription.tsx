@@ -10,7 +10,7 @@ import NoranidNews from "../Doctors/NoranidNews";
 const AboutUsDiscription = () => {
   return (
     <Fragment>
-      <div className="bg-white">
+      <div className="bg-white duration-300">
         <Navbar />
       </div>
       <div className="px-12 pl-12 py-16">

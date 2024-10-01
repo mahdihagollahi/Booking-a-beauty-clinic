@@ -22,7 +22,7 @@ const Footer = () => {
           </button>
           </Link>
         
-          <Link href='/'>
+          <Link href='/Service'>
           <button className="  cursor-pointer">
             <p className="w-[76px]  font-extrabold text-base whitespace-nowrap text-[#8F8F8F] ">
               خدمات نورانید
