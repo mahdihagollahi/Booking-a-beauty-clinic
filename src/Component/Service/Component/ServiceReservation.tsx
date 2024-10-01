@@ -3,6 +3,7 @@ import Image from "next/image";
 import timer from "@/assent/Img/Service/timer.svg";
 import coin from "@/assent/Img/Service/coin.svg";
 import user from "@/assent/Img/Service/user.svg";
+import Link from "next/link";
 const ServiceReservation = ({ serviceData }) => {
   return (
     <Fragment>
@@ -31,10 +32,11 @@ const ServiceReservation = ({ serviceData }) => {
           </p>
         </div>
       </div>
-
-      <button className="mt-10 duration-300 bg-[#EA78AF] hover:bg-[#DC1E7A] text-white w-[48%] h-[12%] rounded-lg">
-        رزرو نوبت
-      </button>
+      <Link href='/Resevaion/SetTime'>
+        <button className="mt-10 duration-300 bg-[#EA78AF] hover:bg-[#DC1E7A] text-white w-[48%] h-[12%] rounded-lg">
+          رزرو نوبت
+        </button>
+      </Link>
     </Fragment>
   );
 };
