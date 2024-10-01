@@ -23,10 +23,12 @@ function Navbar() {
   return (
     <div className="relative z-10">
       <div className="flex px-20 py-6 items-center">
-        <div className="flex items-center gap-3">
-          <Image src={IconImage} width={30} height={30} alt="logo" />
-          <h2 className="font-bold text-xl text-[#DC1E7A]">نورانید</h2>
-        </div>
+        <Link href="/">
+          <div className="flex items-center cursor-pointer gap-3">
+            <Image src={IconImage} width={30} height={30} alt="logo" />
+            <h2 className="font-bold text-xl text-[#DC1E7A]">نورانید</h2>
+          </div>
+        </Link>
         <div className="flex gap-20 mr-60 items-center">
           <Link href="/">
             <button className="cursor-pointer">
@@ -75,12 +77,12 @@ function Navbar() {
             </button>
           </Link>
 
-          <Link href="/Articles">
+          <Link href="/Article">
             <button className="cursor-pointer">
               <p
-                style={pathName === "/Articles" ? { color: "#4BB09C" } : {}}
+                style={pathName === "/Article" ? { color: "#4BB09C" } : {}}
                 className={`w-9 font-extrabold ${
-                  pathName === "/Articles"
+                  pathName === "/Article"
                     ? "border-b-4 border-[#4BB09C] pb-[2px] mt-[1px] w-[40px] duration-300"
                     : "text-[#8F8F8F]"
                 } text-base whitespace-nowrap text-[#8F8F8F] hover:w-10 hover:text-[#4BB09C] hover:border-b-4 hover:border-[#4BB09C] hover:pb-[2px] hover:mt-[1px] duration-300`}

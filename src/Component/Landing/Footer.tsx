@@ -38,7 +38,7 @@ const Footer = () => {
           </button>
           </Link>
 
-          <Link href='/Doctors'>
+          <Link href='/Article'>
           <button className="  cursor-pointer">
             <p className="w-9 font-extrabold text-base whitespace-nowrap text-[#8F8F8F] ">
               مقالات

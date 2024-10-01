@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import Navbar from "../Landing/Navbar";
 import Image from "next/image";
 import ArticleHeader from "@/assent/Img/Article/ArticleHeader.svg";
-import ArticleData from "./ArticleData";
+import ArticleData from "./Component/DetailArticleData";
 import Footer from "../Landing/Footer";
 import NoranidNews from "../Doctors/NoranidNews";
 
