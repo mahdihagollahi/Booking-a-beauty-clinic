@@ -4,7 +4,7 @@ import DoctorImage from "@/assent/Img/Landing/aboutme.svg";
 import Flower from "@/assent/Img/Landing/flower.svg";
 import EllipseServicePhoto from "@/assent/Img/Landing/EllipseServicePhoto.png";
 import EllipseService from "@/assent/Img/Landing/EllipseService.svg";
-
+import Link from "next/link";
 function AboutMe() {
   return (
     <Fragment>
@@ -36,9 +36,12 @@ function AboutMe() {
             </div>
 
             <div className="mt-12 mr-7">
+              <Link href='/Service'>
+          
               <button className="bg-[#DC1E7A] whitespace-nowrap w-36 py-2 px-4 rounded-md text-white font-medium text-sm">
                 خدمات ما
               </button>
+              </Link>
             </div>
           </div>
         </div>

@@ -5,33 +5,34 @@ import AboutUsPicture from "./AboutUsPicture";
 import ContactUs from "./ContactUs";
 import InformationInput from "./InformationInput";
 import Footer from "../Landing/Footer";
+import NoranidNews from "../Doctors/NoranidNews";
 
 const AboutUsDiscription = () => {
   return (
     <Fragment>
-      <div className="bg-white">
+      <div className="bg-white duration-300">
         <Navbar />
       </div>
       <div className="px-12 pl-12 py-16">
-      <div className=" mx-auto p-6">
-      <div className="flex justify-between">
-          <AboutUsTitle />
+        <div className=" mx-auto p-6">
+          <div className="flex justify-between">
+            <AboutUsTitle />
 
-          <AboutUsPicture />
-        </div>
-        <div className="mt-32 flex gap-40 items-center">
+            <AboutUsPicture />
+          </div>
+          <div className="mt-32 flex gap-40 items-center">
             <div>
-            <ContactUs/>
+              <ContactUs />
             </div>
             <div>
-                <InformationInput/>
+              <InformationInput />
             </div>
-              
+          </div>
         </div>
-      </div>
       </div>
       <div>
-        <Footer/>
+        <NoranidNews />
+        <Footer />
       </div>
     </Fragment>
   );

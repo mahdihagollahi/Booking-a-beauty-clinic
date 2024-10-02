@@ -9,6 +9,7 @@ import RoutDoctor from "@/assent/Img/Doctors/RoutDactor.svg";
 import LeftFlower from "@/assent/Img/Doctors/LeftFlower.svg";
 import Navbar from "../Landing/Navbar";
 import Footer from "../Landing/Footer";
+import NoranidNews from "../Doctors/NoranidNews";
 
 interface Doctor {
   id: number;
@@ -161,6 +162,10 @@ const Doctors = () => {
           </div>
         ))}
       </div>
+      <div className="mt-20">
+      <NoranidNews/>
+      </div>
+     
       <Footer/>
     </div>
   );

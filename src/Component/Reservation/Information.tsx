@@ -4,6 +4,7 @@ import Navbar from "../Landing/Navbar";
 import Image from "next/image";
 import InformationReservation from "@/assent/Img/Reservation/InformationReservation.svg";
 import AppointmentReservation from "./AppointmentReservation";
+import Link from "next/link";
 const Information = () => {
   const [selectedOption, setSelectedOption] = useState("خانم");
   const [isOpen, setIsOpen] = useState(false);
@@ -138,15 +139,22 @@ const Information = () => {
         </div>
 
         <div className="flex gap-8 mr-[159.7%] mb-40">
+         
+        </div>
+      </div>
+      <div className="flex gap-8 mr-[68.5%] mb-40 mt-12">
+        <Link href='/Resevaion/SetTime'>
           <button className=" whitespace-nowrap w-36 py-2 px-4 rounded-md text-[#727272] bg-[#DDDDDD] font-medium text-sm">
             مرحله قبل
           </button>
+          </Link>
 
+          <Link href='/Resevaion/Peyment'>
           <button className="bg-[#DC1E7A] whitespace-nowrap w-36 py-2 px-4 rounded-md text-white font-medium text-sm">
             تایید و ادامه
           </button>
+          </Link>
         </div>
-      </div>
     </div>
   );
 };

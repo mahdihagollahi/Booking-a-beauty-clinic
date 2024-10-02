@@ -6,6 +6,7 @@ import Navbar from "../Landing/Navbar";
 import Image from "next/image";
 import SelectTime from "@/assent/Img/Reservation/SelectTime.svg";
 import AppointmentReservation from "./AppointmentReservation";
+import Link from "next/link";
 
 moment.loadPersian({ dialect: "persian-modern" });
 
@@ -205,14 +206,18 @@ const SetTimeAndDate = () => {
             </div>
           </div>
         </div>
-        <div className="flex gap-8 mr-[80.5%] mt-12">
+        <div className="flex gap-8 mr-[75.5%] mt-12">
+        <Link href='/Resevaion/SelectService'>
           <button className=" whitespace-nowrap w-36 py-2 px-4 rounded-md text-[#727272] bg-[#DDDDDD] font-medium text-sm">
             مرحله قبل
           </button>
+          </Link>
 
+          <Link href='/Resevaion/Information'>
           <button className="bg-[#DC1E7A] whitespace-nowrap w-36 py-2 px-4 rounded-md text-white font-medium text-sm">
             تایید و ادامه
           </button>
+          </Link>
         </div>
       </div>
     </div>

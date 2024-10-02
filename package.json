@@ -19,7 +19,11 @@
     "react": "^18",
     "react-dom": "^18",
     "react-otp-input": "^3.1.1",
+<<<<<<< HEAD
     "recharts": "^2.12.7",
+=======
+    "react-paginate": "^8.2.0",
+>>>>>>> 73869ef0f279c79c4695cb764a32d3760b96e551
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7"
   },

@@ -7,7 +7,7 @@ import DownRight from "@/assent/Img/AboutUs/DownRight.svg";
 const AboutUsPicture = () => {
   return (
     <Fragment>
-      <div className="pl-32">
+      <div className="pl-32 duration-300">
         <div className="flex gap-4 ">
           <Image src={UpRight} width={435} height={217} alt="" />
 

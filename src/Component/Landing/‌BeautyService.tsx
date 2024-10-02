@@ -2,7 +2,8 @@ import React, { Fragment } from "react";
 import Image from "next/image";
 import GreenRservation from "@/assent/Img/Landing/GreenRservation.svg";
 import Logo from "@/assent/Img/Landing/GreenLogo.svg";
-
+import Flower from "@/assent/Img/Landing/flower.svg";
+import Link from "next/link";
 const BeautyService = () => {
   return (
     <Fragment>
@@ -26,10 +27,15 @@ const BeautyService = () => {
         </div>
 
         <div className="mt-[5.3%] mr-[55%]">
+        <Link href='/Resevaion'>
           <button className="bg-[#DC1E7A] whitespace-nowrap w-36 py-2 px-4 rounded-md text-white font-medium text-sm">
             رزرو نوبت
           </button>
+          </Link>
         </div>
+      </div>
+      <div className=" absolute mr-[65.9%] -mt-3 bg-no-repeat ">
+        <Image src={Flower} width={52} height={58} alt="" />
       </div>
     </Fragment>
   );

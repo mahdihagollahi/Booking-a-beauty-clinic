@@ -4,19 +4,21 @@ import Image from "next/image";
 import ArrowLeft from "@/assent/Img/Service/arrowLeft.png";
 import ranking from "@/assent/Img/Service/ranking.svg";
 import Navbar from "../Landing/Navbar";
-import ServiceData from "./ServiceData";
-import Comments from "@/Component/Service/Comments";
-import RatingForm from "./RatingForm";
-import Modal from "./Modal";
-import ServiceInfo from "./ServiceInfo";
-import ServiceDescription from "./ServiceDescription";
-import ServiceReservation from "./ServiceReservation";
-import WhyUs from "./WhyUs";
-import Metod from "./Metod";
-import SetComment from "./SetComment";
+import ServiceData from "./Component/ServiceDetailData";
+import Comments from "@/Component/Service/Component/Comments";
+import RatingForm from "./Component/RatingForm";
+import Modal from "./Component/Modal";
+import ServiceInfo from "./Component/ServiceInfo";
+import ServiceDescription from "./Component/ServiceDescription";
+import ServiceReservation from "./Component/ServiceReservation";
+import WhyUs from "./Component/WhyUs";
+import Metod from "./Component/Metod";
+import SetComment from "./Component/SetComment";
 import Footer from "../Landing/Footer";
 import Background from '@/assent/Img/Service/BGdatialService.svg'
 import WomanServiceDetail from '@/assent/Img/Service/WomanDetailService.svg'
+import NoranidNews from "../Doctors/NoranidNews";
+
 
 const ServiceDetails = ({ serviceData }) => {
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -104,7 +106,7 @@ const ServiceDetails = ({ serviceData }) => {
           <RatingForm handleCloseModal={handleCloseModal} />
         </Modal>
       </div>
-      <Footer/>
+    
     </div>
   );
 };
@@ -120,6 +122,10 @@ const ShowService = () => {
       <div className="mt-20 px-24">
         <ServiceDetails serviceData={serviceData} />
       </div>
+      <div className="w-full">
+      <NoranidNews/>
+      </div>
+      <Footer/>
     </div>
   );
 };
