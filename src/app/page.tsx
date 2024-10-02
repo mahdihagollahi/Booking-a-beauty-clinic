@@ -5,7 +5,7 @@ import SalesChart from "@/Component/AdminDashboard/SalesChart";
 import ReservationChart from "@/Component/AdminDashboard/ReservationChart"
 import ButtonNavbar from "@/Component/AdminDashboard/ButtonNavbar";
 import Navbar from "@/Component/AdminDashboard/Navbar";
-import ProfileCard from "@/Component/AdminDashboard/ProfileCard"
+// import ProfileCard from "@/Component/AdminDashboard/ProfileCard"
 import SearchUser from "@/Component/AdminDashboard/SearchUser";
 import ButtonRule from "@/Component/AdminDashboard/ButtonRule";
 
