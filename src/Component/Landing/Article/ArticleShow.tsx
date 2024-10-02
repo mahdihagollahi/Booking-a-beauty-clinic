@@ -1,12 +1,24 @@
-import React, { Fragment } from "react";
+'use client'
+import React, { Fragment , useState } from "react";
 import Image from "next/image";
 import ArrowRight from "@/assent/Img/404Arow.svg";
 import Link from "next/link";
 import ShareIcon from "@/assent/Img/Article/share.svg";
-const ArticleShow = ({ currentPageData, filledHeart, handleHeartClick }) => {
+import ArticleData from "./ArticleData";
+const ArticleShow = () => {
+    const Data = ArticleData().Article
+    const [filledHeart, setFilledHeart] = useState<Record<number, boolean>>({});
+
+    const handleHeartClick = (index: number) => {
+        setFilledHeart((prev) => ({
+          ...prev,
+          [index]: !prev[index],
+        }));
+      };
   return (
     <Fragment>
-      {currentPageData.map((treatment, index) => (
+         <div className="grid grid-cols-4 py-4  mr-20 gap-9 w-[90%]">
+      {Data.map((treatment, index) => (
         <div
           key={index}
           className="relative w-64 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 group"
@@ -78,6 +90,7 @@ const ArticleShow = ({ currentPageData, filledHeart, handleHeartClick }) => {
           </div>
         </div>
       ))}
+      </div>
     </Fragment>
   );
 };
