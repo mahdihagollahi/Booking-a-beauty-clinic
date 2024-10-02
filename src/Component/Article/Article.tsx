@@ -54,7 +54,7 @@ const Article = () => {
         </div>
         <div className="grid grid-cols-3 mr-10 mt-10 gap-9 w-[80%]">
           <ArticleShow
-            Data={Data}
+            currentPageData={currentPageData}
             filledHeart={filledHeart}
             handleHeartClick={handleHeartClick}
           />

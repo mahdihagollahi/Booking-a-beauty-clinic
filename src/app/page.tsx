@@ -4,7 +4,7 @@ import WelcomePanel from "@/Component/AdminDashboard/WelcomePanel";
 import SalesChart from "@/Component/AdminDashboard/SalesChart";
 import ReservationChart from "@/Component/AdminDashboard/ReservationChart"
 import ButtonNavbar from "@/Component/AdminDashboard/ButtonNavbar";
-import Navbar from "@/Component/AdminDashboard/Navbar";
+import Navbar from "@/Component/Landing/Navbar";
 // import ProfileCard from "@/Component/AdminDashboard/ProfileCard"
 import SearchUser from "@/Component/AdminDashboard/SearchUser";
 import ButtonRule from "@/Component/AdminDashboard/ButtonRule";
@@ -22,6 +22,7 @@ import SampleWork from "@/Component/Landing/SampleWork";
 import UserComment from "@/Component/Landing/UserComent/UserComment";
 import FAQ from "@/Component/Landing/FAQ/FAQ";
 import NoranidNews from "@/Component/Landing/NoranidNewsLanding";
+import Article from "@/Component/Landing/Article";
 
 
 // import SingIn from '@/Component/Login/SingIn'
@@ -46,16 +47,17 @@ function page() {
 
       <ContactWithCustomer />
       <SampleWork />
+      <Article/>
       <UserComment />
       <FAQ />
       <NoranidNews />
       <Footer />
 
 
-      // {/* <SingIn/> */}
-      // {/* <SingIn2/> */}
-      // {/* <SingIn3/> */}
-      // {/* <LogIn1/> */}
+     {/* <SingIn/> */}
+      {/* <SingIn2/> */}
+       {/* <SingIn3/> */}
+      {/* <LogIn1/> */}
 
 
 
