@@ -7,6 +7,8 @@ import Paginate from "@/Component/Service/Component/Paginet";
 import ArticleShow from "./Component/ArticleShow";
 import ArticleData from "@/Component/Article/Component/ArticleData";
 import FilterData from "@/Component/Service/Component/FilterData";
+import ArticleImage from '@/assent/Img/Article/ArticleImage.svg'
+import Image from "next/image";
 
 const Article = () => {
 
@@ -33,6 +35,14 @@ const Article = () => {
     <Fragment>
       <div className="bg-white">
         <Navbar />
+      </div>
+      <div className="my-10 px-20">
+       <Image
+       src={ArticleImage}
+       width={184}
+       height={30}
+       alt=""
+       />
       </div>
       <div className="flex  mt-10">
       <div>
