@@ -45,7 +45,7 @@ const NavbarData = () => {
                 image:LickedImage,
                 title:'علاقه مندی ها',
                 imageHover: LikedHoverImage,
-                link: ''
+                link: '/UserDashboard/Favorite'
     
             },
         ]
