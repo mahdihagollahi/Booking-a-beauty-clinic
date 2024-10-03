@@ -7,10 +7,13 @@ import Modal from "./Modal";
 import SingIn from "../SingIn/SingIn";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import NavbarResponsive from "./Navbar/NavbarResponsive";
+import { FiMenu, FiX } from "react-icons/fi"; // استفاده از react-icons برای آیکون همبرگری و بستن
 
 function Navbar() {
   const pathName = usePathname();
   const [isModalVisible, setIsModalVisible] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // وضعیت منوی همبرگری
 
   const handleOpenModal = () => {
     setIsModalVisible(true);
@@ -20,27 +23,51 @@ function Navbar() {
     setIsModalVisible(false);
   };
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <div className="relative z-10">
-      <div className="flex px-20 py-6 items-center">
+      <div className="flex px-4 md:px-20 py-6 items-center md:justify-between">
+
+        {/* دکمه همبرگری و لوگو در حالت ریسپانسیو */}
+        <div className="flex justify-between items-center w-full md:hidden">
+          <Link href="/">
+            <div className="flex items-center cursor-pointer gap-3">
+              <Image src={IconImage} width={30} height={30} alt="logo" />
+              <h2 className="font-bold text-xl text-[#DC1E7A]">نورانید</h2>
+            </div>
+          </Link>
+
+          <button onClick={toggleMenu}>
+            {isMenuOpen ? (
+              <FiX size={24} color="#4BB09C" />
+            ) : (
+              <FiMenu size={24} color="#4BB09C" />
+            )}
+          </button>
+        </div>
+
         <Link href="/">
-          <div className="flex items-center cursor-pointer gap-3">
+          <div className="flex items-center cursor-pointer gap-3 hidden md:flex">
             <Image src={IconImage} width={30} height={30} alt="logo" />
             <h2 className="font-bold text-xl text-[#DC1E7A]">نورانید</h2>
           </div>
         </Link>
-        <div className="flex gap-20 mr-60 items-center">
+
+        <div className="hidden md:flex gap-20 mr-60 items-center">
           <Link href="/">
             <button className="cursor-pointer">
               <span
                 style={pathName === "/" ? { color: "#4BB09C" } : {}}
                 className={`w-20 font-extrabold text-base whitespace-nowrap 
-    ${
-      pathName === "/"
-        ? "border-b-4 border-[#4BB09C] pb-[2px] mt-[1px] duration-300"
-        : "text-[#8F8F8F]"
-    }
-    hover:w-[77px] hover:text-[#4BB09C] hover:border-b-4 hover:border-[#4BB09C] hover:pb-[2px] hover:mt-[1px] duration-300`}
+                  ${
+                    pathName === "/"
+                      ? "border-b-4 border-[#4BB09C] pb-[2px] mt-[1px] duration-300"
+                      : "text-[#8F8F8F]"
+                  }
+                  hover:w-[77px] hover:text-[#4BB09C] hover:border-b-4 hover:border-[#4BB09C] hover:pb-[2px] hover:mt-[1px] duration-300`}
               >
                 صفحه اصلی
               </span>
@@ -107,7 +134,9 @@ function Navbar() {
             </button>
           </Link>
         </div>
-        <div className="mr-44">
+
+        {/* دکمه ورود/ثبت‌نام */}
+        <div className="hidden md:block mr-44">
           <button
             className="flex gap-2 bg-[#DC1E7A] rounded-md py-2 px-4 whitespace-nowrap"
             onClick={handleOpenModal}
@@ -118,6 +147,23 @@ function Navbar() {
             </p>
           </button>
         </div>
+
+        {isMenuOpen && (
+          <NavbarResponsive
+            pathName={pathName}
+            handleOpenModal={handleOpenModal}
+           
+            toggleMenu={toggleMenu}
+          />
+        )}
+
+        {isMenuOpen && (
+          <div
+            className="fixed inset-0 bg-black opacity-50 z-10"
+            onClick={toggleMenu}
+          ></div>
+        )}
+
         <Modal isVisible={isModalVisible} handleCloseModal={handleCloseModal}>
           <SingIn handleCloseModal={handleCloseModal} />
         </Modal>
