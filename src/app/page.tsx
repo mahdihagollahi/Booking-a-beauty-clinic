@@ -25,13 +25,13 @@ import Article from "@/Component/Landing/Article";
 // import SingIn from '@/Component/Login/SingIn'
 // import SingIn2 from '@/Component/Login/SingIn2'
 // import LogIn1 from '@/Component/LogIn/LogIn1'
-// import SingIn3 from '@/Component/SingIn/SingIn3'
+import SingIn3 from '@/Component/SingIn/SingIn3'
 
 function page() {
   return (
     <Fragment>
-      <Navbar />
-      <ReservationServicePart />
+      <Navbar  />
+      {/* <ReservationServicePart />
       <AboutMe />
       <Services />
       <WhyMe />
@@ -44,7 +44,7 @@ function page() {
       <UserComment />
       <FAQ />
       <NoranidNews />
-      <Footer />
+      <Footer /> */}
 
       {/* <SingIn/> */}
       {/* <SingIn2/> */}
