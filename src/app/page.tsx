@@ -32,8 +32,8 @@ function page() {
     <Fragment>
       <Navbar  />
       <ReservationServicePart />
-      {/* <AboutMe />
-      <Services />
+      <AboutMe />
+      {/* <Services />
       <WhyMe />
       <BeautyService />
       <Doctor />
