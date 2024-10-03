@@ -31,8 +31,8 @@ function page() {
   return (
     <Fragment>
       <Navbar  />
-      {/* <ReservationServicePart />
-      <AboutMe />
+      <ReservationServicePart />
+      {/* <AboutMe />
       <Services />
       <WhyMe />
       <BeautyService />
