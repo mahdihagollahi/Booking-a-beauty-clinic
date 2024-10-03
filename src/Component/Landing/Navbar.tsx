@@ -8,12 +8,12 @@ import SingIn from "../SingIn/SingIn";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import NavbarResponsive from "./Navbar/NavbarResponsive";
-import { FiMenu, FiX } from "react-icons/fi"; // استفاده از react-icons برای آیکون همبرگری و بستن
+import { FiMenu, FiX } from "react-icons/fi"; 
 
 function Navbar() {
   const pathName = usePathname();
   const [isModalVisible, setIsModalVisible] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // وضعیت منوی همبرگری
+  const [isMenuOpen, setIsMenuOpen] = useState(false); 
 
   const handleOpenModal = () => {
     setIsModalVisible(true);
@@ -31,7 +31,7 @@ function Navbar() {
     <div className="relative z-10">
       <div className="flex px-4 md:px-20 py-6 items-center md:justify-between">
 
-        {/* دکمه همبرگری و لوگو در حالت ریسپانسیو */}
+        
         <div className="flex justify-between items-center w-full md:hidden">
           <Link href="/">
             <div className="flex items-center cursor-pointer gap-3">
@@ -50,7 +50,7 @@ function Navbar() {
         </div>
 
         <Link href="/">
-          <div className="flex items-center cursor-pointer gap-3 hidden md:flex">
+          <div className=" items-center cursor-pointer gap-3 hidden md:flex">
             <Image src={IconImage} width={30} height={30} alt="logo" />
             <h2 className="font-bold text-xl text-[#DC1E7A]">نورانید</h2>
           </div>
