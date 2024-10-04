@@ -24,18 +24,18 @@ const FAQ:React.FC = () => {
     <Fragment>
     
       <div
-        className="px-20 w-[100%] h-[63%] py-10 relative"
+        className="px-20 w-[100%] h-[63%] md:overflow-hidden overflow-scroll mt-10 md:mt-0 py-10 relative"
         style={{
           backgroundImage: `url(${Background.src})`,
           zIndex: "10",
           position: "relative",
-          overflow: "hidden", 
+          // overflow: "hidden", 
         }}
       >
         <p className="font-medium text-xl text-[#393939]">سوالات متدوال</p>
 
         <div className="flex flex-col  mt-10 items-center">
-          <div className="w-[50%] -mr-[50%] ">
+          <div className="md:w-[50%] w-full overflow-scroll md:-mr-[50%] ">
             {Data.map((faq) => (
               <div
                 key={faq.id}
@@ -47,7 +47,7 @@ const FAQ:React.FC = () => {
                   className="text-[#393939] rounded-xl w-full p-4 border border-[#00000014] font-medium duration-300 flex items-center text-xl justify-between mt-2"
                   style={{ zIndex: "6", position: "relative" }}
                 >
-                  <div>{faq.question}</div>
+                  <div className="text-sm whitespace-normal md:whitespace-normal md:text-lg">{faq.question}</div>
                   <Image
                     src={IconDown}
                     width={20}
@@ -79,7 +79,7 @@ const FAQ:React.FC = () => {
       </div>
 
    
-      <div className="mr-[73%] -mt-96 absolute" style={{ zIndex: "15" }}>
+      <div className="mr-[73%] hidden md:block -mt-96 absolute" style={{ zIndex: "15" }}>
         <Image src={CreamImage} width={289} height={310} alt="" />
       </div>
 
