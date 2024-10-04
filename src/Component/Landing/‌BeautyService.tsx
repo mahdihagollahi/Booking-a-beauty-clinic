@@ -8,7 +8,7 @@ const BeautyService = () => {
   return (
     <Fragment>
       <div
-        className="mt-20  py-4 relative z-10"
+        className="mt-20 hidden md:block py-4 relative z-10"
         style={{ backgroundImage: `url(${GreenRservation.src})` }}
       >
         <div className="px-28">
@@ -34,7 +34,7 @@ const BeautyService = () => {
           </Link>
         </div>
       </div>
-      <div className=" absolute mr-[65.9%] -mt-3 bg-no-repeat ">
+      <div className=" hidden md:block absolute mr-[65.9%] -mt-3 bg-no-repeat ">
         <Image src={Flower} width={52} height={58} alt="" />
       </div>
     </Fragment>
