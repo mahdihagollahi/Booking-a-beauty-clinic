@@ -33,8 +33,8 @@ function page() {
       <Navbar  />
       <ReservationServicePart />
       <AboutMe />
-      {/* <Services />
-      <WhyMe />
+      <Services />
+      {/* <WhyMe />
       <BeautyService />
       <Doctor />
 
