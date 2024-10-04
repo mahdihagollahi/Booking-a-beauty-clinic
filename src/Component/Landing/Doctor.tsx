@@ -32,7 +32,7 @@ const Doctor = () => {
   return (
     <Fragment>
       <div
-        className="bg-no-repeat pt-24 h-[42%] mt-20 "
+        className="bg-no-repeat hidden md:block pt-24 h-[42%] mt-20 "
         style={{ backgroundImage: `url(${background.src})` }}
       >
         <div
@@ -140,7 +140,7 @@ const Doctor = () => {
           </div>
         </div>
       </div>
-      <div className=" absolute mr-[42.9%] -mt-1 bg-no-repeat ">
+      <div className="hidden md:block absolute mr-[42.9%] -mt-1 bg-no-repeat ">
         <Image src={Flower} width={52} height={58} alt="" />
       </div>
     </Fragment>

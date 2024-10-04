@@ -20,11 +20,11 @@ function Services() {
             <Image src={EllipseService} width={490} height={530} alt="" />
           </div>
           <div className="px-20 py-20">
-            <h3 className="font-medium text-xl text-[#393939] mr-8 mt-14">
+            <h3 className="font-medium text-xl text-[#393939]  md:mr-8 mt-14">
               خدمات نورانید
             </h3>
 
-            <div className="mt-5 font-regular text-base mr-8 text-[#A5A5A5]">
+            <div className="mt-5 font-regular text-base md:mr-8 text-[#A5A5A5]">
               <p>
                 کلینیک تخصصی پوست و مو نورانید ارائه دهنده خدمات ویژه جوانسازی
               </p>

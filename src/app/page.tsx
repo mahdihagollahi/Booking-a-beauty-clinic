@@ -15,7 +15,6 @@ import Services from "@/Component/Landing/Services";
 import WhyMe from "@/Component/Landing/WhyMe";
 import BeautyService from "@/Component/Landing/‌BeautyService";
 import Doctor from "@/Component/Landing/Doctor";
-import ContactWithCustomer from "@/Component/Landing/ContactWithCustomer";
 import SampleWork from "@/Component/Landing/SampleWork";
 import UserComment from "@/Component/Landing/UserComent/UserComment";
 import FAQ from "@/Component/Landing/FAQ/FAQ";
@@ -25,22 +24,21 @@ import Article from "@/Component/Landing/Article";
 // import SingIn from '@/Component/Login/SingIn'
 // import SingIn2 from '@/Component/Login/SingIn2'
 // import LogIn1 from '@/Component/LogIn/LogIn1'
-import SingIn3 from '@/Component/SingIn/SingIn3'
+import SingIn3 from "@/Component/SingIn/SingIn3";
 
 function page() {
   return (
     <Fragment>
-      <Navbar  />
+      <Navbar />
       <ReservationServicePart />
       <AboutMe />
       <Services />
-      {/* <WhyMe />
+      <WhyMe />
       <BeautyService />
       <Doctor />
 
-      <ContactWithCustomer />
       <SampleWork />
-      <Article />
+      {/* <Article />
       <UserComment />
       <FAQ />
       <NoranidNews />

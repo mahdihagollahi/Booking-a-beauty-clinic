@@ -15,7 +15,7 @@ const SampleWork = () => {
   return (
     <Fragment>
       <div className="mt-20 px-24 mb-20">
-        <p className="font-medium text-xl text-[#393939]">
+        <p className="font-medium  text-xl text-[#393939]">
           برخی از نمونه کار های کلینیک نورانید
         </p>
       </div>
@@ -24,7 +24,7 @@ const SampleWork = () => {
       </div>
       <div className="flex gap-20 mt-8 items-center">
         <div
-          className="h-96 w-[383px] mr-11"
+          className="h-96 md:w-[383px] w-96 md:mr-11"
           style={{ backgroundImage: `url(${Background.src})` }}
         >
           <Image
@@ -67,7 +67,7 @@ const SampleWork = () => {
             height={200}
             alt=""
             onClick={() => setMainImage(orginalWomanExmple)}
-            className="mt-[89px] mr-24 "
+            className="mt-[89px] mr-[90px] md:mr-24 "
           />
 
           <p className="mr-36 mt-4 font-medium text-[#393939] text-base">
@@ -80,7 +80,7 @@ const SampleWork = () => {
         </div>
 
         <div
-          className="h-96 w-[383px] mr-11"
+          className="h-96 w-[383px] mr-11 hidden md:block"
           style={{ backgroundImage: `url(${Background.src})` }}
         >
           <Image
@@ -134,7 +134,7 @@ const SampleWork = () => {
         </div>
 
         <div
-          className="h-96 w-[383px] mr-7"
+          className="h-96 w-[383px] mr-7 hidden md:block"
           style={{ backgroundImage: `url(${Background.src})` }}
         >
           <Image
