@@ -23,7 +23,7 @@ function AboutMe() {
   }, []);
   return (
     <Fragment>
-      <div className="bg-white   mt-6">
+      <div className="bg-white mt-10  md:mt-6">
         {!isMobile && (
           <>
             <div className="absolute">
@@ -38,13 +38,13 @@ function AboutMe() {
               <Image src={EllipseService} width={490} height={500} alt="" />
             </div>
           </>
-        )}
+     )} 
 
         <div className=" md:flex px-20">
           <Image src={DoctorImage} width={308} height={343} alt=""
           className="hidden md:flex"
           />
-          <div className="py-3 md:py-0">
+          <div className="py-32 md:py-0">
             <h3 className="font-medium text-xl text-[#393939] md:mr-8 mt-96 md:mt-14">
               درباره نورانید
             </h3>
@@ -71,11 +71,11 @@ function AboutMe() {
           </div>
         </div>
       </div>
-      {!isMobile && (
+      {/* {!isMobile && ( */}
       <div className=" mr-[57%] mt-[20px]">
         <Image src={Flower} width={52} height={58} alt="" />
       </div>
-      )}
+      {/* )} */}
     </Fragment>
   );
 }

@@ -7,15 +7,15 @@ import LocationImage from "@/assent/Img/Landing/Location.svg";
 import Link from "next/link";
 const Footer = () => {
   return (
-    <div className=" relative z-10">
-      <div className="flex px-20 py-6 items-center bg-white  ">
+    <div className=" md:relative md:z-10">
+      <div className="md:flex md:px-20 md:py-6 md:items-center md:bg-white  ">
         <Link href="/">
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 mt-5 mr-40 md:mt-0 md:mr-0">
             <Image src={IconImage} width={30} height={30} alt="logo" />
             <h2 className="font-bold text-xl text-[#DC1E7A]">نورانید</h2>
           </div>
         </Link>
-        <div className="flex gap-20 mr-40 items-center ">
+        <div className=" hidden md:flex  gap-20 mr-40 items-center ">
           <Link href="/">
             <button className="  cursor-pointer">
               <p className="w-20  font-extrabold text-base whitespace-nowrap text-[#8F8F8F] hover:w-[77px]  ">
@@ -56,7 +56,7 @@ const Footer = () => {
             </button>
           </Link>
         </div>
-        <div className="mr-44 flex gap-2 ">
+        <div className="mr-44 hidden  md:flex gap-2 ">
           <button className="">
             <Image
               src={instagramImage}

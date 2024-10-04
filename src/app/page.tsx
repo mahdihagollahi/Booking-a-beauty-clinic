@@ -38,11 +38,11 @@ function page() {
       <Doctor />
 
       <SampleWork />
-      {/* <Article />
+      <Article />
       <UserComment />
       <FAQ />
       <NoranidNews />
-      <Footer /> */}
+      <Footer />
 
       {/* <SingIn/> */}
       {/* <SingIn2/> */}

@@ -6,7 +6,7 @@ import Link from 'next/link'
 const Article = () => {
   return (
     <Fragment>
-       <div className='bg-white w-full h-[50%] my-20'>
+       <div className='bg-white w-full h-[50%] hidden md:block my-20'>
           <div className=' px-24 py-10 flex justify-between items-center'>
              <p className='font-medium text-xl text-[#393939]'>
              مقالات

@@ -11,10 +11,10 @@ const NoranidNewsLanding = () => {
 
   return (
     <Fragment>
-           <div className=" absolute mr-[66.9%] mt-20 ">
+           <div className=" absolute hidden md:block  mr-[66.9%] mt-20 ">
         <Image src={Flower} width={52} height={58} alt="" />
       </div>
-      <div className="bg-white mt-20">
+      <div className="bg-white mt-20 hidden md:block">
         <div
           className=" ml-24  mt-10 py-20 "
           style={{
