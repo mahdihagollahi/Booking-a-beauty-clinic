@@ -37,8 +37,11 @@ const UserComment = () => {
   };
 
   return (
-    <Fragment>
-      <div className="mt-40 px-20">
+    <div className="hidden md:block">
+      <div className="mt-20 px-20">
+      <div className=" mr-[67%] absolute mt-14">
+        <Image src={Flower} width={52} height={58} alt="" />
+      </div>
         <p className="font-medium text-[#3A3A3A] text-2xl text-right">
           نظرات کاربران
         </p>
@@ -104,7 +107,7 @@ const UserComment = () => {
       <div className=" mr-[27%] absolute -mt-32">
         <Image src={Flower} width={52} height={58} alt="" />
       </div>
-    </Fragment>
+    </div>
   );
 };
 

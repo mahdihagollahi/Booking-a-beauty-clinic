@@ -1,15 +1,15 @@
 import React, { Fragment } from "react";
-
+import TikSwichButton from '@/assent/Img/Article/TikSwichButton.svg'
 function FilterData() {
   return (
     <Fragment>
-      <div className="bg-white w-80 mt-10  mr-10 h-[30%] shadow-md">
+      <div className="bg-white w-80 -mt-[72px] rounded-lg mr-10 h-[30%] shadow">
         <div className="flex flex-col gap-8 px-4 py-4">
           <label className="flex items-center gap-3 cursor-pointer">
             <input
-              type="radio"
-              name="radio-10"
-              className="radio checked:bg-[#DC1E7A]"
+              type="checkbox"
+              className="toggle border-[#E9E9E9] checked:border-[#F5BCD7]  bg-[#DDDDDD] checked:bg-[#DC1E7A]  checked:[--tglbg:#FFF2F8]  hover:bg-[#DC1E7A]"
+              defaultChecked
             />
             <span className="label-text font-medium text-base text-[#393939]">
               تزریقات زیبایی
@@ -17,10 +17,10 @@ function FilterData() {
           </label>
 
           <label className="flex items-center gap-3 cursor-pointer">
-            <input
-              type="radio"
-              name="radio-10"
-              className="radio checked:bg-[#DC1E7A]"
+          <input
+              type="checkbox"
+              className="toggle border-[#E9E9E9] checked:border-[#F5BCD7]  bg-[#DDDDDD] checked:bg-[#DC1E7A]  checked:[--tglbg:#FFF2F8]  hover:bg-[#DC1E7A]"
+              defaultChecked
             />
             <span className="label-text font-medium text-base text-[#393939]">
               مراقبت های پوستی
@@ -28,10 +28,10 @@ function FilterData() {
           </label>
 
           <label className="flex items-center gap-3 cursor-pointer">
-            <input
-              type="radio"
-              name="radio-10"
-              className="radio checked:bg-[#DC1E7A]"
+          <input
+              type="checkbox"
+              className="toggle border-[#E9E9E9] checked:border-[#F5BCD7]  bg-[#DDDDDD] checked:bg-[#DC1E7A]  checked:[--tglbg:#FFF2F8]  hover:bg-[#DC1E7A]"
+              defaultChecked
             />
             <span className="label-text font-medium text-base text-[#393939]">
               لیزر موهای زائد
@@ -39,10 +39,10 @@ function FilterData() {
           </label>
 
           <label className="flex items-center gap-3 cursor-pointer">
-            <input
-              type="radio"
-              name="radio-10"
-              className="radio checked:bg-[#DC1E7A]"
+          <input
+              type="checkbox"
+              className="toggle border-[#E9E9E9] checked:border-[#F5BCD7]  bg-[#DDDDDD] checked:bg-[#DC1E7A]  checked:[--tglbg:#FFF2F8]  hover:bg-[#DC1E7A]"
+              defaultChecked
             />
             <span className="label-text font-medium text-base text-[#393939]">
               انواع کاشت
@@ -55,4 +55,6 @@ function FilterData() {
 }
 
 export default FilterData;
+
+
 

@@ -6,9 +6,10 @@ import Footer from "../Landing/Footer";
 import Paginate from "@/Component/Service/Component/Paginet";
 import ArticleShow from "./Component/ArticleShow";
 import ArticleData from "@/Component/Article/Component/ArticleData";
-import FilterData from "@/Component/Service/Component/FilterData";
+import FilterData from "@/Component/Article/Component/FilterDataToggle";
 import ArticleImage from '@/assent/Img/Article/ArticleImage.svg'
 import Image from "next/image";
+import FilterArticle from "./Component/FilterArticle";
 
 const Article = () => {
 
@@ -44,13 +45,16 @@ const Article = () => {
        alt=""
        />
       </div>
-      <div className="flex  mt-10">
+      <div>
+        <FilterArticle/>
+      </div>
+      <div className="flex  ">
       <div>
           <FilterData />
         </div>
         <div className="grid grid-cols-3 mr-10 mt-10 gap-9 w-[80%]">
           <ArticleShow
-            Data={Data}
+            currentPageData={currentPageData}
             filledHeart={filledHeart}
             handleHeartClick={handleHeartClick}
           />
