@@ -15,7 +15,7 @@
 //   const [hoverImage, setHoverImage] = useState<{ [key: number]: boolean }>({});
 //   const [clickedItems, setClickedItems] = useState<number | null>(null);
 //   const [isModalVisible, setIsModalVisible] = useState<boolean>(false);
-   
+
 //  const pathName = usePathname();
 
 //   const handleMouseEnter = (id: number) => {
@@ -29,8 +29,6 @@
 //   const handelClick = (id: number) => {
 //     setClickedItems(id);
 //   };
-
-  
 
 //   const handleOpenModal = () => {
 //     console.log("Opening modal...");
@@ -78,11 +76,11 @@
 //                     ? " border-r-2 bg-pink-100 border-[#DC1E7A] text-[#DC1E7A] rounded-md"
 //                     : "bg-[#DC1E7A]"
 //                 } hover:bg-[#FCE9F2] hover:border-r-2 hover:text-[#DC1E7A] hover:border-[#DC1E7A] hover:rounded-md `}
-               
+
 //               >
 //                 <Link href={items.link} passHref>
 //                   <div className="flex items-center gap-3  "
-                   
+
 //                   >
 //                     <Image
 //                       src={
@@ -125,8 +123,6 @@
 // };
 
 // export default Navbar;
-
-
 
 "use client";
 import React, { Fragment, useState } from "react";
@@ -248,4 +244,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
