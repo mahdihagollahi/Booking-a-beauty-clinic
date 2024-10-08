@@ -10,6 +10,8 @@ import VisitTheSite from "@/Component/AdminDashboard/Dashboard/VisitTheSite";
 import TotalReservations from "@/Component/AdminDashboard/Dashboard/TotalReservations";
 import SumUsers from "@/Component/AdminDashboard/Dashboard/SumUsers";
 import SumSale from "@/Component/AdminDashboard/Dashboard/SumSale";
+import DoctorShow from "@/Component/AdminDashboard/Dashboard/DoctorShow";
+import SalesChart from "@/Component/AdminDashboard/Dashboard/SalesChart";
 
 const page = () => {
   return (
@@ -19,14 +21,18 @@ const page = () => {
       <div className="absolute mr-72 bottom-[39%]">
       <NumberUserReviews/>
       </div>
-      <div className="flex items-center gap-5 absolute bottom-[64%] mr-[21.5%] ">
+      
+      <div className="flex items-center gap-3 absolute bottom-[64%] mr-[21%] ">
       <VisitTheSite/>
       <TotalReservations/>
       <SumUsers/>
       <SumSale/>
       </div>
-    
+    <DoctorShow/>
+    <SalesChart/>
+    {/* <ReservationChart/> */}
     </Fragment>
+    
   );
 };
 
