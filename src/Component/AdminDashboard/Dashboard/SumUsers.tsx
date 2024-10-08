@@ -6,8 +6,7 @@ const SumUsers = () => {
   return (
     <Fragment>
       <div
-        className="  w-48 h-40 -mt-60 px-2 rounded-xl "
-        style={{
+ className="  w-44 h-[150px] -mt-60 px-2 rounded-xl "        style={{
           backgroundImage: `url(${Background.src})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
@@ -17,8 +16,8 @@ const SumUsers = () => {
           <Image src={UserNumber} width={24} height={24} alt="" />
           <p className="font-medium text-sm text-[#393939]">کاربران</p>
         </div>
-        <p className="font-medium text-sm text-[#393939] mr-32 mt-4">1.889</p>
-        <p className="font-regular mr-36 py-3  text-xs text-[#393939]">نفر</p>
+        <p className="font-medium text-sm text-[#393939] mr-28 mt-4">1.889</p>
+        <p className="font-regular mr-32 py-1  text-xs text-[#393939]">نفر</p>
       </div>
     </Fragment>
   );

@@ -38,6 +38,7 @@ function page() {
       <NoranidNews />
       <Footer />
 
+
       {/* <SingIn/> */}
       {/* <SingIn2/> */}
       {/* <SingIn3/> */}

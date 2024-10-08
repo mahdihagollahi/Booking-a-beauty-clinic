@@ -27,7 +27,7 @@ const NavbarDashboard = () => {
 
   return (
     <Fragment>
-      <div className="mr-20 py-5 my-3 mt-5 w-52 rounded-2xl bg-white shadow-lg ">
+      <div className="mr-20 py-5 h-[100%] my-3 mt-5 w-52 rounded-2xl bg-white shadow-lg ">
         <div className="flex justify-center mb-5">
           <div className="flex items-center gap-2">
             <Image src={Logo} width={30} height={30} alt="" />
