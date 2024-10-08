@@ -1,11 +1,11 @@
 "use client";
 import React, { Fragment, useState } from "react";
-import NavbarData from "./Navbar/NavbarData";
+import NavbarData from "./NavbarData";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Logo from "@/assent/Img/AdminDashboard/Logo.svg";
-const ButtonNavbar = () => {
+const NavbarDashboard = () => {
   const [hoverImage, setHoverImage] = useState<{ [key: number]: boolean }>({});
   const [clickedImage, setClickedImage] = useState<number | null>(null);
   const Data = NavbarData().Navbar;
@@ -27,7 +27,7 @@ const ButtonNavbar = () => {
 
   return (
     <Fragment>
-      <div className="mr-20 py-5 my-3 w-52 rounded-2xl bg-white shadow-lg ">
+      <div className="mr-20 py-5 my-3 mt-5 w-52 rounded-2xl bg-white shadow-lg ">
         <div className="flex justify-center mb-5">
           <div className="flex items-center gap-2">
             <Image src={Logo} width={30} height={30} alt="" />
@@ -82,4 +82,4 @@ const ButtonNavbar = () => {
   );
 };
 
-export default ButtonNavbar;
+export default NavbarDashboard;

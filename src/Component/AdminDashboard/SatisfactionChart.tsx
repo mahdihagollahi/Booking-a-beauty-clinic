@@ -14,7 +14,7 @@ const SatisfactionChart = () => (
           <span>ساینس قلب</span> <span className="text-pink-400">۹۰٪</span>
         </li>
         <li className="flex justify-between">
-          <span>امیر رضایان</span> <span className="text-blue-400">۸۰٪</span>
+          <span>امیر رضایان</span> <span className="text-blue-400">6۰٪</span>
         </li>
         <li className="flex justify-between">
           <span>فیزیوتراپ</span> <span className="text-green-400">۷۰٪</span>
