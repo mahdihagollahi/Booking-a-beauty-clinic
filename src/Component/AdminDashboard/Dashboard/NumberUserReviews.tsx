@@ -47,7 +47,7 @@ const NumberUserReviews = () => {
           />
 
           <Image
-            src={ImageUser3}
+            src={ImageUser4}
             width={20}
             height={20}
             alt=""
