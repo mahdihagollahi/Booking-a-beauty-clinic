@@ -7,6 +7,7 @@ import Paginate from "@/Component/AdminDashboard/Users/Paginate";
 import UserData from "./UserData";
 import Modal from "@/Component/UserDashboard/component/Modal";
 import ModalDeleteUser from "./ModalDeleteUser";
+import Link from "next/link";
 const UserTable = () => {
   const Data = UserData().User;
   const [isModalVisible, setIsModalVisible] = useState<boolean>(false);
@@ -97,16 +98,17 @@ const UserTable = () => {
                       <td className="w-1/12 py-2 pr-2 ">
                         <div className="flex items-center gap-2">
                           <button className="w-6 h-6">
-                            <Image
-                              src={EditIcon}
-                              width={24}
-                              height={24}
-                              alt="ویرایش"
-                            />
+                            <Link href="/AdminDashboard/Users/Edit">
+                              <Image
+                                src={EditIcon}
+                                width={24}
+                                height={24}
+                                alt="ویرایش"
+                              />
+                            </Link>
                           </button>
-                          <button className="w-6 h-6"
-                          onClick={handleOpenModal}
-                          >
+
+                          <button className="w-6 h-6" onClick={handleOpenModal}>
                             <Image
                               src={TrashIcon}
                               width={24}
