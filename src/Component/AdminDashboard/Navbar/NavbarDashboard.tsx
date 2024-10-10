@@ -29,10 +29,13 @@ const NavbarDashboard = () => {
     <Fragment>
       <div className="mr-20 py-5 h-[120%] my-3 mt-5 w-52 rounded-2xl bg-white shadow ">
         <div className="flex justify-center mb-5">
-          <div className="flex items-center gap-2">
+          <Link href='/AdminDashboard/Dashboard'>
+         
+          <div className="flex items-center gap-2 ">
             <Image src={Logo} width={30} height={30} alt="" />
             <p className="font-bold text-xl text-[#DC1E7A]">نورانید</p>
           </div>
+          </Link>
         </div>
 
         <div className=" flex flex-col gap-8">
