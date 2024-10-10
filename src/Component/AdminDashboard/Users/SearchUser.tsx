@@ -1,5 +1,5 @@
 import React from "react";
-
+import Link from "next/link";
 const SearchUser = () => {
   return (
     <>
@@ -17,7 +17,7 @@ const SearchUser = () => {
           </div>
           <div>
             <button className="border-[#DC1E7A] whitespace-nowrap border-solid border-2 rounded-md text-[#DC1E7A] px-4 py-1">
-              لیست نقش ها
+              <Link href="/AdminDashboard/Users/Charcter">لیست نقش ها</Link>
             </button>
           </div>
         </div>
