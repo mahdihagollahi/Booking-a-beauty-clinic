@@ -16,7 +16,7 @@ const TotalReservations = () => {
         <p className="font-medium text-sm text-[#393939] mr-28 mt-4">
         1.889
         </p>
-        <p className="font-regular mr-[135px] py-1  text-xs text-[#393939]">
+        <p className="font-regular mr-[126px] py-1  text-xs text-[#393939]">
         رزرو
         </p>
       </div>
