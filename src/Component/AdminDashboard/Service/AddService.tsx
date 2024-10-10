@@ -1,0 +1,20 @@
+import React, { Fragment } from "react";
+import WelcomePanel from "@/Component/AdminDashboard/Dashboard/HeaderDashboard";
+import NavbarDashboard from "@/Component/AdminDashboard/Navbar/NavbarDashboard";
+const AddService = () => {
+  return (
+    <Fragment>
+      <WelcomePanel />
+
+      <div>
+        <NavbarDashboard />
+      </div>
+
+      <div className="w-[73.5%] h-[100%] shadow  rounded-2xl py-6 px-4  mr-80 -mt-[57%] bg-white ml-72">
+        <p className="font-medium text-xl text-[#393939]">کاربران</p>
+      </div>
+    </Fragment>
+  );
+};
+
+export default AddService;
