@@ -36,7 +36,7 @@ function NavbarData() {
         src: user,
         hoverSrc: userHover,
         text: 'کاربران',
-        link: "",
+        link: "/AdminDashboard/Users",
       },
       {
         id: 3,
