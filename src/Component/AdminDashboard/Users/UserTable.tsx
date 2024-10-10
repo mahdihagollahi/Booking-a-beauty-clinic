@@ -5,8 +5,12 @@ import TrashIcon from "@/assent/Img/AdminDashboard/trashIcon.svg";
 import EditIcon from "@/assent/Img/AdminDashboard/editIcon.svg";
 import Paginate from "@/Component/AdminDashboard/Users/Paginate";
 import UserData from "./UserData";
+import Modal from "@/Component/UserDashboard/component/Modal";
+import ModalDeleteUser from "./ModalDeleteUser";
 const UserTable = () => {
   const Data = UserData().User;
+  const [isModalVisible, setIsModalVisible] = useState<boolean>(false);
+
   const [currentPage, setCurrentPage] = useState<number>(1);
   const itemsPerPage = 7;
 
@@ -17,6 +21,14 @@ const UserTable = () => {
   const pageClick = (data: { selected: number }) => {
     setCurrentPage(data.selected + 1);
   };
+
+  const handleOpenModal = () => {
+    setIsModalVisible(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalVisible(false);
+  };
   return (
     <Fragment>
       <div>
@@ -26,22 +38,37 @@ const UserTable = () => {
               <thead>
                 <tr className="bg-[#DC1E7A] text-white font-regular ">
                   <th className="w-[1%] px-3 py-2">ردیف</th>
-                  <th className="w-[20%] px-2 py-2 whitespace-nowrap">نام و نام خانوادگی</th>
-                  <th className="w-[20%] px-4 py-2 whitespace-nowrap">شماره تماس</th>
-                  <th className="w-[16%] px-4 py-2 whitespace-nowrap">مجموع رزرو ها</th>
+                  <th className="w-[20%] px-2 py-2 whitespace-nowrap">
+                    نام و نام خانوادگی
+                  </th>
+                  <th className="w-[20%] px-4 py-2 whitespace-nowrap">
+                    شماره تماس
+                  </th>
+                  <th className="w-[16%] px-4 py-2 whitespace-nowrap">
+                    مجموع رزرو ها
+                  </th>
 
-                  <th className="w-[25%] px-[15%] py-2 whitespace-nowrap">قیمت کل رزروها</th>
-                  <th className="w-[16%] px-4 py-2 whitespace-nowrap">نقش ها</th>
-                  <th className="w-[13%] px-4 py-2 whitespace-nowrap">عملیات</th>
+                  <th className="w-[25%] px-[15%] py-2 whitespace-nowrap">
+                    قیمت کل رزروها
+                  </th>
+                  <th className="w-[16%] px-4 py-2 whitespace-nowrap">
+                    نقش ها
+                  </th>
+                  <th className="w-[13%] px-4 py-2 whitespace-nowrap">
+                    عملیات
+                  </th>
                 </tr>
               </thead>
             </table>
             <div className="mt-4">
               <table className="w-full table-auto border-collapse">
                 <tbody className="divide-y divide-gray-200 space-y-4">
-                  {currentPageData.map((user ,index) => (
-                    <tr key={user.id}
-                    className={index % 2 === 0 ? "bg-[#FFF2F8]" : "bg-[#FFFFFF]"}
+                  {currentPageData.map((user, index) => (
+                    <tr
+                      key={user.id}
+                      className={
+                        index % 2 === 0 ? "bg-[#FFF2F8]" : "bg-[#FFFFFF]"
+                      }
                     >
                       <td className="w-1/12 py-[22.5px] px-4">{user.id}</td>
                       <td className="w-[14%] whitespace-nowrap py-2 px-4 ">
@@ -60,34 +87,33 @@ const UserTable = () => {
 
                       <td className="w-[20%]  py-2  px-12 whitespace-nowrap">
                         {user.SumPrice.toLocaleString()}
-                        {''}        تومان
+                        {""} تومان
                       </td>
 
                       <td className="w-[10%]  py-2  px-14 whitespace-nowrap">
                         {user.Carcter}
-                       
                       </td>
 
                       <td className="w-1/12 py-2 pr-2 ">
-                      <div className="flex items-center gap-2">
-
-                   
-                        <button className="w-6 h-6">
-                          <Image
-                            src={EditIcon}
-                            width={24}
-                            height={24}
-                            alt="ویرایش"
-                          />
-                        </button>
-                        <button className="w-6 h-6">
-                          <Image
-                            src={TrashIcon}
-                            width={24}
-                            height={24}
-                            alt="حذف"
-                          />
-                        </button>
+                        <div className="flex items-center gap-2">
+                          <button className="w-6 h-6">
+                            <Image
+                              src={EditIcon}
+                              width={24}
+                              height={24}
+                              alt="ویرایش"
+                            />
+                          </button>
+                          <button className="w-6 h-6"
+                          onClick={handleOpenModal}
+                          >
+                            <Image
+                              src={TrashIcon}
+                              width={24}
+                              height={24}
+                              alt="حذف"
+                            />
+                          </button>
                         </div>
                       </td>
                     </tr>
@@ -97,11 +123,16 @@ const UserTable = () => {
             </div>
           </div>
         </div>
+
         <Paginate
           currentPageData={currentPageData}
           pageCount={pageCount}
           pageClick={pageClick}
         />
+
+        <Modal isVisible={isModalVisible}>
+          <ModalDeleteUser handleCloseModal={handleCloseModal} />
+        </Modal>
       </div>
     </Fragment>
   );

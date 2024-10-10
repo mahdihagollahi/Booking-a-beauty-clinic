@@ -31,8 +31,8 @@ function SalesChart() {
           <h3 style={{ textAlign: "center" }}>آمار فروش هفتگی</h3>
           <defs>
             <linearGradient id="colorSales" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="5%" stopColor="#ff69b4" stopOpacity={0.8} />
-              <stop offset="95%" stopColor="#ff69b4" stopOpacity={0} />
+              <stop offset="5%" stopColor="#FFFFFF99" stopOpacity={0.8} />
+              <stop offset="95%" stopColor="#CA42A399" stopOpacity={1} />
             </linearGradient>
           </defs>
           <XAxis dataKey="name" />
