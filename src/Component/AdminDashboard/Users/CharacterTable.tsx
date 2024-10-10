@@ -61,18 +61,18 @@ const CharacterTable = () => {
                           index % 2 === 0 ? "bg-[#FFF2F8]" : "bg-[#FFFFFF]"
                         }
                       >
-                        <td className="w-1/12 py-[22.5px] px-4">{user.id}</td>
-                        <td className="w-[14%] whitespace-nowrap py-2 px-4 ">
+                        <td className="w-1/12 py-[22.5px] px-8">{user.id}</td>
+                        <td className="w-[14%] whitespace-nowrap py-2 pr-12 ">
                           <div className=" ">
                             {`${user.firstName} ${user.lastName}`}
                           </div>
                         </td>
 
-                        <td className="w-20 py-2 pr-14 pl-10">
+                        <td className="w-20 py-2 pr-[18%] ">
                           {user.phoneNumber.toLocaleString()}
                         </td>
 
-                        <td className="w-[10%]  py-2  px-14 whitespace-nowrap">
+                        <td className="w-[22%]  py-2   whitespace-nowrap">
                           {user.Carcter}
                         </td>
 
