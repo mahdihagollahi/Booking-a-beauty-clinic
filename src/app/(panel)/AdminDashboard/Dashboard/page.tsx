@@ -30,7 +30,9 @@ const page = () => {
       </div>
     <DoctorShow/>
     <SalesChart/>
-    {/* <ReservationChart/> */}
+    <div className=" mr-72 -mt-[35%] absolute">
+    <ReservationChart/>
+    </div>
     </Fragment>
     
   );
