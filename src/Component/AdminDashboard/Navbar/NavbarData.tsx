@@ -29,7 +29,7 @@ function NavbarData() {
         src: dashbord,
         hoverSrc: dashbordHover,
         text: 'داشبورد',
-        link: "/AdminDashboarad/Dashboard",
+        link: "/AdminDashboard/Dashboard",
       },
       {
         id: 2,

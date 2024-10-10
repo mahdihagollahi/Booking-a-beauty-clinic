@@ -22,7 +22,7 @@ const data = [
 
 function SalesChart() {
   return (
-    <div className="bg-white w-[500px] h-64 rounded-[15px] shadow-md p-2 absolute mr-[36.5%] md:-mt-[44%]">
+    <div className="bg-white w-[500px] h-64 rounded-[15px] shadow-md p-2 absolute mr-[37%] md:-mt-[56%]">
       <ResponsiveContainer width="100%" height="100%">
         <AreaChart
           data={data}

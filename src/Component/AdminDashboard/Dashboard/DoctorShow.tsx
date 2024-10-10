@@ -87,7 +87,7 @@
 
 "use client";
 
-import React, { Fragment, PureComponent } from "react";
+import React, { Fragment } from "react";
 import Background from "@/assent/Img/AdminDashboard/ShowDoctorFrame.svg";
 import Image from "next/image";
 import MoreDoctor from "@/assent/Img/AdminDashboard/MoreShowDoctor.svg";
@@ -100,7 +100,7 @@ const DoctorShow = () => {
 
   return (
     <Fragment>
-      <div className="bg-white  absolute -mt-[57%] right-[73%] shadow-md rounded-[40px]">
+      <div className="bg-white  absolute -mt-[68.5%] h-[120%] right-[73%] shadow-md rounded-[40px]">
         <div
           className="w-full h-80 rounded-[40px]"
           style={{
