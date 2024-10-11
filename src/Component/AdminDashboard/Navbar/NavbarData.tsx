@@ -50,7 +50,7 @@ function NavbarData() {
         src: docter,
         hoverSrc: docterHover,
         text: 'پزشکان',
-        link: "",
+        link: "/AdminDashboard/Doctor",
 
       },
       {
