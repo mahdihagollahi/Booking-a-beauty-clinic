@@ -7,7 +7,7 @@ import Image from "next/image";
 import AddPhoto from "./AddPhoto";
 import RuleImage from "@/assent/Img/AdminDashboard/RuleAddPhoto.svg";
 import AddServiceImage from "@/assent/Img/AdminDashboard/AddService.svg";
-const AddService: React.FC = () => {
+const EditService: React.FC = () => {
   return (
     <Fragment>
       <WelcomePanel />
@@ -35,7 +35,7 @@ const AddService: React.FC = () => {
             </p>
             <input
               type="text"
-              className="w-[457px] p-4 mb-4 border border-gray-300 rounded-lg mt-1"
+              className="w-[457px] p-4 mb-4 border border-[#00AEFF] text-[#00AEFF] rounded-lg mt-1"
             />
           </div>
           <div>
@@ -44,7 +44,7 @@ const AddService: React.FC = () => {
             </p>
             <input
               type="text"
-              className="w-[457px] p-4 mb-4 border border-gray-300 rounded-lg mt-1"
+              className="w-[457px] p-4 mb-4 border border-[#00AEFF] text-[#00AEFF] rounded-lg mt-1"
             />
           </div>
         </div>
@@ -59,7 +59,7 @@ const AddService: React.FC = () => {
           </div>
         </div>
 
-        <input className="w-[1032px] pb-[136px] p-2 mb-4 border border-gray-300 rounded-lg mt-[5px]" />
+        <input className="w-[1032px] pb-[136px] p-2 mb-4 border border-[#00AEFF] text-[#00AEFF] rounded-lg mt-[5px]" />
 
         <div className="flex items-center justify-between mt-1">
           <div>
@@ -68,25 +68,25 @@ const AddService: React.FC = () => {
             </p>
             <input
               type="text"
-              className="w-[457px] p-4 mb-4 border border-gray-300 rounded-lg "
+              className="w-[457px] p-4 mb-4 border border-[#00AEFF] text-[#00AEFF] rounded-lg "
             />
           </div>
           <div>
             <p className=" mr-2 text-[#2B2B2B] font-medium text-base">قیمت :</p>
             <input
               type="text"
-              className="w-[457px] p-4 mb-4 border border-gray-300 rounded-lg "
+              className="w-[457px] p-4 mb-4 border border-[#00AEFF] text-[#00AEFF] rounded-lg "
             />
           </div>
         </div>
         <p className=" mr-2 text-[#2B2B2B] font-medium text-base">رده سنی :</p>
         <input
           type="text"
-          className="w-[457px] p-4 mb-4 border border-gray-300 rounded-lg mt-1"
+          className="w-[457px] p-4 mb-4 border border-[#00AEFF] text-[#00AEFF] rounded-lg mt-1"
         />
       </div>
     </Fragment>
   );
 };
 
-export default AddService;
+export default EditService;
