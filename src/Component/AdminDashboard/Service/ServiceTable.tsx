@@ -7,7 +7,7 @@ import ServiceData from "./ServiceData";
 import Link from "next/link";
 const ServiceTable = () => {
   const Data = ServiceData().User;
-  const [isModalVisible, setIsModalVisible] = useState<boolean>(false);
+  
 
   const [currentPage, setCurrentPage] = useState<number>(1);
   const itemsPerPage = 5;
@@ -76,7 +76,7 @@ const ServiceTable = () => {
                         </div>
                       </td>
 
-                      <td className="w-20 py-2 pr-14 pl-10">
+                      <td className="w-20 py-2 whitespace-nowrap pr-14 pl-10">
                         {user.Setion.toLocaleString()} جلسه
                       </td>
 
@@ -91,7 +91,7 @@ const ServiceTable = () => {
 
                       <td className="w-1/12 py-2 pr-2 ">
                         <button className="w-6 h-6">
-                          <Link href="/AdminDashboard/Service/AddService">
+                          <Link href="/AdminDashboard/Service/EditService">
                             <Image
                               src={EditIcon}
                               width={24}
