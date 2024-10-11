@@ -91,7 +91,7 @@ const ServiceTable = () => {
 
                       <td className="w-1/12 py-2 pr-2 ">
                         <button className="w-6 h-6">
-                          <Link href="/AdminDashboard/Users/Edit">
+                          <Link href="/AdminDashboard/Service/AddService">
                             <Image
                               src={EditIcon}
                               width={24}
