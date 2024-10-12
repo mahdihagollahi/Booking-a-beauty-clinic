@@ -61,7 +61,7 @@ const ArticleTable = () => {
                       <input type="checkbox" className="  toggle toggle-success" defaultChecked />
                       </td>
                       <td className="w-1/12 py-[22.5px] pr-20">{user.id}</td>
-                      <td className="w-40 pr-20 py-[22.5px] ">
+                      <td className="w-40 pr-[75px] py-[22.5px] ">
                       <Image
                       src={user.src}
                       width={54}
