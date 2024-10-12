@@ -86,7 +86,7 @@ function NavbarData() {
         src: question,
         hoverSrc: questionHover,
         text: 'سوالات متداول',
-        link: "",
+        link: "/AdminDashboard/FAQ",
       },
       {
         id: 10,
