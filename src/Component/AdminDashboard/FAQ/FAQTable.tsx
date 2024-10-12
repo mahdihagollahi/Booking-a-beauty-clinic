@@ -21,11 +21,11 @@ const FAQTable = () => {
   };
   return (
     <Fragment>
-      <div className="mt-5">
+      <div className="mt-16">
         {Data.map((items) => (
           <div
             key={items.id}
-            className="bg-white mt-2 p-4 w-[1030px] h-[111px] shadow rounded-lg"
+            className="bg-white mt-2 p-4 w-[1030px] h-[109px] shadow rounded-lg"
           >
             <div className="flex justify-between">
               <div>
@@ -36,9 +36,9 @@ const FAQTable = () => {
                   جواب : {items.answer}
                 </p>
               </div>
-              <div>
+              <div className="flex gap-4">
                 <button className="w-6 h-6">
-                  <Link href="/AdminDashboard/Doctor/EditDoctor">
+                  <Link href="/AdminDashboard/FAQ/EditFAQ">
                     <Image src={EditIcon} width={24} height={24} alt="ویرایش" />
                   </Link>
                 </button>

@@ -15,12 +15,12 @@ const FAQ = () => {
       </div>
 
       <div className="w-[73.5%] h-[100%] shadow  rounded-2xl py-6 px-4  mr-80 -mt-[57%] bg-white ml-72">
-        <div className="flex gap-[80%] items-center">
-          <p className="font-medium text-xl text-[#393939]">خدمات</p>
-          <Link href="/AdminDashboard/Service/AddService">
+        <div className="flex gap-[75%] items-center">
+          <p className="font-medium text-xl whitespace-nowrap text-[#393939]">سوالات متداول</p>
+          <Link href="/AdminDashboard/FAQ/AddFAQ">
             <button className="bg-[#5DD9C1] text-white flex items-center gap-2 px-4 py-2 w-36 h-10 rounded-lg">
-              <p className="font-medium text-base whitespace-nowrap">
-                افزودن خدمات
+              <p className="font-medium text-[10px] whitespace-nowrap">
+                افزودن سوالات متداول
               </p>
               <Image src={AddImage} width={24} height={24} alt="" />
             </button>
