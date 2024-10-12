@@ -58,7 +58,7 @@ function NavbarData() {
         src: work,
         hoverSrc: workHover,
         text: 'نمونه کار ها',
-        link: "",
+        link: "/AdminDashboard/WorkExample",
       },
       {
         id: 6,
