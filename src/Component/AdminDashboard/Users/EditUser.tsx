@@ -2,10 +2,23 @@
 import React, { Fragment, useState } from "react";
 import WelcomePanel from "@/Component/AdminDashboard/Dashboard/HeaderDashboard";
 import NavbarDashboard from "@/Component/AdminDashboard/Navbar/NavbarDashboard";
+import Modal from "@/Component/UserDashboard/component/Modal";
+import AcceptChangeModal from "@/Component/AdminDashboard/Doctor/AcceptChangeModal";
+
 const EditUser = () => {
+  const [isModalVisible, setIsModalVisible] = useState<boolean>(false);
+
+ 
   const [selectedOption, setSelectedOption] = useState("ادمین");
   const [isOpen, setIsOpen] = useState(false);
 
+  const handleOpenModal = () => {
+    setIsModalVisible(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalVisible(false);
+  };
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
@@ -100,10 +113,15 @@ const EditUser = () => {
             </div>
           </div>
         </div>
-        <button className="bg-[#DC1E7A] mt-40 mr-[86%] whitespace-nowrap w-36 py-2 px-4 rounded-md text-white font-medium text-sm">
+        <button 
+          onClick={handleOpenModal}
+        className="bg-[#DC1E7A] mt-40 mr-[86%] whitespace-nowrap w-36 py-2 px-4 rounded-md text-white font-medium text-sm">
         اعمال تغیراتت
         </button>
       </div>
+      <Modal isVisible={isModalVisible}>
+        <AcceptChangeModal handleCloseModal={handleCloseModal} />
+      </Modal>
     </Fragment>
   );
 };

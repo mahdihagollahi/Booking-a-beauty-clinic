@@ -35,8 +35,8 @@ function Navbar() {
         <div className="flex justify-between items-center w-full md:hidden">
           <Link href="/">
             <div className="flex items-center cursor-pointer gap-3">
-              <Image src={IconImage} width={30} height={30} alt="logo" />
-              <h2 className="font-bold text-xl text-[#DC1E7A]">نورانید</h2>
+              <Image src={IconImage} width={30} height={30} alt="logo" className="cursor-pointer" />
+              <h2 className="font-bold text-xl cursor-pointer text-[#DC1E7A]">نورانید</h2>
             </div>
           </Link>
 
