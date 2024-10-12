@@ -93,7 +93,7 @@ function NavbarData() {
         src: Article,
         hoverSrc: ArticleHover,
         text: 'مقالات',
-        link: "",
+        link: "/AdminDashboard/Article",
       },
 
       {
