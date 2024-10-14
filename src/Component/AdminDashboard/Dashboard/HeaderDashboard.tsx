@@ -5,6 +5,7 @@ import out from "@/assent/Img/AdminDashboard/logout.svg";
 import CommentOutline from "@/assent/Img/AdminDashboard/CommentOutline.svg";
 import Clock from "@/assent/Img/AdminDashboard/clock.svg";
 import Calnder from "@/assent/Img/AdminDashboard/Calnder.svg";
+import Link from "next/link";
 
 const WelcomePanel = () => {
   const [currentDateTime, setCurrentDateTime] = useState(new Date());
@@ -22,7 +23,10 @@ const WelcomePanel = () => {
       <div className="w-[90%] bg-white mr-20  my-3 h-16 p-3 rounded-lg flex flex-row items-center justify-between shadow-md ">
         <div className="flex flex-col mt-1 gap-2">
           <span>
-            به پنل<span className="text-[#DC1E7A]"> نورانید</span> خوش آمدید
+            به پنل<span  className="text-[#DC1E7A]"><Link href='/AdminDashboard/Dashboard'>
+            {" "}
+            نورانید
+            </Link> </span> خوش آمدید
           </span>
           <div className="flex justify-between">
             <div className="flex items-center gap-2">
@@ -46,7 +50,9 @@ const WelcomePanel = () => {
             <Image width={24} height={24} src={CommentOutline} alt="" />
           </button>
           <button>
+            <Link href='/AdminDashboard/Login'>
             <Image width={24} height={24} src={out} alt="" />
+            </Link>
           </button>
         </div>
       </div>

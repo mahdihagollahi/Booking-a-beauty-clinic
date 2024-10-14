@@ -37,7 +37,7 @@ const SetTimeAndDate = () => {
   };
 
   const daysInMonth = moment.jDaysInMonth(year, month);
-  const firstDay = moment(`${year}/${month + 1}/01`, "jYYYY/jM/jD").weekday(); // Starting day of the week
+  const firstDay = moment(`${year}/${month + 1}/01`, "jYYYY/jM/jD").weekday(); 
 
   const handleDayClick = (day) => {
     setSelectedDate(day);

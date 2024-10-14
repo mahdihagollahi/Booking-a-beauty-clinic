@@ -1,13 +1,24 @@
 "use client";
 
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import WelcomePanel from "@/Component/AdminDashboard/Dashboard/HeaderDashboard";
 import NavbarDashboard from "@/Component/AdminDashboard/Navbar/NavbarDashboard";
 import Image from "next/image";
 import AddPhoto from "./AddPhoto";
 import RuleImage from "@/assent/Img/AdminDashboard/RuleAddPhoto.svg";
 import AddServiceImage from "@/assent/Img/AdminDashboard/AddService.svg";
+import Modal from "@/Component/UserDashboard/component/Modal";
+import AcceptChangeModal from "@/Component/AdminDashboard/Doctor/AcceptChangeModal";
 const EditService: React.FC = () => {
+  const [isModalVisible, setIsModalVisible] = useState<boolean>(false);
+
+  const handleOpenModal = () => {
+    setIsModalVisible(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalVisible(false);
+  };
   return (
     <Fragment>
       <WelcomePanel />
@@ -15,8 +26,9 @@ const EditService: React.FC = () => {
         <NavbarDashboard />
       </div>
 
-      <div className="w-[73.5%] h-[100%] shadow rounded-2xl py-6 px-4 mr-80 -mt-[57%] bg-white ml-72">
+      <div className="w-[73.5%] h-[100%] shadow rounded-2xl py-6 px-4 mr-80 overflow-y-scroll -mt-[57%] bg-white ml-72">
         <p className="font-medium text-xl text-[#393939]">خدمات</p>
+
         <div className="flex gap-[40%]">
           <div>
             <p className="font-medium text-lg text-[#393939] mt-6">
@@ -35,7 +47,7 @@ const EditService: React.FC = () => {
             </p>
             <input
               type="text"
-              className="w-[457px] p-4 mb-4 border border-[#00AEFF] text-[#00AEFF] rounded-lg mt-1"
+              className="w-[457px] p-4 mb-4  border border-[#00AEFF] rounded-lg mt-1"
             />
           </div>
           <div>
@@ -44,7 +56,7 @@ const EditService: React.FC = () => {
             </p>
             <input
               type="text"
-              className="w-[457px] p-4 mb-4 border border-[#00AEFF] text-[#00AEFF] rounded-lg mt-1"
+              className="w-[457px] p-4 mb-4 border border-[#00AEFF] text-[] rounded-lg mt-1"
             />
           </div>
         </div>
@@ -59,7 +71,7 @@ const EditService: React.FC = () => {
           </div>
         </div>
 
-        <input className="w-[1032px] pb-[136px] p-2 mb-4 border border-[#00AEFF] text-[#00AEFF] rounded-lg mt-[5px]" />
+        <input className="w-[1032px] pb-[136px] p-2 mb-4 border border-[#00AEFF] text-[] rounded-lg mt-[5px]" />
 
         <div className="flex items-center justify-between mt-1">
           <div>
@@ -84,7 +96,101 @@ const EditService: React.FC = () => {
           type="text"
           className="w-[457px] p-4 mb-4 border border-[#00AEFF] text-[#00AEFF] rounded-lg mt-1"
         />
+
+        <div className="flex items-center justify-between mt-2">
+          <div>
+            <p className=" mr-2 text-[#2B2B2B] font-medium text-base">
+              چرا این خدمات در کلینیک نورانید:
+            </p>
+            <input
+              type="text"
+              className="w-[457px] p-4 mb-4 border border-[#00AEFF] text-[#00AEFF] rounded-lg mt-1"
+            />
+          </div>
+          <div>
+            <p className=" mr-2 text-[#2B2B2B] font-medium text-base">
+              چرا این خدمات در کلینیک نورانید:
+            </p>
+            <input
+              type="text"
+              className="w-[457px] p-4 mb-4 border border-[#00AEFF] text-[#00AEFF] rounded-lg mt-1"
+            />
+          </div>
+        </div>
+
+        <div className="flex items-center justify-between mt-4">
+          <div>
+            <p className=" mr-2 text-[#2B2B2B] font-medium text-base">
+              چرا این خدمات در کلینیک نورانید:
+            </p>
+            <input
+              type="text"
+              className="w-[457px] p-4 mb-4 border border-[#00AEFF] text-[#00AEFF] rounded-lg mt-1"
+            />
+          </div>
+          <div>
+            <p className=" mr-2 text-[#2B2B2B] font-medium text-base">
+              چرا این خدمات در کلینیک نورانید:
+            </p>
+            <input
+              type="text"
+              className="w-[457px] p-4 mb-4 border border-[#00AEFF] text-[#00AEFF] rounded-lg mt-1"
+            />
+          </div>
+        </div>
+        <p className=" mr-2 text-[#2B2B2B] font-medium text-base">
+          عنوان پارگراف اول:
+        </p>
+        <input
+          type="text"
+          className="w-[457px] p-4 mb-4 border border-[#00AEFF] text-[]#00AEFF rounded-lg mt-1"
+        />
+
+        <div className="flex items-center  justify-between">
+          <div>
+            <p className=" mr-2 text-[#2B2B2B] font-medium text-base">
+              پارگراف اول:
+            </p>
+          </div>
+          <div>
+            <Image src={AddServiceImage} width={24} height={24} alt="" />
+          </div>
+        </div>
+
+        <input className="w-[1032px] pb-[136px] p-2 mb-4 border border-[#00AEFF] text-[#00AEFF] rounded-lg mt-[5px]" />
+
+        <p className=" mr-2 text-[#2B2B2B] font-medium text-base">
+          عنوان پارگراف دوم:
+        </p>
+        <input
+          type="text"
+          className="w-[457px] p-4 mb-4 border border-[#00AEFF] text-[#00AEFF] rounded-lg mt-1"
+        />
+
+        <div className="flex items-center  justify-between">
+          <div>
+            <p className=" mr-2 text-[#2B2B2B] font-medium text-base">
+              پارگراف دوم:
+            </p>
+          </div>
+          <div>
+            <Image src={AddServiceImage} width={24} height={24} alt="" />
+          </div>
+        </div>
+
+        <input className="w-[1032px] pb-[136px] p-2 mb-4 border border-[#00AEFF] text-[#00AEFF] rounded-lg mt-[5px]" />
+
+        <button
+          onClick={handleOpenModal}
+          className="text-white bg-[#DC1E7A] w-36 h-10 py-2 px-4 font-medium mt-5 rounded-lg mr-[86%] text-base"
+        >
+          اعمال تغییرات
+        </button>
       </div>
+
+      <Modal isVisible={isModalVisible}>
+        <AcceptChangeModal handleCloseModal={handleCloseModal} />
+      </Modal>
     </Fragment>
   );
 };

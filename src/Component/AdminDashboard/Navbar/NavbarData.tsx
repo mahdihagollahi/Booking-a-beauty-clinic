@@ -72,7 +72,7 @@ function NavbarData() {
         src: Report,
         hoverSrc: ReportHover,
         text: 'گزارشات',
-        link: "",
+        link: "/AdminDashboard/Reports",
       },
       {
         id: 8,

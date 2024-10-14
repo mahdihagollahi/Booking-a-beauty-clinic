@@ -102,7 +102,7 @@ const DoctorShow = () => {
     <Fragment>
       <div className="bg-white  absolute -mt-[68.5%] h-[120%] right-[73%] shadow-md rounded-[40px]">
         <div
-          className="w-full h-80 rounded-[40px]"
+          className="w-full h-[360px] rounded-[40px]"
           style={{
             backgroundImage: `url(${Background.src})`,
             backgroundRepeat: "no-repeat",
@@ -115,14 +115,14 @@ const DoctorShow = () => {
               width={84}
               height={84}
               alt=""
-              className="pt-32 mr-28"
+              className="md:pt-[140px] md:mr-[120px]"
             />
             <p className=" mr-[32%] mt-3">دکتر {Data[0].name}</p>
             <p className=" mr-[27%] mt-1 ">{Data[0].Work}</p>
           </div>
         </div>
 
-        <div className="-mt-10">
+        <button className="-mt-10">
           <Image
             src={MoreDoctor}
             width={28}
@@ -133,7 +133,7 @@ const DoctorShow = () => {
           <p className="text-[#8F8F8F] mr-56 mt-4 text-xs font-regular whitespace-nowrap">
             مشاهده بیشتر
           </p>
-        </div>
+        </button>
 
         <div>
           <p className="font-medium pr-4 text-sm text-[#393939]">

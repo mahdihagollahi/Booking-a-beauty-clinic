@@ -14,7 +14,7 @@ const DoctorTable = () => {
   const [isModalVisible, setIsModalVisible] = useState<boolean>(false);
 
   const [currentPage, setCurrentPage] = useState<number>(1);
-  const itemsPerPage = 5;
+  const itemsPerPage = 8;
 
   const offset = (currentPage - 1) * itemsPerPage;
   const currentPageData = Data.slice(offset, offset + itemsPerPage);
@@ -68,8 +68,8 @@ const DoctorTable = () => {
                         index % 2 === 0 ? "bg-[#FFF2F8]" : "bg-[#FFFFFF]"
                       }
                     >
-                      <td className="w-1/12 py-[22.5px] px-10">{user.id}</td>
-                      <td className="w-[10%] pr-[70px] py-[22.5px] ">
+                      <td className="w-1/12 py-[4.5px] px-10">{user.id}</td>
+                      <td className="w-[10%] pr-[70px] py-[4.5px] ">
                         <Image
                           src={user.src}
                           width={54}
