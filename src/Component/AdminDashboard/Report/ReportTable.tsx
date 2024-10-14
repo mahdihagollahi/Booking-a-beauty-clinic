@@ -73,7 +73,7 @@ const ReportTable = () => {
                       </td>
 
                       <td className="w-[20%] pr-16 py-2">
-                        <div className="flex items-center gap-1">
+                        <button className="flex items-center gap-1">
                           <div>
                             <Image
                               src={IconDownload}
@@ -87,7 +87,7 @@ const ReportTable = () => {
                               خروجی اکسل
                             </p>
                           </div>
-                        </div>
+                        </button>
                       </td>
                     </tr>
                   ))}
