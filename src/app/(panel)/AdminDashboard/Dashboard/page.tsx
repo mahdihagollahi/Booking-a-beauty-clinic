@@ -19,22 +19,21 @@ const page = () => {
       <WelcomePanel />
       <NavbarDashboard />
       <div className="absolute mr-72 bottom-[39%]">
-      <NumberUserReviews/>
+        <NumberUserReviews />
       </div>
-      
+
       <div className="flex items-center gap-3 absolute bottom-[64%] mr-[21%] ">
-      <VisitTheSite/>
-      <TotalReservations/>
-      <SumUsers/>
-      <SumSale/>
+        <VisitTheSite />
+        <TotalReservations />
+        <SumUsers />
+        <SumSale />
       </div>
-    <DoctorShow/>
-    <SalesChart/>
-    <div className=" mr-72 -mt-[35%] absolute">
-    <ReservationChart/>
-    </div>
+      <DoctorShow />
+      <SalesChart />
+      <div className=" mr-72 -mt-[35%] absolute">
+        <ReservationChart />
+      </div>
     </Fragment>
-    
   );
 };
 

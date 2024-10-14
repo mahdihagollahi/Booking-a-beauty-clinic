@@ -10,7 +10,7 @@ const ServiceTable = () => {
   
 
   const [currentPage, setCurrentPage] = useState<number>(1);
-  const itemsPerPage = 5;
+  const itemsPerPage = 8;
 
   const offset = (currentPage - 1) * itemsPerPage;
   const currentPageData = Data.slice(offset, offset + itemsPerPage);
@@ -57,11 +57,11 @@ const ServiceTable = () => {
                         index % 2 === 0 ? "bg-[#FFF2F8]" : "bg-[#FFFFFF]"
                       }
                     >
-                      <td className="w-1/12 py-[22.5px] pr-8">
+                      <td className="w-1/12 py-[4.5px] pr-8">
                       <input type="checkbox" className="  toggle toggle-success" defaultChecked />
                       </td>
-                      <td className="w-1/12 py-[22.5px] px-32">{user.id}</td>
-                      <td className="w-1/12 pl-8 py-[22.5px] ">
+                      <td className="w-1/12 py-[4.5px] px-32">{user.id}</td>
+                      <td className="w-1/12 pl-8 py-[4.5px] ">
                       <Image
                       src={user.src}
                       width={54}

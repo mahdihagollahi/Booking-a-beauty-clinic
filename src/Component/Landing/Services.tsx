@@ -70,7 +70,7 @@ function Services() {
                 style={{
                   zIndex: "10",
                   background:
-                    "linear-gradient(180.99deg, rgba(255, 255, 255, 0) 25.13%, #5DD9C1 104.3%)",
+                    "linear-gradient(180.99deg, rgba(255, 255, 255, 0) 15%, #5DD9C1 104.3%)",
                 }}
               ></div>
             </p>

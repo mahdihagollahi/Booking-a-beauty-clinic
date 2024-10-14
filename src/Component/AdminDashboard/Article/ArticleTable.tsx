@@ -10,7 +10,7 @@ const ArticleTable = () => {
   
 
   const [currentPage, setCurrentPage] = useState<number>(1);
-  const itemsPerPage = 5;
+  const itemsPerPage = 7;
 
   const offset = (currentPage - 1) * itemsPerPage;
   const currentPageData = Data.slice(offset, offset + itemsPerPage);
@@ -57,11 +57,11 @@ const ArticleTable = () => {
                         index % 2 === 0 ? "bg-[#FFF2F8]" : "bg-[#FFFFFF]"
                       }
                     >
-                      <td className="w-1/12 py-[22.5px] pr-8">
+                      <td className="w-1/12 py-[4.5px] pr-8">
                       <input type="checkbox" className="  toggle toggle-success" defaultChecked />
                       </td>
-                      <td className="w-1/12 py-[22.5px] pr-20">{user.id}</td>
-                      <td className="w-40 pr-[75px] py-[22.5px] ">
+                      <td className="w-1/12 py-[4.5px] pr-20">{user.id}</td>
+                      <td className="w-40 pr-[75px] py-[4.5px] ">
                       <Image
                       src={user.src}
                       width={54}

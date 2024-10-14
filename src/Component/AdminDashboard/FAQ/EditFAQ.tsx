@@ -1,7 +1,19 @@
-import React, { Fragment } from "react";
+"use client";
+import React, { Fragment, useState } from "react";
 import WelcomePanel from "@/Component/AdminDashboard/Dashboard/HeaderDashboard";
 import NavbarDashboard from "@/Component/AdminDashboard/Navbar/NavbarDashboard";
+import Modal from "@/Component/UserDashboard/component/Modal";
+import AcceptChangeModal from "@/Component/AdminDashboard/Doctor/AcceptChangeModal";
 const EditFAQ = () => {
+  const [isModalVisible, setIsModalVisible] = useState<boolean>(false);
+
+  const handleOpenModal = () => {
+    setIsModalVisible(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalVisible(false);
+  };
   return (
     <Fragment>
       <WelcomePanel />
@@ -34,7 +46,17 @@ const EditFAQ = () => {
 
           <input className="w-[1032px] pb-[136px] p-2 mb-4 border border-[#00AEFF] text-[#00AEFF] rounded-lg mt-[5px]" />
         </div>
+        <button
+          onClick={handleOpenModal}
+          className="text-white bg-[#DC1E7A] w-36 h-10 py-2 px-4 font-medium mt-5 rounded-lg mr-[86%] text-base"
+        >
+          اعمال تغییرات
+        </button>
       </div>
+
+      <Modal isVisible={isModalVisible}>
+        <AcceptChangeModal handleCloseModal={handleCloseModal} />
+      </Modal>
     </Fragment>
   );
 };
