@@ -7,7 +7,7 @@ import ImageUser4 from "@/assent/Img/AdminDashboard/UserImage4.svg";
 const NumberUserReviews = () => {
   return (
     <Fragment>
-      <div className="w-52 h-52 mr-5  rounded-xl bg-white px-3 py-6">
+      <div className="w-52 h-64 mr-5  rounded-xl bg-white px-3 py-6">
         <h3 className="font-medium text-sm text-[#393939]">
           تعداد نظرات کاربران از خدمات
         </h3>

@@ -40,7 +40,7 @@ const Navbar = () => {
   return (
     <Fragment>
       <div className="bg-[#EA78AF] w-60 py-10 h-full rounded-l-[50px]">
-        <Link href="/UserDashboard/Profile">
+        <Link href="/">
           <div className="flex cursor-pointer items-center gap-2 justify-center">
             <Image src={Logo} width={30} height={30} alt="" className="" />
             <p className="font-bold text-xl cursor-pointer text-[#FFFFFF]">

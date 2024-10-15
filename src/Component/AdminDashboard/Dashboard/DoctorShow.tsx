@@ -100,7 +100,7 @@ const DoctorShow = () => {
 
   return (
     <Fragment>
-      <div className="bg-white  absolute -mt-[68.5%] h-[120%] right-[73%] shadow-md rounded-[40px]">
+      <div className="bg-white  absolute -mt-[67.5%] h-[92.5%] right-[73%] shadow-md rounded-[40px]">
         <div
           className="w-full h-[360px] rounded-[40px]"
           style={{

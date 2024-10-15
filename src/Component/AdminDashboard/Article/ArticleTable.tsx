@@ -7,10 +7,9 @@ import ArticleData from "./ArticleData";
 import Link from "next/link";
 const ArticleTable = () => {
   const Data = ArticleData().Article;
-  
 
   const [currentPage, setCurrentPage] = useState<number>(1);
-  const itemsPerPage = 7;
+  const itemsPerPage = 9;
 
   const offset = (currentPage - 1) * itemsPerPage;
   const currentPageData = Data.slice(offset, offset + itemsPerPage);
@@ -20,7 +19,6 @@ const ArticleTable = () => {
     setCurrentPage(data.selected + 1);
   };
 
- 
   return (
     <Fragment>
       <div>
@@ -29,18 +27,25 @@ const ArticleTable = () => {
             <table className=" table-auto border-collapse">
               <thead>
                 <tr className="bg-[#DC1E7A] text-white font-regular ">
-              
-                  <th className="w-[20%] pr-2 pl-14 py-2 whitespace-nowrap">وضعیت</th>
-                  <th className="w-[9%] pl-[70px] py-2 whitespace-nowrap">ردیف</th>
-                  <th className="w-[16%] pl-[142px]   py-2 whitespace-nowrap">تصویر</th>
+                  <th className="w-[20%] pr-2 pl-14 py-2 whitespace-nowrap">
+                    وضعیت
+                  </th>
+                  <th className="w-[9%] pl-[70px] py-2 whitespace-nowrap">
+                    ردیف
+                  </th>
+                  <th className="w-[16%] pl-[142px]   py-2 whitespace-nowrap">
+                    تصویر
+                  </th>
 
                   <th className="w-[25%] pl-[19%]   py-2 whitespace-nowrap">
-                  عنوان مقاله
+                    عنوان مقاله
                   </th>
                   <th className="w-[16%] pl-[168px] py-2 whitespace-nowrap">
-                  تاریخ
+                    تاریخ
                   </th>
-                  <th className=" pl-20 w-20 py-2 whitespace-nowrap">جزئیات مقاله</th>
+                  <th className=" pl-20 w-20 py-2 whitespace-nowrap">
+                    جزئیات مقاله
+                  </th>
                   <th className="w-[13%] pl-6 py-2 whitespace-nowrap">
                     عملیات
                   </th>
@@ -58,36 +63,33 @@ const ArticleTable = () => {
                       }
                     >
                       <td className="w-1/12 py-[4.5px] pr-8">
-                      <input type="checkbox" className="  toggle toggle-success" defaultChecked />
+                        <input
+                          type="checkbox"
+                          className="  toggle toggle-success"
+                          defaultChecked
+                        />
                       </td>
                       <td className="w-1/12 py-[4.5px] pr-20">{user.id}</td>
                       <td className="w-40 pr-[75px] py-[4.5px] ">
-                      <Image
-                      src={user.src}
-                      width={54}
-                      height={54}
-                      alt=""
-                      className="rounded-lg"
-                      />
+                        <Image
+                          src={user.src}
+                          width={54}
+                          height={54}
+                          alt=""
+                          className="rounded-lg"
+                        />
                       </td>
                       <td className="w-[14%] whitespace-nowrap py-2 pr-4 ">
-                        <div className=" ">
-                       {user.Article}
-                        </div>
+                        <div className=" ">{user.Article}</div>
                       </td>
 
                       <td className="w-20 py-2 whitespace-nowrap pr-14 pl-10">
-                        {user.Date.toLocaleString()} 
+                        {user.Date.toLocaleString()}
                       </td>
-
-                      
 
                       <td className="w-[20%]  py-2  px-12 whitespace-nowrap">
                         {user.Detail}
-                     
                       </td>
-
-                   
 
                       <td className="w-1/12 py-2 pr-2 ">
                         <button className="w-6 h-6">
@@ -114,8 +116,6 @@ const ArticleTable = () => {
           pageCount={pageCount}
           pageClick={pageClick}
         />
-
-        
       </div>
     </Fragment>
   );

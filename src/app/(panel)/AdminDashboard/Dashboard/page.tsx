@@ -16,22 +16,26 @@ import SalesChart from "@/Component/AdminDashboard/Dashboard/SalesChart";
 const page = () => {
   return (
     <Fragment>
-      <WelcomePanel />
-      <NavbarDashboard />
-      <div className="absolute mr-72 bottom-[39%]">
-        <NumberUserReviews />
-      </div>
+      <div className="relative">
+        <WelcomePanel />
+       
+        <NavbarDashboard />
+   
+        <div className="absolute mr-72 bottom-[32.5rem]">
+          <NumberUserReviews />
+        </div>
 
-      <div className="flex items-center gap-3 absolute bottom-[64%] mr-[21%] ">
-        <VisitTheSite />
-        <TotalReservations />
-        <SumUsers />
-        <SumSale />
-      </div>
-      <DoctorShow />
-      <SalesChart />
-      <div className=" mr-72 -mt-[35%] absolute">
-        <ReservationChart />
+        <div className="flex items-center gap-3 absolute bottom-[48rem] mr-[19rem] ">
+          <VisitTheSite />
+          <TotalReservations />
+          <SumUsers />
+          <SumSale />
+        </div>
+        <DoctorShow />
+        <SalesChart />
+        <div className=" md:mr-[18rem] md:-mt-[28rem]   md:absolute">
+          <ReservationChart />
+        </div>
       </div>
     </Fragment>
   );

@@ -10,7 +10,7 @@ const ServiceTable = () => {
   
 
   const [currentPage, setCurrentPage] = useState<number>(1);
-  const itemsPerPage = 8;
+  const itemsPerPage = 10;
 
   const offset = (currentPage - 1) * itemsPerPage;
   const currentPageData = Data.slice(offset, offset + itemsPerPage);

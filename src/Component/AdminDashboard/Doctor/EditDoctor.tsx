@@ -23,7 +23,7 @@ const EditDoctor: React.FC = () => {
       <div>
         <NavbarDashboard />
       </div>
-      <div className="w-[73.5%] h-[100%] shadow rounded-2xl py-6 px-4 mr-80 -mt-[57%] bg-white ml-72">
+      <div className="w-[73.5%] h-[118.5%] shadow rounded-2xl py-6 px-4 mr-80 -mt-[67.5%] bg-white ml-72">
         <p className="font-medium text-xl text-[#393939]">پزشکان</p>
         <div className="flex justify-end mt-4">
           <Image src={RuleImage} width={159} height={122} alt="" />

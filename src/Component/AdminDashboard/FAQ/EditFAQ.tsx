@@ -22,7 +22,7 @@ const EditFAQ = () => {
         <NavbarDashboard />
       </div>
 
-      <div className="w-[73.5%] h-[100%] shadow  rounded-2xl py-6 px-4  mr-80 -mt-[57%] bg-white ml-72">
+      <div className="w-[73.5%] h-[118.5%] shadow  rounded-2xl py-6 px-4  mr-80 -mt-[67.5%] bg-white ml-72">
         <div className="flex gap-[75%] items-center">
           <p className="font-medium text-xl whitespace-nowrap text-[#393939]">
             سوالات متداول
