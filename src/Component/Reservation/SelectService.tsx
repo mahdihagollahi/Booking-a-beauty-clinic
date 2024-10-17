@@ -142,17 +142,13 @@ const SelectService: React.FC = () => {
           ))}
         </div>
 
-        <div className="flex gap-8 mr-[75.5%] mt-32">
+        <div className="flex gap-8 mr-[89%] mt-32">
         <Link href='/Resevaion'>
           <button className=" whitespace-nowrap w-36 py-2 px-4 rounded-md text-[#727272] bg-[#DDDDDD] font-medium text-sm">
             مرحله قبل
           </button>
           </Link>
-          <Link href='/Resevaion/SetTime'>
-          <button className="bg-[#DC1E7A] whitespace-nowrap w-36 py-2 px-4 rounded-md text-white font-medium text-sm">
-            تایید و ادامه
-          </button>
-          </Link>
+      
         </div>
       </div>
     </div>

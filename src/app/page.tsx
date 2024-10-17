@@ -23,22 +23,30 @@ import SingIn3 from "@/Component/SingIn/SingIn3";
 function page() {
   return (
     <Fragment>
+     
+
+    
       <Navbar />
+      <div className="relative">
       <ReservationServicePart />
+      </div>
       <AboutMe />
       <Services />
       <WhyMe />
       <BeautyService />
       <Doctor />
-
+      <div className="relative">
       <SampleWork />
+      </div>
       <Article />
       <UserComment />
       <FAQ />
+      <div className="relative">
       <NoranidNews />
+      </div>
       <Footer />
 
-
+   
       {/* <SingIn/> */}
       {/* <SingIn2/> */}
       {/* <SingIn3/> */}

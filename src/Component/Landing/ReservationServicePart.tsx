@@ -26,7 +26,7 @@ function ReservationServicePart() {
   return (
     <Fragment>
       <div
-        className="absolute -z-1 inset-0 w-[100%] h-[65%] md:h-[56%] py-10 mt-1 bg-white "
+        className="absolute -z-1 inset-0 w-[100%] h-[920px] md:h-[56%] pb-[28.5%] py-10 -mt-[34%] bg-white "
         style={{ backgroundImage: `url(${Background.src})` }}
       >
         {!isMobile && (

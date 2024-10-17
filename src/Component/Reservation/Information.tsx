@@ -27,7 +27,7 @@ const Information = () => {
 
       <div className="py-20 px-8 md:px-20">
         <AppointmentReservation />
-
+    
         <div className="mt-16 text-center px-24">
           <Image
             src={InformationReservation}
@@ -35,9 +35,16 @@ const Information = () => {
             height={83}
             alt=""
           />
+          
         </div>
+        
       </div>
-
+   <div className="flex items-center gap-5 mr-20">
+   <input type="checkbox" defaultChecked className="checkbox checkbox-success" />
+   <p className="font-medium text-base text-[#393939]">
+   برای خودم میخواهم!
+   </p>
+   </div>
       <div className="grid grid-cols-4 md:grid-cols-2 gap-20 items-center mt-10 mr-20">
         <div className="">
           <p className="font-medium text-base mb-2 text-[#393939] mr-1">نام:</p>
@@ -155,6 +162,8 @@ const Information = () => {
           </button>
           </Link>
         </div>
+
+        
     </div>
   );
 };
