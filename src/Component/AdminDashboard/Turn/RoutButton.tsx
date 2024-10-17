@@ -1,7 +1,7 @@
 import React, { useState, Fragment } from "react";
 
 const ServiceButtons = ({  setSelectedService }) => {
-  const [activeButton, setActiveButton] = useState<number | null>(null);
+  const [activeButton, setActiveButton] = useState<number | null>(1);
 
   const handleClick = (buttonIndex: number, service: string) => {
     setActiveButton(buttonIndex);
@@ -13,7 +13,7 @@ const ServiceButtons = ({  setSelectedService }) => {
       <div className="flex  items-center">
         <button
           onClick={() => handleClick(1, "تزریقات زیبایی")}
-          className={`p-2 whitespace-nowrap font-medium text-base w-28 h-12 ${
+          className={`p-2 whitespace-nowrap  font-medium text-base w-28 h-12 ${
             activeButton === 1
               ? "bg-[#DC1E7A] text-white"
               : "bg-gray-200 text-gray-800"
