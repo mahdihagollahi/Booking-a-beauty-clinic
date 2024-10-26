@@ -35,7 +35,7 @@ const AddFAQ = () => {
           </p>
           <input
             type="text"
-            className="w-[457px] p-4 mb-4 border border-gray-300 rounded-lg mt-3"
+            className="w-[457px] p-4 mb-4 border border-gray-300 dark:bg-inherit dark:border dark:border-gray-300 rounded-lg mt-3"
           />
         </div>
 
@@ -44,7 +44,7 @@ const AddFAQ = () => {
             پاسخ سوال :
           </p>
 
-          <input className="w-[1032px] pb-[136px] p-2 mb-4 border border-gray-300 rounded-lg mt-[5px]" />
+          <input className="w-[1032px] pb-[136px] p-2 mb-4 border border-gray-300 dark:bg-inherit dark:border dark:border-gray-300 rounded-lg mt-[5px]" />
         </div>
 
         <button

@@ -46,7 +46,7 @@ const EditUser = () => {
             </p>
             <input
               type="text"
-              className="w-[457px] p-4 mb-4 border border-gray-300 rounded-lg mt-4"
+              className="w-[457px] p-4 mb-4 border border-gray-300 dark:bg-inherit dark:border dark:border-gray-300 rounded-lg mt-4"
             />
           </div>
           <div>
@@ -56,7 +56,7 @@ const EditUser = () => {
             </p>
             <input
               type="text"
-              className="w-[457px] p-4 mb-4 border border-gray-300 rounded-lg mt-4"
+              className="w-[457px] p-4 mb-4 border border-gray-300 dark:bg-inherit dark:border dark:border-gray-300 rounded-lg mt-4"
             />
           </div>
         </div>
@@ -67,7 +67,7 @@ const EditUser = () => {
             </p>
             <input
               type="text"
-              className="w-[457px] p-4 mb-4 border border-gray-300 rounded-lg mt-4"
+              className="w-[457px] p-4 mb-4 border border-gray-300 dark:bg-inherit dark:border dark:border-gray-300 rounded-lg mt-4"
             />
           </div>
           <div>
@@ -76,7 +76,7 @@ const EditUser = () => {
                 نقش ها :
               </p>
               <div
-                className="w-full p-4 border border-gray-300 text-[#393939] rounded-lg bg-white cursor-pointer flex justify-between items-center"
+                className="w-full p-4 border border-gray-300 dark:bg-inherit dark:border dark:border-gray-300 text-[#393939] rounded-lg bg-white cursor-pointer flex justify-between items-center"
                 onClick={toggleDropdown}
               >
                 <span>{selectedOption}</span>

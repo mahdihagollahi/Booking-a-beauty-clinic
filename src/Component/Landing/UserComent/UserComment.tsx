@@ -37,7 +37,7 @@ const UserComment = () => {
   };
 
   return (
-    <div className="hidden md:block">
+    <div className="hidden  md:block">
       <div className="mt-20 px-20">
       <div className=" mr-[67%] absolute mt-14">
         <Image src={Flower} width={52} height={58} alt="" />
@@ -83,7 +83,7 @@ const UserComment = () => {
             zIndex: 10,
           }}
         >
-          <div className="flex items-center gap-10 relative z-0">
+          <div className="flex  items-center gap-10 relative z-0">
             <CommentUser
               Data={Data}
               commentListRef={commentListRef}

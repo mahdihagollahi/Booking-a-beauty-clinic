@@ -47,7 +47,7 @@ const EditService: React.FC = () => {
             </p>
             <input
               type="text"
-              className="w-[457px] p-4 mb-4  border border-[#00AEFF] rounded-lg mt-1"
+              className="w-[457px] p-4 mb-4  border border-[#00AEFF] dark:border dark:border-[#00AEFF] rounded-lg mt-1"
             />
           </div>
           <div>
@@ -56,7 +56,7 @@ const EditService: React.FC = () => {
             </p>
             <input
               type="text"
-              className="w-[457px] p-4 mb-4 border border-[#00AEFF] text-[] rounded-lg mt-1"
+              className="w-[457px] p-4 mb-4 border border-[#00AEFF] dark:border dark:border-[#00AEFF] text-[] rounded-lg mt-1"
             />
           </div>
         </div>
@@ -71,7 +71,7 @@ const EditService: React.FC = () => {
           </div>
         </div>
 
-        <input className="w-[1032px] pb-[136px] p-2 mb-4 border border-[#00AEFF] text-[] rounded-lg mt-[5px]" />
+        <input className="w-[1032px] pb-[136px] p-2 mb-4 border border-[#00AEFF] dark:border dark:border-[#00AEFF] text-[] rounded-lg mt-[5px]" />
 
         <div className="flex items-center justify-between mt-1">
           <div>
@@ -80,21 +80,21 @@ const EditService: React.FC = () => {
             </p>
             <input
               type="text"
-              className="w-[457px] p-4 mb-4 border border-[#00AEFF] text-[#00AEFF] rounded-lg "
+              className="w-[457px] p-4 mb-4 border border-[#00AEFF] dark:border dark:border-[#00AEFF] text-[#00AEFF] rounded-lg "
             />
           </div>
           <div>
             <p className=" mr-2 text-[#2B2B2B] font-medium text-base">قیمت :</p>
             <input
               type="text"
-              className="w-[457px] p-4 mb-4 border border-[#00AEFF] text-[#00AEFF] rounded-lg "
+              className="w-[457px] p-4 mb-4 border border-[#00AEFF] dark:border dark:border-[#00AEFF] text-[#00AEFF] rounded-lg "
             />
           </div>
         </div>
         <p className=" mr-2 text-[#2B2B2B] font-medium text-base">رده سنی :</p>
         <input
           type="text"
-          className="w-[457px] p-4 mb-4 border border-[#00AEFF] text-[#00AEFF] rounded-lg mt-1"
+          className="w-[457px] p-4 mb-4 border border-[#00AEFF] dark:border dark:border-[#00AEFF] text-[#00AEFF] rounded-lg mt-1"
         />
 
         <div className="flex items-center justify-between mt-2">
@@ -104,7 +104,7 @@ const EditService: React.FC = () => {
             </p>
             <input
               type="text"
-              className="w-[457px] p-4 mb-4 border border-[#00AEFF] text-[#00AEFF] rounded-lg mt-1"
+              className="w-[457px] p-4 mb-4 border border-[#00AEFF] dark:border dark:border-[#00AEFF] text-[#00AEFF] rounded-lg mt-1"
             />
           </div>
           <div>
@@ -113,7 +113,7 @@ const EditService: React.FC = () => {
             </p>
             <input
               type="text"
-              className="w-[457px] p-4 mb-4 border border-[#00AEFF] text-[#00AEFF] rounded-lg mt-1"
+              className="w-[457px] p-4 mb-4 border border-[#00AEFF] dark:border dark:border-[#00AEFF] text-[#00AEFF] rounded-lg mt-1"
             />
           </div>
         </div>
@@ -125,7 +125,7 @@ const EditService: React.FC = () => {
             </p>
             <input
               type="text"
-              className="w-[457px] p-4 mb-4 border border-[#00AEFF] text-[#00AEFF] rounded-lg mt-1"
+              className="w-[457px] p-4 mb-4 border border-[#00AEFF] dark:border dark:border-[#00AEFF] text-[#00AEFF] rounded-lg mt-1"
             />
           </div>
           <div>
@@ -134,7 +134,7 @@ const EditService: React.FC = () => {
             </p>
             <input
               type="text"
-              className="w-[457px] p-4 mb-4 border border-[#00AEFF] text-[#00AEFF] rounded-lg mt-1"
+              className="w-[457px] p-4 mb-4 border border-[#00AEFF] dark:border dark:border-[#00AEFF] text-[#00AEFF] rounded-lg mt-1"
             />
           </div>
         </div>
@@ -143,7 +143,7 @@ const EditService: React.FC = () => {
         </p>
         <input
           type="text"
-          className="w-[457px] p-4 mb-4 border border-[#00AEFF] text-[]#00AEFF rounded-lg mt-1"
+          className="w-[457px] p-4 mb-4 border border-[#00AEFF] dark:border dark:border-[#00AEFF] text-[]#00AEFF rounded-lg mt-1"
         />
 
         <div className="flex items-center  justify-between">
@@ -157,14 +157,14 @@ const EditService: React.FC = () => {
           </div>
         </div>
 
-        <input className="w-[1032px] pb-[136px] p-2 mb-4 border border-[#00AEFF] text-[#00AEFF] rounded-lg mt-[5px]" />
+        <input className="w-[1032px] pb-[136px] p-2 mb-4 border border-[#00AEFF] dark:border dark:border-[#00AEFF] text-[#00AEFF] rounded-lg mt-[5px]" />
 
         <p className=" mr-2 text-[#2B2B2B] font-medium text-base">
           عنوان پارگراف دوم:
         </p>
         <input
           type="text"
-          className="w-[457px] p-4 mb-4 border border-[#00AEFF] text-[#00AEFF] rounded-lg mt-1"
+          className="w-[457px] p-4 mb-4 border border-[#00AEFF] dark:border dark:border-[#00AEFF] text-[#00AEFF] rounded-lg mt-1"
         />
 
         <div className="flex items-center  justify-between">
@@ -178,7 +178,7 @@ const EditService: React.FC = () => {
           </div>
         </div>
 
-        <input className="w-[1032px] pb-[136px] p-2 mb-4 border border-[#00AEFF] text-[#00AEFF] rounded-lg mt-[5px]" />
+        <input className="w-[1032px] pb-[136px] p-2 mb-4 border border-[#00AEFF] dark:border dark:border-[#00AEFF] text-[#00AEFF] rounded-lg mt-[5px]" />
 
         <button
           onClick={handleOpenModal}
