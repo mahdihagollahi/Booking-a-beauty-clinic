@@ -24,12 +24,13 @@ const FAQ:React.FC = () => {
     <Fragment>
     
       <div
-        className="px-20 w-[100%] h-[63%] md:overflow-hidden overflow-scroll mt-10 md:mt-0 py-10 relative"
+        className="px-20 w-[100%] h-[63%] custom-scrollbar md:overflow-hidden overflow-scroll mt-10 md:mt-0 py-10 relative"
         style={{
           backgroundImage: `url(${Background.src})`,
+          backgroundRepeat: 'no-repeat',
           zIndex: "10",
           position: "relative",
-          // overflow: "hidden", 
+          
         }}
       >
         <p className="font-medium text-xl text-[#393939]">سوالات متدوال</p>

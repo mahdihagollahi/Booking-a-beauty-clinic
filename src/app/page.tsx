@@ -40,7 +40,9 @@ function page() {
       </div>
       <Article />
       <UserComment />
+     
       <FAQ />
+   
       <div className="relative">
       <NoranidNews />
       </div>

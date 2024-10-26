@@ -31,7 +31,7 @@ const WorkExample = () => {
             </p>
             <input
               type="text"
-              className="w-[457px]  p-4 mb-4 border border-[#00AEFF] text-[#00AEFF] rounded-lg mt-2"
+              className="w-[457px]  p-4 mb-4 border border-[#00AEFF] dark:border dark:border-[#00AEFF] text-[#00AEFF] rounded-lg mt-2"
             />
           </div>
           <div>
@@ -40,7 +40,7 @@ const WorkExample = () => {
             </p>
             <input
               type="text"
-              className="w-[457px] p-4 mb-4 border border-[#00AEFF] text-[#00AEFF] rounded-lg mt-2"
+              className="w-[457px] p-4 mb-4 border border-[#00AEFF] dark:border dark:border-[#00AEFF] text-[#00AEFF] rounded-lg mt-2"
             />
           </div>
         </div>

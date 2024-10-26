@@ -36,7 +36,7 @@ const EditDoctor: React.FC = () => {
             </p>
             <input
               type="text"
-              className="w-[457px] p-4 mb-4 border border-[#00AEFF] text-[#00AEFF] rounded-lg mt-1"
+              className="w-[457px] p-4 mb-4 border border-[#00AEFF] text-[#00AEFF] dark:border dark:border-[#00AEFF] rounded-lg mt-1"
             />
 
             <p className=" mr-2 mt-7 text-[#2B2B2B] font-medium text-base">
@@ -44,7 +44,7 @@ const EditDoctor: React.FC = () => {
             </p>
             <input
               type="text"
-              className="w-[457px] p-4 mb-4 border border-[#00AEFF] text-[#00AEFF] rounded-lg mt-1"
+              className="w-[457px] p-4 mb-4 border border-[#00AEFF] dark:border dark:border-[#00AEFF] text-[#00AEFF] rounded-lg mt-1"
             />
           </div>
           <div>
@@ -62,7 +62,7 @@ const EditDoctor: React.FC = () => {
             </p>
             <input
               type="text"
-              className="w-[457px] p-4 mb-4 border border-[#00AEFF] text-[#00AEFF] rounded-lg mt-1"
+              className="w-[457px] p-4 mb-4 border border-[#00AEFF] dark:border dark:border-[#00AEFF] text-[#00AEFF] rounded-lg mt-1"
             />
           </div>
           <div>
@@ -71,7 +71,7 @@ const EditDoctor: React.FC = () => {
             </p>
             <input
               type="text"
-              className="w-[457px] p-4 mb-4 border border-[#00AEFF] text-[#00AEFF] rounded-lg mt-1"
+              className="w-[457px] p-4 mb-4 border border-[#00AEFF] dark:border dark:border-[#00AEFF] text-[#00AEFF] rounded-lg mt-1"
             />
           </div>
         </div>

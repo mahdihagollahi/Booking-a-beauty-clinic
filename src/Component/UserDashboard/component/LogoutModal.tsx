@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import Background from "@/assent/Img/UserDashboard/LogOutUser.svg";
-const LogoutModal = ({handleCloseModal}) => {
+import Link from "next/link";
+const LogoutModal = ({ handleCloseModal }) => {
   return (
     <Fragment>
       <div className="flex flex-col items-center justify-center min-h-screen ">
@@ -14,15 +15,17 @@ const LogoutModal = ({handleCloseModal}) => {
             </p>
           </div>
           <div className="flex justify-center gap-20 mt-20 items-center">
-            <button className="bg-white border border-[#565656] px-4 py-[9px] w-[101px] rounded-md "
-                onClick={handleCloseModal}
+            <button
+              className="bg-white border border-[#565656] px-4 py-[9px] w-[101px] rounded-md "
+              onClick={handleCloseModal}
             >
               خیر
             </button>
-
-            <button className="bg-[#DC1E7A] px-4 py-[9px] w-[101px] rounded-md text-white">
-              بله
-            </button>
+            <Link href="/">
+              <button className="bg-[#DC1E7A] px-4 py-[9px] w-[101px] rounded-md text-white">
+                بله
+              </button>
+            </Link>
           </div>
         </div>
       </div>

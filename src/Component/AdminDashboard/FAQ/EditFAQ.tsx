@@ -35,7 +35,7 @@ const EditFAQ = () => {
           </p>
           <input
             type="text"
-            className="w-[457px] p-4 mb-4 border border-[#00AEFF] text-[#00AEFF] rounded-lg mt-3"
+            className="w-[457px] p-4 mb-4 border border-[#00AEFF] dark:border dark:border-[#00AEFF] text-[#00AEFF] rounded-lg mt-3"
           />
         </div>
 
@@ -44,7 +44,7 @@ const EditFAQ = () => {
             پاسخ سوال :
           </p>
 
-          <input className="w-[1032px] pb-[136px] p-2 mb-4 border border-[#00AEFF] text-[#00AEFF] rounded-lg mt-[5px]" />
+          <input className="w-[1032px] pb-[136px] p-2 mb-4 border border-[#00AEFF] dark:border dark:border-[#00AEFF] text-[#00AEFF] rounded-lg mt-[5px]" />
         </div>
         <button
           onClick={handleOpenModal}

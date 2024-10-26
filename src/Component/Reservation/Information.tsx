@@ -50,7 +50,7 @@ const Information = () => {
           <p className="font-medium text-base mb-2 text-[#393939] mr-1">نام:</p>
           <input
             type="text"
-            className="w-[528px] p-4 mb-4 border border-gray-300 rounded-lg"
+            className="w-[528px] p-4 mb-4 border border-gray-300 dark:bg-inherit dark:border dark:border-gray-300 rounded-lg"
           />
         </div>
 
@@ -60,7 +60,7 @@ const Information = () => {
           </p>
           <input
             type="text"
-            className="w-[528px] p-4 mb-4 border border-gray-300 rounded-lg"
+            className="w-[528px] p-4 mb-4 border border-gray-300 dark:bg-inherit dark:border dark:border-gray-300 rounded-lg"
           />
         </div>
 
@@ -70,7 +70,7 @@ const Information = () => {
           </p>
           <input
             type="text"
-            className="w-[528px] p-4  border border-gray-300 rounded-lg"
+            className="w-[528px] p-4  border border-gray-300 dark:bg-inherit dark:border dark:border-gray-300 rounded-lg"
           />
         </div>
 
@@ -80,7 +80,7 @@ const Information = () => {
           </p>
           <input
             type="text"
-            className="w-[528px] p-4  border border-gray-300 rounded-lg"
+            className="w-[528px] p-4  border border-gray-300 dark:bg-inherit dark:border dark:border-gray-300 rounded-lg"
           />
         </div>
 
@@ -90,7 +90,7 @@ const Information = () => {
           </p>
           <input
             type="text"
-            className="w-[528px] p-4 mb-4 border border-gray-300 rounded-lg"
+            className="w-[528px] p-4 mb-4 border border-gray-300 dark:bg-inherit dark:border dark:border-gray-300 rounded-lg"
           />
         </div>
 
@@ -100,7 +100,7 @@ const Information = () => {
           </p>
           <input
             type="text"
-            className="w-[528px] p-4 mb-4 border border-gray-300 rounded-lg"
+            className="w-[528px] p-4 mb-4 border border-gray-300 dark:bg-inherit dark:border dark:border-gray-300 rounded-lg"
           />
         </div>
 

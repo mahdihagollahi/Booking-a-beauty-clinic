@@ -28,7 +28,7 @@ const InputProfile = () => {
             <input
               type="text"
               value={items.name}
-              className="w-[528px] p-4 mb-4 border border-[#00AEFF] text-[#00AEFF] rounded-lg"
+              className="w-[528px] p-4 mb-4 border border-[#00AEFF] text-[#00AEFF] dark:bg-inherit dark:border dark:border-[#00AEFF] dark:text-[#00AEFF] rounded-lg"
             />
           </div>
 
@@ -37,7 +37,7 @@ const InputProfile = () => {
             <input
               type="text"
               value={items.lastname}
-              className="w-[528px] p-4 mb-4 border border-[#00AEFF] text-[#00AEFF] rounded-lg"
+              className="w-[528px] p-4 mb-4 border border-[#00AEFF] text-[#00AEFF] dark:bg-inherit dark:border dark:border-[#00AEFF] dark:text-[#00AEFF] rounded-lg"
             />
           </div>
 
@@ -46,7 +46,7 @@ const InputProfile = () => {
             <input
               type="text"
               value={items.birthyear}
-              className="w-[528px] p-4  border border-[#00AEFF] text-[#00AEFF] rounded-lg"
+              className="w-[528px] p-4  border border-[#00AEFF] text-[#00AEFF] dark:bg-inherit dark:border dark:border-[#00AEFF] dark:text-[#00AEFF] rounded-lg"
             />
           </div>
 
@@ -55,7 +55,7 @@ const InputProfile = () => {
             <input
               type="text"
               value={items.nationalCode}
-              className="w-[528px] p-4  border border-[#00AEFF] text-[#00AEFF] rounded-lg"
+              className="w-[528px] p-4  border border-[#00AEFF] text-[#00AEFF] dark:bg-inherit dark:border dark:border-[#00AEFF] dark:text-[#00AEFF] rounded-lg"
             />
           </div>
 
@@ -66,7 +66,7 @@ const InputProfile = () => {
             <input
               type="text"
               value={items.phoNumber}
-              className="w-[528px] p-4 mb-4 border border-[#00AEFF] text-[#00AEFF] rounded-lg"
+              className="w-[528px] p-4 mb-4 border border-[#00AEFF] text-[#00AEFF] dark:bg-inherit dark:border dark:border-[#00AEFF] dark:text-[#00AEFF] rounded-lg"
             />
           </div>
 
@@ -77,7 +77,7 @@ const InputProfile = () => {
             <input
               type="text"
               value={items.Email}
-              className="w-[528px] p-4 mb-4 border border-[#00AEFF] text-[#00AEFF] rounded-lg"
+              className="w-[528px] p-4 mb-4 border border-[#00AEFF] text-[#00AEFF] dark:bg-inherit dark:border dark:border-[#00AEFF] dark:text-[#00AEFF] rounded-lg"
             />
           </div>
 

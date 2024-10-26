@@ -46,19 +46,19 @@ const NoranidNewsLanding = () => {
             <input
               type="text"
               placeholder="نام"
-              className="w-full mt-10 p-4 mb-4 border border-gray-300 rounded-lg"
+              className="w-full mt-10 p-4 mb-4 border border-gray-300 dark:bg-inherit dark:border dark:border-gray-300  rounded-lg"
             />
 
             <input
               type="text"
               placeholder="نام خانوادگی"
-              className="w-full  p-4 mb-4 border border-gray-300 rounded-lg"
+              className="w-full  p-4 mb-4 border border-gray-300 dark:bg-inherit dark:border dark:border-gray-300  rounded-lg"
             />
 
             <input
               type="text"
               placeholder="شماره تماس"
-              className="w-full  p-4 mb-4 border border-gray-300 rounded-lg"
+              className="w-full  p-4 mb-4 border border-gray-300 dark:bg-inherit dark:border dark:border-gray-300  rounded-lg"
               onFocus={handleFocus}
             />
             <button className="bg-[#4BB09C] rounded-md text-white px-6 mt-4 mr-[81%] py-2">تایید</button>
