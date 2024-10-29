@@ -24,6 +24,8 @@ function page() {
   return (
     <Fragment>
      
+<div className="relative">
+
 
     
       <Navbar />
@@ -45,14 +47,15 @@ function page() {
    
       <div className="relative">
       <NoranidNews />
-      </div>
+      </div>|
       <Footer />
 
-   
+     
       {/* <SingIn/> */}
       {/* <SingIn2/> */}
       {/* <SingIn3/> */}
       {/* <LogIn1/> */}
+      </div>
     </Fragment>
   );
 }

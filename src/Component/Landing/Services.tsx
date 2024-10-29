@@ -16,7 +16,7 @@ function Services() {
     <Fragment>
       <div className="bg-white relative z-10 py-2 mt-4">
         <div className="flex">
-          <div className="absolute mr-[26%] -mt-2">
+          <div className="absolute mr-[26%] -mt-2 2xl:mr-[26%] 2xl:-mt-2">
             <Image src={EllipseService} width={490} height={530} alt="" />
           </div>
           <div className="px-20 py-20">
@@ -32,13 +32,13 @@ function Services() {
                 پوست با لیزر، لاغری با دستگاه، لیزر موهای زائد، جراحی زیبایی و
                 فیشیال
               </p>
-              <div className="mr-[31.6%] -mt-9 absolute">
+              <div className="mr-[31.6%] -mt-9 2xl:mr-[24.6%] 2xl:-mt-9  absolute">
                 <Image src={Flower} width={52} height={58} alt="" />
               </div>
               <p className="mt-2">صورت است.</p>
             </div>
 
-            <div className="absolute mr-[30%] mt-[22%] md:-mt-[5.9%]">
+            <div className="absolute mr-[30%] mt-[22%] md:-mt-[5.9%]  2xl:mr-[30%]  2xl:-mt-[5.9%]">
               <Image src={EllipseRevers} width={490} height={530} alt="" />
             </div>
             <div className="mt-12 mr-7">
@@ -55,7 +55,7 @@ function Services() {
             <Image src={ServiceFrame} width={226} height={226} alt="" />
           </div>
 
-          <div className="hidden md:block relative -mr-[14.9%] mt-[10%]">
+          <div className="hidden md:block relative 2xl:mr-[14.9%] 2xl:mt-[10%] -mr-[14.9%] mt-[10%]">
             <Image
               src={servicePhoto2}
               width={199}
@@ -63,7 +63,7 @@ function Services() {
               alt="service"
               className="rounded-xl object-cover"
             />
-            <p className="absolute -mt-16 mr-[63px] opacity-0 hover:opacity-100 font-medium text-sm">
+            <p className="absolute -mt-16 mr-[63px]  opacity-0 hover:opacity-100 font-medium text-sm">
               خدمات لیزر
               <div
                 className="absolute inset-0 w-[135px] h-[132px] -mt-[101.9px] -mr-[29.6px] rounded-xl object-cover opacity-0 rotate-45 hover:bg-[#5DD9C1] hover:opacity-20"
@@ -76,7 +76,7 @@ function Services() {
             </p>
           </div>
 
-          <div className="hidden md:block -mr-[6.5%]">
+          <div className="hidden md:block -mr-[6.5%] 2xl:mr-[2.5%]">
             <Image src={ServiceFrame} width={226} height={226} alt="" />
           </div>
 
@@ -101,7 +101,7 @@ function Services() {
             </p>
           </div>
 
-          <div className="hidden md:block -mr-[4.5%] mt-24">
+          <div className="hidden md:block -mr-[4.5%] mt-24  2xl:mr-[2.5%] 2xl:mt-24">
             <Image src={ServiceFrame} width={226} height={226} alt="" />
           </div>
 
@@ -126,7 +126,7 @@ function Services() {
             </p>
           </div>
 
-          <div className="hidden md:block -mr-[22.9%] mt-[15%]">
+          <div className="hidden md:block -mr-[22.9%] mt-[15%]  2xl:mr-[2.9%] 2xl:mt-[15%]">
             <Image src={ServiceFrame} width={226} height={226} alt="" />
           </div>
 
