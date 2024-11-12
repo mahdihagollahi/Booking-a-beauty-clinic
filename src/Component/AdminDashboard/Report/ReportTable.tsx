@@ -9,7 +9,7 @@ const ReportTable = () => {
   const Data = DataReport().Report;
 
   const [currentPage, setCurrentPage] = useState<number>(1);
-  const itemsPerPage = 5;
+  const itemsPerPage = 8;
 
   const offset = (currentPage - 1) * itemsPerPage;
   const currentPageData = Data.slice(offset, offset + itemsPerPage);

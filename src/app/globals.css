@@ -239,3 +239,44 @@
     @apply bg-background text-foreground;
     }
 }
+:root {
+  --primary: #f1f1f1;
+  --secondary: rgba(0, 0, 0, 0);
+  --tertiary: rgba(0, 0, 0, 0);
+}
+
+
+*::-webkit-scrollbar {
+  display : none !important
+}
+
+*::-webkit-scrollbar-track {
+display : none !important
+}
+
+*::-webkit-scrollbar-thumb {
+  display : none !important
+}
+
+::-webkit-scrollbar-thumb:hover {
+  display : none !important
+}
+
+
+
+.custom-scrollbar::-webkit-scrollbar {
+  display : none !important
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  display : none !important
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  display : none !important
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  display : none !important
+}
+

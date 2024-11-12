@@ -16,25 +16,31 @@ interface SingInProps {
 
 const SingIn: React.FC<SingInProps> = ({ handleCloseModal }) => {
   const [isOTPVisible, setIsOTPVisible] = useState(false); 
-  const [buttonText, setButtonText] = useState("دریافت کد"); 
+  const [isNextStepVisible, setIsNextStepVisible] = useState(false); // وضعیت برای نمایش مرحله بعدی
+  const [buttonText, setButtonText] = useState("تائید و ادامه"); 
 
   const handleFocus = () => {
     document.documentElement.lang = "en";
   };
 
   const handleButtonClick = () => {
-    setIsOTPVisible(true); 
-    setButtonText("ارسال کد"); 
+    if (!isOTPVisible) {
+      setIsOTPVisible(true); // نمایش OTP
+      setButtonText("ارسال کد");
+    } else {
+      setIsNextStepVisible(true); // نمایش فرم نام، نام خانوادگی و غیره
+      setButtonText("تائید و ثبت");
+    }
   };
 
   return (
     <div className="flex justify-center items-center mt-[15%] relative z-50">
       <div
-        className={`px-10 py-3 pb-32 rounded-r-[4.5%] ${
-            isOTPVisible ? "w-full " : "w-[90%] "
-          } rounded-l-[4.5%]`}
+        className={`px-10 py-3 pb-32 rounded-r-[4.5%] 
+          ${isOTPVisible || isNextStepVisible ? "w-[90%]" : "w-[90%]"} 
+          rounded-l-[4.5%]`}
         style={{
-          backgroundImage: `url(${LoginImage.src})`,
+          backgroundImage: !isNextStepVisible ? `url(${LoginImage.src})` : "none", 
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -62,34 +68,61 @@ const SingIn: React.FC<SingInProps> = ({ handleCloseModal }) => {
           <span className="text-[#4BB09C] cursor-pointer">وارد شوید</span>
         </p>
 
-        <input
-          type="text"
-          placeholder="09192803715"
-          className="w-full p-4 mb-4 border border-gray-300 rounded-lg"
-          onFocus={handleFocus}
-        />
-
-      
-        {isOTPVisible && (
-         
-        <InputOTP
-          className=""
-          maxLength={4}
-          pattern={REGEXP_ONLY_DIGITS_AND_CHARS}
-        >
-          <InputOTPGroup
-            className="text-white mr-10 my-2  "
-            style={{ direction: "ltr" }}
-          >
-            <InputOTPSlot className="mr-8 rounded" index={0} />
-            <InputOTPSlot className="mr-8 rounded border border-white" index={1} />
-            <InputOTPSlot className="mr-8 rounded border border-white" index={2} />
-            <InputOTPSlot className="mr-8 rounded border border-white" index={3} />
-          </InputOTPGroup>
-        </InputOTP>
+        {/* نمایش فیلد شماره موبایل فقط زمانی که مرحله بعدی فعال نشده */}
+        {!isNextStepVisible && (
+          <input
+            type="text"
+            placeholder="09192803715"
+            className="w-full p-4 mb-4 border border-gray-300 rounded-lg dark:bg-inherit dark:border dark:border-gray-300 "
+            onFocus={handleFocus}
+          />
         )}
 
-       
+        {/* نمایش فیلدهای OTP فقط اگر مرحله بعد نمایش داده نشود */}
+        {isOTPVisible && !isNextStepVisible && (
+          <InputOTP
+            className=""
+            maxLength={4}
+            pattern={REGEXP_ONLY_DIGITS_AND_CHARS}
+          >
+            <InputOTPGroup
+              className="text-white mr-10 my-2"
+              style={{ direction: "ltr" }}
+            >
+              <InputOTPSlot className="mr-8 rounded" index={0} />
+              <InputOTPSlot className="mr-8 rounded border border-white" index={1} />
+              <InputOTPSlot className="mr-8 rounded border border-white" index={2} />
+              <InputOTPSlot className="mr-8 rounded border border-white" index={3} />
+            </InputOTPGroup>
+          </InputOTP>
+        )}
+
+        {/* نمایش فیلدهای نام، نام خانوادگی و رمز عبور پس از OTP */}
+        {isNextStepVisible && (
+          <>
+            <input
+              type="text"
+              placeholder="نام"
+              className="w-full p-4 mb-4 border border-gray-300 rounded-lg dark:bg-inherit dark:border dark:border-gray-300 "
+            />
+            <input
+              type="text"
+              placeholder="نام خانوادگی"
+              className="w-full p-4 mb-4 border border-gray-300 rounded-lg dark:bg-inherit dark:border dark:border-gray-300 "
+            />
+            <input
+              type="password"
+              placeholder="رمز عبور"
+              className="w-full p-4 mb-4 border border-gray-300 rounded-lg dark:bg-inherit dark:border dark:border-gray-300 "
+            />
+            <input
+              type="password"
+              placeholder="تکرار رمز عبور"
+              className="w-full p-4 mb-4 border border-gray-300 rounded-lg dark:bg-inherit dark:border dark:border-gray-300 "
+            />
+          </>
+        )}
+
         <button
           className={`w-full bg-[#DC1E7A] text-white py-4 rounded-lg mt-4 ${
             isOTPVisible ? "mt-4 " : "mt-[10%] "
@@ -104,4 +137,3 @@ const SingIn: React.FC<SingInProps> = ({ handleCloseModal }) => {
 };
 
 export default SingIn;
-

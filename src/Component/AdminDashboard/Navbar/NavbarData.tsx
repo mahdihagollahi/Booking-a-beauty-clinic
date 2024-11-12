@@ -20,6 +20,7 @@ import ReportHover from "@/assent/Img/AdminDashboard/ReportHover.svg";
 import CommentHover from "@/assent/Img/AdminDashboard/CommentHover.svg";
 import questionHover from "@/assent/Img/AdminDashboard/questionHover.svg";
 import ArticleHover from "@/assent/Img/AdminDashboard/ArticleHover.svg";
+import settingHover from "@/assent/Img/AdminDashboard/settingHover.svg";
 
 function NavbarData() {
   return {
@@ -65,7 +66,7 @@ function NavbarData() {
         src: Turn,
         hoverSrc: TurnHover,
         text: 'نوبت ها',
-        link: "",
+        link: "/AdminDashboard/Turn",
       },
       {
         id: 7,
@@ -99,7 +100,7 @@ function NavbarData() {
       {
         id: 11,
         src: setting,
-        // hoverSrc: ArticleHover,
+        hoverSrc: settingHover,
         text: 'تنظیمات',
         link: "",
       },

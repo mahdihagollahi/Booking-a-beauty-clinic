@@ -27,7 +27,7 @@ const NavbarDashboard = () => {
 
   return (
     <Fragment>
-      <div className="mr-20 py-5 h-[120%] my-3 mt-5 w-52 rounded-2xl bg-white shadow ">
+      <div className="mr-20 py-5 pb-44 h-[230%] my-3 mt-5 w-52 rounded-2xl bg-white shadow ">
         <div className="flex justify-center mb-5">
           <Link href='/AdminDashboard/Dashboard'>
          

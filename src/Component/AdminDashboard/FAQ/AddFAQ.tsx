@@ -22,7 +22,7 @@ const AddFAQ = () => {
         <NavbarDashboard />
       </div>
 
-      <div className="w-[73.5%] h-[100%] shadow  rounded-2xl py-6 px-4  mr-80 -mt-[57%] bg-white ml-72">
+      <div className="w-[73.5%] h-[118.5%] shadow  rounded-2xl py-6 px-4  mr-80 -mt-[67.5%] bg-white ml-72">
         <div className="flex gap-[75%] items-center">
           <p className="font-medium text-xl whitespace-nowrap text-[#393939]">
             سوالات متداول
@@ -35,7 +35,7 @@ const AddFAQ = () => {
           </p>
           <input
             type="text"
-            className="w-[457px] p-4 mb-4 border border-gray-300 rounded-lg mt-3"
+            className="w-[457px] p-4 mb-4 border border-gray-300 dark:bg-inherit dark:border dark:border-gray-300 rounded-lg mt-3"
           />
         </div>
 
@@ -44,7 +44,7 @@ const AddFAQ = () => {
             پاسخ سوال :
           </p>
 
-          <input className="w-[1032px] pb-[136px] p-2 mb-4 border border-gray-300 rounded-lg mt-[5px]" />
+          <input className="w-[1032px] pb-[136px] p-2 mb-4 border border-gray-300 dark:bg-inherit dark:border dark:border-gray-300 rounded-lg mt-[5px]" />
         </div>
 
         <button

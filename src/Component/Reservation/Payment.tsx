@@ -67,22 +67,22 @@ const Payment: React.FC = () => {
 
         <div className="flex gap-10">
           <div>
-            <div className="w-[600px] mt-20">
+            <div className="w-[600px] mt-20 bg-white  border border-[#E5E5E5] rounded-xl p-4 shadow-md">
               {Service.map((items) => (
                 <div
                   key={items.id}
-                  className="bg-white border border-[#E5E5E5] rounded-xl p-4 shadow-md"
+                 
                 >
                   <p className="font-medium text-base text-[#393939] mb-2">
                     نوع نوبت
                   </p>
-                  <div className="flex gap-4 items-center">
+                  <div className="flex gap-4 mt-5 items-center">
                     <Image src={items.image} width={100} height={100} alt="" />
                     <div className="flex-1">
                       <p className="font-semibold  text-lg text-[#DC1E7A]">
                         {items.name}
                       </p>
-                      <p className="font-regular text-sm mt-2 text-[#8F8F8F]">
+                      <p className="font-regular w-full h-full text-sm mt-2 text-[#8F8F8F]">
                         {items.discription}
                       </p>
                     </div>
@@ -95,19 +95,20 @@ const Payment: React.FC = () => {
                     </div>
                   </div>
                 </div>
+                
               ))}
-            </div>
-
-            <div className="w-[600px] mt-[17.5%]">
-              {Doctor.map((items) => (
+            
+                
+             
+                 {Doctor.map((items) => (
                 <div
                   key={items.id}
-                  className="bg-white border border-[#E5E5E5] rounded-xl p-4 shadow-md"
+                  className="mt-[115px]"
                 >
                   <p className="font-medium text-base text-[#393939] mb-2">
                     نام پزشک
                   </p>
-                  <div className="flex gap-4 items-center">
+                  <div className="flex gap-4 mt-5 items-center">
                     <Image src={items.image} width={100} height={100} alt="" />
                     <div className="flex-1">
                       <p className="font-regular  text-base text-[#393939]">
@@ -129,6 +130,10 @@ const Payment: React.FC = () => {
                   </div>
                 </div>
               ))}
+            </div>
+
+            <div className="w-[600px] ">
+           
             </div>
           </div>
           <div className="bg-white w-[568px]  mt-20 px-5 py-8 rounded-lg shadow-md">

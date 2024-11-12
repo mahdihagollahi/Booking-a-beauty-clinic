@@ -37,16 +37,16 @@ const EditUser = () => {
         <NavbarDashboard />
       </div>
 
-      <div className="w-[73.5%] h-[100%] shadow  rounded-2xl py-6 px-4  mr-80 -mt-[57%] bg-white ml-72">
+      <div className="w-[73.5%] h-[118.5%] shadow  rounded-2xl py-6 px-4  mr-80 -mt-[67.5%] bg-white ml-72">
         <p className="font-medium text-xl text-[#393939]">اطلاعات کاربر</p>
-        <div className="flex items-center justify-between">
+        <div className="flex items-center mt-10 justify-between">
           <div>
             <p className="mt-3 mr-2 text-[#2B2B2B] font-medium text-base">
          نام:
             </p>
             <input
               type="text"
-              className="w-[457px] p-4 mb-4 border border-gray-300 rounded-lg mt-4"
+              className="w-[457px] p-4 mb-4 border border-gray-300 dark:bg-inherit dark:border dark:border-gray-300 rounded-lg mt-4"
             />
           </div>
           <div>
@@ -56,7 +56,7 @@ const EditUser = () => {
             </p>
             <input
               type="text"
-              className="w-[457px] p-4 mb-4 border border-gray-300 rounded-lg mt-4"
+              className="w-[457px] p-4 mb-4 border border-gray-300 dark:bg-inherit dark:border dark:border-gray-300 rounded-lg mt-4"
             />
           </div>
         </div>
@@ -67,7 +67,7 @@ const EditUser = () => {
             </p>
             <input
               type="text"
-              className="w-[457px] p-4 mb-4 border border-gray-300 rounded-lg mt-4"
+              className="w-[457px] p-4 mb-4 border border-gray-300 dark:bg-inherit dark:border dark:border-gray-300 rounded-lg mt-4"
             />
           </div>
           <div>
@@ -76,7 +76,7 @@ const EditUser = () => {
                 نقش ها :
               </p>
               <div
-                className="w-full p-4 border border-gray-300 text-[#393939] rounded-lg bg-white cursor-pointer flex justify-between items-center"
+                className="w-full p-4 border border-gray-300 dark:bg-inherit dark:border dark:border-gray-300 text-[#393939] rounded-lg bg-white cursor-pointer flex justify-between items-center"
                 onClick={toggleDropdown}
               >
                 <span>{selectedOption}</span>

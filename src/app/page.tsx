@@ -25,21 +25,45 @@ import LogIn1 from '@/Component/LogIn/LogIn1';
 
 function page() {
   return (
+<<<<<<< HEAD
    
      <Fragment>
+=======
+    <Fragment>
+     
+<div className="relative">
+
+
+    
+>>>>>>> 0c93ee39fac24ec0584ef4ca73c31f9dbdcfb58a
       <Navbar />
+      <div className="relative">
       <ReservationServicePart />
+<<<<<<< HEAD
     <AboutMe />
+=======
+      </div>
+      <AboutMe />
+>>>>>>> 0c93ee39fac24ec0584ef4ca73c31f9dbdcfb58a
       <Services />
       <WhyMe />
       <BeautyService />
       <Doctor />
-
+      <div className="relative">
       <SampleWork />
+      </div>
       <Article />
+<<<<<<< HEAD
      <UserComment />
+=======
+      <UserComment />
+     
+>>>>>>> 0c93ee39fac24ec0584ef4ca73c31f9dbdcfb58a
       <FAQ />
+   
+      <div className="relative">
       <NoranidNews />
+<<<<<<< HEAD
     <Footer />
 
 
@@ -48,6 +72,18 @@ function page() {
        <SingIn3/> 
      <LogIn1/> 
    </Fragment>
+=======
+      </div>|
+      <Footer />
+
+     
+      {/* <SingIn/> */}
+      {/* <SingIn2/> */}
+      {/* <SingIn3/> */}
+      {/* <LogIn1/> */}
+      </div>
+    </Fragment>
+>>>>>>> 0c93ee39fac24ec0584ef4ca73c31f9dbdcfb58a
   );
 }
 

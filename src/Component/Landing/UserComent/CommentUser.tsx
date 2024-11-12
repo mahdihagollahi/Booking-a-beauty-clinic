@@ -5,13 +5,13 @@ import Image from "next/image";
 const CommentUser = ({Data , commentListRef , currentIndex}) => {
   return (
     <Fragment>
-      <div className="flex items-start overflow-x-scroll w-full"
+      <div className="flex items-start custom-scrollbar overflow-x-scroll w-full"
               ref={commentListRef}
             >
               {Data[currentIndex].comments?.map((comment, idx) => (
                 <div key={idx} className="">
                   <div
-                    className="w-[500px] h-[200px] p-10  bg-cover mt-5 flex items-center gap-3  relative"
+                    className="w-[500px]  h-[200px] p-10  bg-cover mt-5 flex items-center gap-3  relative"
                     style={{
                       backgroundImage: `url(${BackgroundComment.src})`,
                       zIndex: -1,

@@ -13,7 +13,7 @@ const UserTable = () => {
   const [isModalVisible, setIsModalVisible] = useState<boolean>(false);
 
   const [currentPage, setCurrentPage] = useState<number>(1);
-  const itemsPerPage = 7;
+  const itemsPerPage = 9;
 
   const offset = (currentPage - 1) * itemsPerPage;
   const currentPageData = Data.slice(offset, offset + itemsPerPage);

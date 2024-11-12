@@ -29,7 +29,7 @@ const Login = () => {
             </p>
             <input
               type="text"
-              className="w-[528px] p-4 mb-4 border border-gray-300 rounded-lg mt-4"
+              className="w-[528px] p-4 mb-4 border border-gray-300  dark:bg-inherit dark:border dark:border-gray-300 rounded-lg mt-4"
               onFocus={handleFocus}
             />
             <p className="mt-3 mr-2 text-[#2B2B2B] font-medium text-base">
@@ -37,7 +37,7 @@ const Login = () => {
             </p>
             <input
                type={showPassword ? "text" : "password"}
-              className="w-[528px] p-4 mb-4 border border-gray-300 rounded-lg mt-4"
+              className="w-[528px] p-4 mb-4 border border-gray-300 dark:bg-inherit dark:border dark:border-gray-300 rounded-lg mt-4"
               onFocus={handleFocus}
             />
 
