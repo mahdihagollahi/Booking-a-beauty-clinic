@@ -14,18 +14,22 @@ import UserComment from "@/Component/Landing/UserComent/UserComment";
 import FAQ from "@/Component/Landing/FAQ/FAQ";
 import NoranidNews from "@/Component/Landing/NoranidNewsLanding";
 import Article from "@/Component/Landing/Article";
+;
 
-// import SingIn from '@/Component/Login/SingIn'
-// import SingIn2 from '@/Component/Login/SingIn2'
-// import LogIn1 from '@/Component/LogIn/LogIn1'
-import SingIn3 from "@/Component/SingIn/SingIn3";
+
+
+import SingIn from '@/Component/Login/SingIn';
+import SingIn2 from '@/Component/Login/SingIn2';
+import LogIn1 from '@/Component/LogIn/LogIn1';
+
 
 function page() {
   return (
-    <Fragment>
+   
+     <Fragment>
       <Navbar />
       <ReservationServicePart />
-      <AboutMe />
+    <AboutMe />
       <Services />
       <WhyMe />
       <BeautyService />
@@ -33,17 +37,17 @@ function page() {
 
       <SampleWork />
       <Article />
-      <UserComment />
+     <UserComment />
       <FAQ />
       <NoranidNews />
-      <Footer />
+    <Footer />
 
 
-      {/* <SingIn/> */}
-      {/* <SingIn2/> */}
-      {/* <SingIn3/> */}
-      {/* <LogIn1/> */}
-    </Fragment>
+       <SingIn/> 
+       <SingIn2/> 
+       <SingIn3/> 
+     <LogIn1/> 
+   </Fragment>
   );
 }
 

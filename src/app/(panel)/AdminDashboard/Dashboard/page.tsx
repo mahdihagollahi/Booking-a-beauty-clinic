@@ -18,11 +18,11 @@ const page = () => {
     <Fragment>
       <WelcomePanel />
       <NavbarDashboard />
-      <div className="absolute mr-72 bottom-[39%]">
+      <div className="absolute md:mr-72 md:bottom-[39%]">
         <NumberUserReviews />
       </div>
 
-      <div className="flex items-center gap-3 absolute bottom-[64%] mr-[21%] ">
+      <div className="flex items-center gap-3 absolute md:bottom-[64%] md:mr-[21%] ">
         <VisitTheSite />
         <TotalReservations />
         <SumUsers />
@@ -30,7 +30,7 @@ const page = () => {
       </div>
       <DoctorShow />
       <SalesChart />
-      <div className=" mr-72 -mt-[35%] absolute">
+      <div className=" md:mr-72 md:-mt-[35%] sm:-mt-[43%] absolute">
         <ReservationChart />
       </div>
     </Fragment>
