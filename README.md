@@ -6,7 +6,7 @@
 
 ![Logo](https://github.com/mahdihagollahi/Booking-a-beauty-clinic/blob/developer/src/assent/Img/Landing/GreenLogo.svg)
 
-![Commit Badge](https://img.shields.io/github/commit-activity/y/mahdihagollahi/sandoghProject)
+![Commit Badge](https://img.shields.io/github/commit-activity/y/mahdihagollahi/Booking-a-beauty-clinic)
 
 <!-- - 💵 You will receive the amount quickly -->
   <!-- - 💳 The money is deposited in the account card -->
